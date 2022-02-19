@@ -1,0 +1,60 @@
+.span{ /*This class is for every span*/
+    display:inline-block;
+    height: 100%;
+
+}
+
+#span1 {/*These are spans each part of the map*/
+  background-color: lightblue;
+  width: 30%;
+  height:100%;
+  z-index: 1;
+}
+#span2 {
+  background-color: lightblue;
+  text-align: center;
+  width: 33.3%;
+}
+#span3 {
+  background-color: lightblue;
+  text-align: center;
+  width: 30%;
+}
+#span4 {
+  background-color: lightblue;
+  text-align: center;
+  width: 30%;
+}
+#span5 {
+    background-color: lightblue;
+    text-align: center;
+    width: 33.3%;
+  }
+  #span6 {
+    background-color: lightblue;
+    text-align: center;
+    width: 33.3%;
+  }
+#Div1 { /*This is the Div for the top part of the map*/
+  background-color: yellowgreen;
+  text-align: center;
+  width: 100%;
+  height: 25%;
+
+  opacity: 56%;
+}
+#Div2 { /*This is the Div for the bottom part of the map*/
+  background-color: gray;
+  text-align: center;
+  width: 100%;
+  height: 25%;
+  opacity: 56%;
+}
+#Divmain {  /*This is the main Div*/
+  background-image: url("../Images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 139vh;
+  display: block;
+  margin: 90px auto 0 auto;
+  width: 50%;
+}
