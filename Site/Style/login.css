@@ -35,7 +35,7 @@
     --btn-color: linear-gradient(135deg, #670594 10%, #c629e6 100%);
     --btn-hover-color: #6560ff;
     --login-bg-color-left: #28262b; /* moje i #28262b, 121212 */
-    --login-bg-color-right: #28262b; /* moje i 121212 */
+    --login-bg-color-right: #121212; /* moje i 121212 */
     --text-color: #c4c4c4;
     --span-color: #0da849;
     --remember-me-color: #0da849;
@@ -58,14 +58,10 @@ header {
 }
 
 #logoInNavbar {
-    width: 100px;
-    height: 60px;
+    width: 20%;
+    height: 100%;
 }
 
-#logoInNavbar {
-    width: 20%;
-    height: 35%;
-}
 
 .nav-links {
     list-style: none;
@@ -153,7 +149,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px); /* drizhenieto na slidera */
+    transform: translateX(150%); /* drizhenieto na slidera */
 }
 
 .slider.round {
@@ -208,7 +204,7 @@ body {
 }
 
 #logoInForm {
-    width: 80%;
+    width: 40%;
 	height: auto;
 }
 
