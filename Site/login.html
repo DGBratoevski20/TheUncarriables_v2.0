@@ -1,60 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="Style/login.css">
+<html>
 
-</head>
-<body>
+    <head>
 
-<div class="box-form">
-	<div class="left">
-    <br>
-    <h1>Lorem Ipsum!</h1>
-    <img src="https://cdn.brainpop.com/science/earthsystem/earth/icon.png">
-		<div class="overlay">
-    <span>
-      <br>
-			<a href="https://bg-bg.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-		</span>
-		</div>
-	</div>
-	
-		<div class="right">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style/login.css">
+        <script language="javascript" src="changeTheme.js"></script>
+        
+    </head>
     
-      
-		<h1>Login</h1>
-      
-      
-      <p>Don't have an account? <a href="#" id="login-register">Create your account</a> it takes less than a minute</p>
-		<div clas!<="inputs">
-			<input type="text" placeholder="Username">
-			<br>
-			<input type="password" placeholder="Password">
-		</div>
-			
-			<br><br>
-			
-		<div class="remember-me--forget-password">
-	<label class="login-label">
-		<input type="checkbox" name="item" checked/>
-		<span class="text-checkbox">Remember me</span>
-	</label>
-			<p>Forget password?</p>
-		</div>
-			
-			<br>
-			<a href = "success-login.html"><button>Login</button></a>
-	</div>
-	
-</div>
+    
+    <body>
 
-  
-</body>
+    <header>
+
+    <!-- <a class="logo" href="/"><img id="logoInNavbar" src="Logo.png" alt="logo"></a>-->
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <a class="cta" href="#">Contact</a>
+
+    <label class="theme-switch" for="checkbox" >
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round" onclick = changeTheme()></div>
+    </label>
+
+    </header>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="box-form">
+
+            <div class="left">
+                <br>
+                <h1>Hello!</h1>
+                <!-- <img id="logoInForm" src="Logo.png"> -->
+                <div class="overlay">
+                    <span>
+                        <br>
+                        <a href="https://bg-bg.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="right">
+            
+                <h1>Login</h1>
+              
+                <p>Don't have an account? <a href="#" id="login-register">Create your account</a> it takes less than a minute</p>
+                
+                <div class="inputs">
+                    <input type="email" placeholder="Email">
+                    <br>
+                    <input type="password" placeholder="Password">
+                </div>
+                    
+                <br><br>
+                    
+                <div class="remember-me--forget-password">
+                    
+                    <label class="login-label">
+                        <input type="checkbox" name="item" checked/>
+                        <span class="text-checkbox">Remember me</span>
+                    </label>
+
+                    <p>Forget password?</p>
+
+                </div>
+                    
+                <br>
+                <a href = "success-login.html"><button>Login</button></a>
+                
+            </div>
+            
+        </div>
+
+
+    </body>
 </html>
