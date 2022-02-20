@@ -7,7 +7,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="Style/login.css">
         <script language="javascript" src="Script/changeTheme.js"></script>
-        
+
     </head>
     
     
@@ -38,7 +38,7 @@
         <br>
         <br>
 
-        <div class="box-form">
+        <form name="myForm" class="box-form">
 
             <div class="left">
                 <br>
@@ -60,9 +60,9 @@
                 <p>Don't have an account? <a href="#" id="login-register">Create your account</a> it takes less than a minute</p>
                 
                 <div class="inputs">
-                    <input type="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <br>
-                    <input type="password" placeholder="Password">
+                    <input type="password" id="email" name="password" placeholder="Password" required>
                 </div>
                     
                 <br><br>
@@ -79,11 +79,11 @@
                 </div>
                     
                 <br>
-                <a href = "success-login.html"><button>Login</button></a>
+                <a href = "success-login.html"><button type="submit" id="submit" onclick="checkForm()">Login</button></a>
                 
             </div>
             
-        </div>
+        </form>
 
 		<br>
 		<br>

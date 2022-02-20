@@ -53,6 +53,15 @@ header {
     background-color: var(--primary-color); /* #24252a originalno */
 }
 
+.logo {
+    margin-right: auto;
+}
+
+#logoInNavbar {
+    width: 100px;
+    height: 60px;
+}
+
 #logoInNavbar {
     width: 20%;
     height: 35%;
