@@ -68,8 +68,11 @@ height: 25%;
 
 
 }
+
 #Divmain {  /*This is the main Div*/
-background-image: url("../Images/bg.jpg");
+background-image: url("../../Images/Maps/bg.jpg");
+filter: blur(0px);
+border-radius: 7.5%;
 background-repeat: no-repeat;
 height: 139vh;
 display: block;
