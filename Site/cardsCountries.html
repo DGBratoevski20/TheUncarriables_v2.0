@@ -6,6 +6,7 @@
 
   <title>European Union</title>
   <link rel="stylesheet" href="Style/cardsCountries.css">
+  <script language="javascript" src="Script/changeTheme.js"></script>
 
 </head>
 
@@ -13,7 +14,7 @@
 
   <header>
 
-    <a class="logo" href="#"><img class="logos" src="Images/Logo.png" alt="logo"></a>
+    <a class="logo" href="#"><img id="logoInNavbar" src="Images/Logo.png" alt="logo"></a>
 
     <nav>
         <ul class="nav-links">
@@ -24,6 +25,11 @@
     </nav>
 
     <a class="cta" href="#">Contact</a>
+	
+	<label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round" onclick = "changeTheme()"></div>
+    </label>
 
   </header>
 

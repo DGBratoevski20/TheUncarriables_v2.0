@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(70deg, #fb9b2d 0%, #024769 100%);
+    background: var(--bg-color);
 }
 
 ::-webkit-scrollbar {
@@ -49,15 +49,15 @@ a {
     width: 270px;
     height: 350px;
     box-shadow: 0 20px 30px -6px black;
-    background-color: #0F393B;
-    overflow: hidden; /* da pokaja na Hakan */
+    background-color: var(--primary-color);
+    overflow: hidden;
 }
 
 .card-title {
     display: block;
     text-align: center;
-    color: #2e2e2e;
-    background-color: #EA7F4A;
+    color: var(--card-title-color);
+    background-color: var(--card-title-bg-color);
     padding: 4%;
     border-radius: 40px 40px 0px 0px;
 }
@@ -87,29 +87,46 @@ a {
 .card:hover .card-desc {
     opacity: 0.85;
     height: 100%;
-    background-color: #0F393B;
+    background-color: var(--card-hover-bg-color);
     color: #F1F1F1;
     border-radius: 40px; /* originalno 10% */
 }
 
 h1 {
     font-size: 2.8rem;
-    color: #cfcfcf;
+    color: var(--heading-color);
     margin: 40px 0 20px 0;
     text-align: center;
 }
 
 :root {
+    --primary-color: #0F393B;
+    --secondary-color: #EA7F4A;
     --font-color: #C9C6C6;
+    --bg-color: linear-gradient(70deg, #fb9b2d 0%, #024769 100%); /* linear-gradient(70deg, #fb9b2d 0%, #024769 100%) */ 
+    --heading-color: #cfcfcf;
+    --card-title-color: #2e2e2e;
+    --card-title-bg-color: #EA7F4A;
+    --card-hover-bg-color: #0F393B;
 }
 
+[data-theme="dark"] {
+    --primary-color: #121212;
+    --secondary-color: #6E6AEE;
+    --font-color: #F2F2F2;
+    --bg-color: linear-gradient(110deg, #292929 0%, #000000 100%);
+    --heading-color: #6E6AEE;
+    --card-title-color: #F2F2F2;
+    --card-title-bg-color: #6E6AEE;
+    --card-hover-bg-color: #333333;
+}
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #0F393B;
+    background-color: var(--primary-color); /* #24252a originalno */
     width: 100%;
     margin-bottom: 4%;
 }
@@ -118,9 +135,9 @@ header {
     margin-right: auto;
 }
 
-.logos {
+#logoInNavbar {
     width: 20%;
-    height: auto;
+    height: 100%;
 }
 
 .nav-links {
@@ -131,7 +148,7 @@ header {
 .nav-links a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #C9C6C6; /* #edf0f1 originalno */
+    color: var(--font-color); /* #edf0f1 originalno */
     text-decoration: none;
 }
 
@@ -149,11 +166,11 @@ header {
 .cta {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #0F393B; /* #edf0f1 originalno */
+    color: var(--primary-color); /* #edf0f1 originalno */
     text-decoration: none;
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: #EA7F4A;
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -161,7 +178,7 @@ header {
 }
 
 .cta:hover {
-    background-color: #EA7F4A;
+    background-color: var(--secondary-color);
 }
 
 
@@ -169,9 +186,9 @@ header {
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 37px;
     position: relative;
-    width: 60px;
+    width: 74px;
     margin-left: 20px;
 }
 
@@ -194,11 +211,11 @@ header {
     background-color: #fff; /* #fff da stoi taka */
     bottom: 4px;
     content: ""; /* da moje da pokazva toggle */
-    height: 26px;
+    height: 29px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;
+    width: 29px;
 }
 
 input:checked + .slider {
@@ -206,7 +223,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(150%); /* drizhenieto na slidera */
+    transform: translateX(130%); /* drizhenieto na slidera */
 }
 
 .slider.round {
