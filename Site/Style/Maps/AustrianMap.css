@@ -1,0 +1,71 @@
+.span{ /*This class is for every span*/
+    display:inline-block;
+    height: 100%;
+  }
+  #span2:hover{
+  border: 3px dashed black;
+  border-radius: 5%;
+  }
+  #span4:hover{
+  border: 3px dashed black;
+  border-radius: 5%;
+  }
+  #span5:hover{
+  border: 3px dashed black;
+  border-radius: 5%;
+  }
+  #span1 {/*These are spans each part of the map*/
+  width: 26%;
+  height:15%;
+  }
+  #span2 {
+  margin-left: 15%;
+  width: 47.5%;
+  margin-top: 10%;
+  height:65.5%;
+  cursor: alias;
+  }
+  #span3 {
+  width: 33%;
+  height:99.9%;
+  }
+  #span4 {
+  cursor: alias;
+  width: 33%;
+  height: 90%;
+  }
+  #span5 {
+    width: 47.5%;
+    height:100%;
+    cursor: alias;
+  }
+  #span6 {
+    width: 21%;
+    height:90%;
+  }
+  #Div1 { /*This is the Div for the top part of the map*/
+  
+  text-align: center;
+  width: 100%;
+  height: 25%;
+  
+  }
+  #Div2 { /*This is the Div for the bottom part of the map*/
+  
+  text-align: center;
+  width: 100%;
+  height: 25%;
+  
+  
+  }
+  
+  #Divmain {  /*This is the main Div*/
+  background-image: url("../../Images/Maps/AustrianMap.jpg");
+  filter: blur(0px);
+  background-repeat: no-repeat;
+  height: 139vh;
+  display: block;
+  margin: 5.5% auto 0 auto;
+  width: 62%;
+  }
+  
