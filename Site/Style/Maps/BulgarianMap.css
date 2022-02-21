@@ -4,22 +4,28 @@
 }
 #span1:hover{
 border: 3px dashed black;
+border-radius: 5%;
 }
 #span2:hover{
 border: 3px dashed black;
+border-radius: 5%;
 
 }
 #span3:hover{
 border: 3px dashed black;
+border-radius: 5%;
 }
 #span4:hover{
 border: 3px dashed black;
+border-radius: 5%;
 }
 #span5:hover{
 border: 3px dashed black;
+border-radius: 5%;
 }
 #span6:hover{
 border: 3px dashed black;
+border-radius: 5%;
 }
 #span1 {/*These are spans each part of the map*/
 width: 26%;
