@@ -112,7 +112,7 @@ header {
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 37px;
     position: relative;
     width: 74px;
     margin-left: 20px;
@@ -137,11 +137,11 @@ header {
     background-color: #fff; /* #fff da stoi taka */
     bottom: 4px;
     content: ""; /* da moje da pokazva toggle */
-    height: 26px;
+    height: 29px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;
+    width: 29px;
 }
 
 input:checked + .slider {
@@ -149,7 +149,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(150%); /* drizhenieto na slidera */
+    transform: translateX(130%); /* drizhenieto na slidera */
 }
 
 .slider.round {
