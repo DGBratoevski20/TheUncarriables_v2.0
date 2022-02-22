@@ -1,0 +1,35 @@
+
+#main-page{
+  overflow: hidden; /* Hide scrollbars */
+  background-color: black;
+}
+#main-right{
+  transition: transform .9s;
+  filter: blur(2px);
+  float: left;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+#main-left{
+  transition: transform .9s;
+  filter: blur(2px);
+  float: left;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#main-left:hover{
+  transform: scale(1.2);
+  filter: blur(0px);
+}
+#main-right:hover{
+  transform: scale(1.2);
+  filter: blur(0px);
+}
+
+#main{
+  width: 100%;
+  height: 61em;
+}
