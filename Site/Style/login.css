@@ -8,14 +8,15 @@
 }
 
 :root { /* light mode */
-    --primary-color: #0F393B;
-    --secondary-color: #EA7F4A;
-    --font-color: #d1cfcf;
-    --bg-color: linear-gradient(135deg, #fb9b2d 0%, #024769 100%);
+    --primary-color: #014F86;
+    --secondary-color: #CAF0F8; /* #ADE8F4 */
+    --links-hover: #90E0EF;
+    --font-color: #dddddd;
+    --bg-color: #F5FFFA;
     --heading-color: #292922;
     --btn-color: linear-gradient(135deg, #70F570 10%, #49C628 100%);
-    --btn-hover-color: #f8793a;
-    --login-bg-color-left: #e6b35b;
+    --btn-hover-color: #90E0EF;
+    --login-bg-color-left: #e6b35b; /* #e6b35b #c6eff7*/
     --login-bg-color-right: #9FB5C3;
     --text-color: #5f5f5f;
     --span-color: #024769;
@@ -24,13 +25,15 @@
     --twitter-bg-color: #1dcaff;
     --input-bg-color: #f1f1f1;
     --input-color: #000000;
+    --placeholder-color: #222222;
 }
 
 [data-theme="dark"] { /* dark mode */
     --primary-color: #121212;
     --secondary-color: #6E6AEE;
+    --links-hover: #6E6AEE;
     --font-color: #E1E1FF;
-    --bg-color: linear-gradient(135deg, #292929 0%, #000000 100%);
+    --bg-color: #000000;
     --heading-color: #6560ff; /* moje i #812CAB */
     --btn-color: linear-gradient(135deg, #670594 10%, #c629e6 100%);
     --btn-hover-color: #6560ff;
@@ -43,6 +46,7 @@
     --twitter-bg-color: #146d88;
     --input-bg-color: #9b9b9b;
     --input-color: #f2f2f2;
+    --placeholder-color: #ffffff;
 }
 
 header {
@@ -50,7 +54,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: var(--primary-color); /* #24252a originalno */
+    background-color: var(--primary-color);
 }
 
 .logo {
@@ -62,7 +66,6 @@ header {
     height: 100%;
 }
 
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -72,7 +75,7 @@ header {
 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: var(--font-color); /* #edf0f1 originalno */
+    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -85,17 +88,17 @@ header {
 }
 
 .nav-links li a:hover {
-    color: var(--secondary-color); /* #0088a9 originalno */
+    color: var(--links-hover);
 }
 
 .cta {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: var(--primary-color); /* #edf0f1 originalno */
+    color: var(--primary-color);
     text-decoration: none;
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: var(--secondary-color); /* #0088a9 originalno */
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -103,7 +106,7 @@ header {
 }
 
 .cta:hover {
-    background-color: var(--btn-hover-color); /* #0088a9cc originalno */
+    background-color: var(--btn-hover-color);
 }
 
 ::-webkit-scrollbar {
@@ -136,7 +139,7 @@ header {
 }
 
 .slider {
-    background-color: #ccc; /* #ccc da stoi taka */
+    background-color: #ccc;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -147,9 +150,9 @@ header {
 }
 
 .slider:before {
-    background-color: #fff; /* #fff da stoi taka */
+    background-color: #fff;
     bottom: 4px;
-    content: ""; /* da moje da pokazva toggle */
+    content: "";
     height: 29px;
     left: 4px;
     position: absolute;
@@ -158,11 +161,11 @@ header {
 }
 
 input:checked + .slider {
-    background-color: #66bb6a; /* #66bb6a originalno */
+    background-color: #66bb6a;
 }
 
 input:checked + .slider:before {
-    transform: translateX(130%); /* drizhenieto na slidera */
+    transform: translateX(130%);
 }
 
 .slider.round {
@@ -174,7 +177,7 @@ input:checked + .slider:before {
 }
 
 body {
-    background-image: var(--bg-color); /* originalno fb9b2d 024769*/
+    background-color: var(--bg-color);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -184,6 +187,8 @@ body {
 
 .box-form {
     margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
     width: 80%;
     background: var(--login-bg-color-right);
     border-radius: 40px;
@@ -226,7 +231,7 @@ span {
 }
 
 .box-form .left .overlay {
-    padding: 1%;
+    padding: 10%;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -237,7 +242,7 @@ span {
     line-height: 1;
     font-weight: 900;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .box-form .left .overlay span p {
@@ -305,6 +310,11 @@ span {
     outline: none;
     border-radius: 10px;
     border-bottom: 2% solid #B0B3B9;
+}
+
+::placeholder {
+    color: var(--placeholder-color);
+    opacity: 0.8;
 }
 
 .box-form .right .remember-me--forget-password {
