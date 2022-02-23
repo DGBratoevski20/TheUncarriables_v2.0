@@ -1,10 +1,10 @@
 var t;
 var t2;
-var int2;
+var int2, int3;
 var up = 0;
 var counter = 0;
-var t3;
-var helperOn = 100;
+var t3, t4;
+var helperOn = 1000;
 var left = 46;
 var health = 1000;
 
@@ -55,11 +55,11 @@ window.addEventListener("keydown", function(e)
                     }, 2000)
                 }, 2000)
                 
-                
+                //bomb
                 setInterval(function()
                     {
                          
-                    document.querySelector('#bomb').style.animation = "clouds 1s infinite" 
+                    document.querySelector('#bomb').style.animation = "clouds 3s infinite" 
                    
                    
 
@@ -73,10 +73,30 @@ window.addEventListener("keydown", function(e)
                         document.querySelector('#bomb').style.left =  Math.round(Math.random() * 90 + 1) + "%"
                         
                         clearTimeout(t3)
-                    }, 1000)
-                }, 1000)
-
+                    }, 3000)
+                }, 3000)
+                //bomb2
                 setInterval(function()
+                    {
+                         
+                    document.querySelector('#bomb2').style.animation = "clouds 2s infinite" 
+                   
+                   
+
+
+                    
+                    
+                    t4 = setTimeout(function()
+                    {   
+                       
+                        document.querySelector('#bomb2').style.animation = "none"
+                        document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 90 + 1) + "%"
+                        
+                        clearTimeout(t4)
+                    }, 2000)
+                }, 2000)
+
+                int3 = setInterval(function()
                 {
                     counter += helperOn;
                     document.querySelector('.score').innerText = `${counter}`;
@@ -84,10 +104,11 @@ window.addEventListener("keydown", function(e)
                         
                         if(counter >= 12000 && counter < 50000)
                         {
-                            helperOn = 1000;
+                            helperOn = 10;
                             document.querySelector('h1').innerHTML = 'Stratosphere';
-                            
-                            
+                            document.querySelector('#cloud').style.animation = "none"
+                            document.querySelector('#cloud').style.animation = "clouds 8s infinite"
+                            document.querySelector('#cloud').style.backgroundImage = "url('baloon.png')"
                             document.querySelector('.area').style.backgroundColor = '#1a8cff'
                               
                             
@@ -100,13 +121,13 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('.area').style.backgroundColor = '#0059b3'
 
                             document.querySelector('#cloud').style.animation = "none"
-                            document.querySelector('#cloud').style.animation = "left-right 2s infinite"
+                            document.querySelector('#cloud').style.animation = "left-right 8s infinite"
 
                             document.querySelector('#cloud2').style.animation = "none"
-                            document.querySelector('#cloud2').style.animation = "left-right 2s infinite"
+                            document.querySelector('#cloud2').style.animation = "right-left 6s infinite"
 
-                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft.png')"
+                            document.querySelector('#cloud').style.backgroundImage = "url('aircraft.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft2.png')"
                             
                             
                             
@@ -120,6 +141,15 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('h1').innerHTML = 'Thermosphere';
                             document.querySelector('.area').style.backgroundColor = 'rgb(102, 102, 255)'
 
+                            document.querySelector('#cloud').style.animation = "none"
+                            document.querySelector('#cloud').style.animation = "left-right 6s infinite"
+
+                            document.querySelector('#cloud2').style.animation = "none"
+                            document.querySelector('#cloud2').style.animation = "right-left 8s infinite"
+
+                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft.png')"
+
                         }
                         else if(counter >= 700000 && counter < 10000000)
                         {
@@ -127,12 +157,30 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('h1').innerHTML = 'Exosphere';
                             document.querySelector('.area').style.backgroundColor = '#000066'
 
+                            document.querySelector('#cloud').style.animation = "none"
+                            document.querySelector('#cloud').style.animation = "left-right 9s infinite"
+
+                            document.querySelector('#cloud2').style.animation = "none"
+                            document.querySelector('#cloud2').style.animation = "right-left 10s infinite"
+
+                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft.png')"
+
                         }
                         else if(counter > 10000000)
                         {
                             
                             document.querySelector('h1').innerHTML = 'Space';
                             document.querySelector('.area').style.backgroundColor = 'black'
+
+                            document.querySelector('#cloud').style.animation = "none"
+                            document.querySelector('#cloud').style.animation = "left-right 10s infinite"
+
+                            document.querySelector('#cloud2').style.animation = "none"
+                            document.querySelector('#cloud2').style.animation = "right-left 12s infinite"
+
+                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('comet.png')"
                         }
 
                         
@@ -155,15 +203,24 @@ setInterval(function()
     var p = document.querySelector('#point').getBoundingClientRect();
     var h = document.querySelector('#hero').getBoundingClientRect();
     var b = document.querySelector('#bomb').getBoundingClientRect();
-    function Bomb()
+    var b2 = document.querySelector('#bomb2').getBoundingClientRect();
+    function Bomb1()
     {
-        if((Math.round(b.left) - Math.round(h.left) >= -40 && Math.round(b.left) - Math.round(h.left) <= 60 ) && (Math.round(b.top) - Math.round(h.top) >= -20 && Math.round(b.top) < Math.round(h.top) + 60) )
+        if((Math.round(b.left) - Math.round(h.left) >= -40 && Math.round(b.left) - Math.round(h.left) <= 60 ) && (Math.round(b.top) - Math.round(h.top) >= -40 && Math.round(b.top) < Math.round(h.top) + 60) )
         {
 
             return true;
         }
+        
     }
-    if((Math.round(p.left) - Math.round(h.left) >= -40 && Math.round(p.left) - Math.round(h.left) <= 60 ) && (Math.round(p.top) - Math.round(h.top) >= -20 && Math.round(p.top) < Math.round(h.top) + 50))
+    function Bomb2()
+    {
+        if((Math.round(b2.left) - Math.round(h.left) >= -40 && Math.round(b2.left) - Math.round(h.left) <= 60 ) && (Math.round(b2.top) - Math.round(h.top) >= -40 && Math.round(b2.top) < Math.round(h.top) + 60) )
+        {
+            return true;
+        }
+    }
+    if((Math.round(p.left) - Math.round(h.left) >= -40 && Math.round(p.left) - Math.round(h.left) <= 60 ) && (Math.round(p.top) - Math.round(h.top) >= -40 && Math.round(p.top) < Math.round(h.top) + 50))
     {
        
         document.querySelector('#point').style.animation = 'none'
@@ -192,23 +249,79 @@ setInterval(function()
         
         
     }
-    else if(Bomb())
+    else if(Bomb1())
     {
         document.querySelector('#bomb').style.animation = 'none'
         console.log('Hello')
-        health -= 50;
+        health -= 200;
+    }
+    else if(Bomb2())
+    {
+        document.querySelector('#bomb2').style.animation = 'none'
+        console.log('Hello')
+        health -= 200;
     }
     
 }, 1)
-setInterval(function()
+int2 = setInterval(function()
 {
     if(health <= 0)
     {
+        
         document.querySelector('.area').style.display = "none";
+        document.querySelector('.score').style.display = "none";
         
-        document.querySelector('body').innerHTML = "<h1 style='font-size:10rem'>GameOver!</h1>"
+        var con = document.querySelector('h1').innerText
+        document.querySelector('h1').innerText = `GameOver! You reaches ${con} with metres ${counter}`
+        switch(con)
+        {
+            case "Stratosphere":
+            {
+                document.querySelector('#Troposphere').style.opacity = '1'
+                document.querySelector('#Stratosphere').style.opacity = '1'
+                break;
+            }
+            case "Mesosphere":
+            {
+                document.querySelector('#Troposphere').style.opacity = '1'
+                document.querySelector('#Stratosphere').style.opacity = '1'
+                document.querySelector('#Mesosphere').style.opacity = '1'
+                break;
+            }
+            case "Thermosphere":
+            {
+                document.querySelector('#Troposphere').style.opacity = '1'
+                document.querySelector('#Stratosphere').style.opacity = '1'
+                document.querySelector('#Mesosphere').style.opacity = '1'
+                document.querySelector('#Thermosphere').style.opacity = '1'
+                break;
+            }
+            case "Exosphere":
+            {
+                document.querySelector('#Troposphere').style.opacity = '1'
+                document.querySelector('#Stratosphere').style.opacity = '1'
+                document.querySelector('#Mesosphere').style.opacity = '1'
+                document.querySelector('#Thermosphere').style.opacity = '1'
+                document.querySelector('#Exosphere').style.opacity = '1'
+                break;
+            }
+            case "Space":
+            {
+                document.querySelector('#Troposphere').style.opacity = '1'
+                document.querySelector('#Stratosphere').style.opacity = '1'
+                document.querySelector('#Mesosphere').style.opacity = '1'
+                document.querySelector('#Thermosphere').style.opacity = '1'
+                document.querySelector('#Exosphere').style.opacity = '1'
+                document.querySelector('#Space').style.opacity = '1'
+                break;
+            }
+
+        }
         
-        health = 0;
+        
+        helperOn = 0;
+        clearInterval(int2);
+        clearInterval(int3);
     }
     console.log(health)
     document.querySelector('#hero').style.left = left + "%"

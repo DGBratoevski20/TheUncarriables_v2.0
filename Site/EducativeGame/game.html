@@ -22,14 +22,14 @@
             margin: 5%;
             background-color: antiquewhite;
             position: relative;
-            overflow-y: hidden;
+            overflow-y: auto;
 
         }
         .area{
             width: 70vw;
             height: 80vh;
-           overflow: hidden;
-           position: relative;
+            overflow: hidden;
+            position: relative;
             margin: auto;
             box-shadow: 100px, 100px, 100px,black;
             display: flex;
@@ -130,6 +130,43 @@
             border-radius: 100%;
             
         }
+        #bomb2{
+            position: absolute;
+            left: 80%;
+            top:-10%;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            z-index: 100;
+            padding: 0;
+            margin: 0%;
+            
+            border-radius: 100%;
+            
+        }
+        .info{
+            
+            display: grid;
+            grid-template-rows: repeat(6, 50%);
+            row-gap: 1cm;
+            position: absolute;
+            width: 1000px;
+            height:500px;
+            left:10%;
+            top:5%;
+            
+            margin: auto;
+            margin-top: 5%;
+        }
+        article
+        {
+            background-color: rgb(96, 134, 167);
+       
+            opacity: 0;
+            width: 100%;
+            transition: all 2s;
+        }
+        
 
         @keyframes clouds {
             0%{top:-30%;
@@ -151,7 +188,7 @@
         @keyframes left-right {
             0%{ left:-30%;
                 top:10%;
-                opacity: 0;
+                opacity: 1;
             
             }
             90%{
@@ -162,6 +199,7 @@
             100%
             {
                 opacity: 0;
+                top:10%;
                 left: 100%;
                
                 
@@ -170,6 +208,30 @@
             
 
         }
+        @keyframes right-left {
+            0%{ left: 100%;
+                top:30%;
+                opacity: 1;
+            
+            }
+            90%{
+                left: -30%;
+                top:30%;
+                opacity: 1;
+            }
+            100%
+            {
+                opacity: 0;
+                top:30%;
+                left: -300%;
+               
+                
+            }
+            
+            
+
+        }
+        
 
     </style>
 
@@ -182,6 +244,7 @@
         
         <div id = "hero"><img src = "bird.gif"></div>
         <div id = "bomb"></div>
+        <div id = "bomb2"></div>
         <div id = "point"><img src = "straw.gif"></div>
         <div id = "cloud2"></div>
         <div id = "cloud"></div>
@@ -191,6 +254,38 @@
     
         </div>
         
+
+    </div>
+    <div class = "info">
+        <article id = "Troposphere">
+            <h2>Troposphere</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+        </article>
+
+        <article id = "Stratosphere">
+            <h2>Stratosphere</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+        </article>
+
+        <article id = "Mesosphere">
+            <h2>Mesosphere</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+        </article>
+
+        <article id = "Thermosphere">
+            <h2>Thermosphere</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+        </article>
+
+        <article id = "Exosphere">
+            <h2>Exosphere</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+        </article>
+
+        <article id = "Space">
+            <h2>Space</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+        </article>
 
     </div>
 </body>
