@@ -1,0 +1,230 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+body{
+  height: 100%;
+}
+
+.hero-section{
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 64px 24px;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card{
+  list-style: none;
+  position: relative;
+}
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  trsnsform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(3px);
+}
+
+.card__content{
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a; /* #24252a originalno */
+}
+
+.logo {
+    margin-right: auto;
+}
+
+#logoInNavbar {
+    width: 20%;
+    height: 100%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1; /* #edf0f1 originalno */
+    text-decoration: none;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9; /* #0088a9 originalno */
+}
+
+.cta {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1; /* #edf0f1 originalno */
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #0088a9; /* #0088a9 originalno */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: #0088a9cc; /* #0088a9cc originalno */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #2e2e2e; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666666; 
+    border-radius: 10px;
+}
+
+
+/* Toggle slider */
+
+.theme-switch {
+    display: inline-block;
+    height: 37px;
+    position: relative;
+    width: 74px;
+    margin-left: 20px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc; /* #ccc da stoi taka */
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff; /* #fff da stoi taka */
+    bottom: 4px;
+    content: ""; /* da moje da pokazva toggle */
+    height: 29px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 29px;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a; /* #66bb6a originalno */
+}
+
+input:checked + .slider:before {
+    transform: translateX(130%); /* dvizhenieto na slidera */
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
