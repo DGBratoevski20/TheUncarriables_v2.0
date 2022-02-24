@@ -9,9 +9,6 @@ var left = 46;
 var health = 700;
 
 
-
-
-
 window.addEventListener("keydown", function(e)
 {
     switch(e.key)
@@ -82,7 +79,7 @@ window.addEventListener("keydown", function(e)
                 setInterval(function()
                     {
                          
-                    document.querySelector('#bomb2').style.animation = "clouds 2500s infinite" 
+                    document.querySelector('#bomb2').style.animation = "clouds 1500ms infinite" 
                    
                    
 
@@ -92,12 +89,12 @@ window.addEventListener("keydown", function(e)
                     t4 = setTimeout(function()
                     {   
                        
-                        document.querySelector('#bomb2').style.animation = "none"
+                       
                         document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 40 + 1) + "%"
                         
                         clearTimeout(t4)
-                    }, 2500)
-                }, 2500)
+                    }, 1500)
+                }, 1500)
 
                 int3 = setInterval(function()
                 {
@@ -208,6 +205,10 @@ window.addEventListener("keydown", function(e)
 
 
 
+
+
+
+
 //Find Collusion
 setInterval(function()
 {
@@ -266,13 +267,13 @@ setInterval(function()
     {
         document.querySelector('#bomb').style.animation = 'none'
         console.log('Hello')
-        health -= 50;
+        health -= 40;
     }
     else if(Bomb2())
     {
         document.querySelector('#bomb2').style.animation = 'none'
         console.log('Hello')
-        health -= 50;
+        health -= 40;
     }
     
 }, 1)
@@ -288,12 +289,16 @@ int2 = setInterval(function()
     {
         
         document.querySelector('.area').style.display = "none";
-        document.querySelector('.score').style.display = "none";
         
         var con = document.querySelector('h1').innerText
         document.querySelector('h1').innerText = `GameOver! You reaches ${con} with metres ${counter}`
         switch(con)
         {
+            case "Troposphere":
+            {
+                document.querySelector('#Troposphere').style.opacity = '1'
+                break
+            }
             case "Stratosphere":
             {
                 document.querySelector('#Troposphere').style.opacity = '1'

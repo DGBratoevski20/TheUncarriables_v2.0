@@ -23,6 +23,7 @@
             background-color: antiquewhite;
             position: relative;
             overflow-y: auto;
+            overflow-x: hidden;
 
         }
         .area{
@@ -31,13 +32,14 @@
             overflow: hidden;
             position: relative;
             margin: auto;
+            margin-top: 1%;
             box-shadow: 100px, 100px, 100px,black;
             display: flex;
             transition: all 2s;
             justify-content: center;
             align-items: flex-end;
             background-color: #8ffdfd;
-            border-radius: 0% 00%  10%  10%;
+            border-radius: 0% 0%  10%  10%;
             
         }
         #hero{
@@ -59,6 +61,8 @@
         }
         h1{
             text-align: center;
+            width: 300px;
+            margin: auto;
 
         }
         #point{
@@ -105,7 +109,7 @@
             position: absolute;
             left: 10.5%;
             top: -1%;
-            width: 200px;
+            width: 150px;
             height: 50px;
             z-index: 101;
             font-size: 1.5rem;  
@@ -141,6 +145,7 @@
             z-index: 100;
             padding: 0;
             margin: 0%;
+            display: block;
             
             border-radius: 100%;
             
@@ -154,7 +159,7 @@
             width: 1000px;
             height:500px;
             left:10%;
-            top:5%;
+            top:10%;
             
             margin: auto;
             margin-top: 5%;
@@ -164,11 +169,11 @@
             background-color: rgb(96, 134, 167);
        
             opacity: 0;
-            width: 100%;
+            width: 80vw;
             transition: all 2s;
         }
         
-
+        
         @keyframes clouds {
             0%{top:-30%;
                 opacity: 1;
@@ -257,6 +262,34 @@
             place-items: center;
         }
         
+        
+        @media only screen and (max-height:600px)
+        {
+
+            h3{
+                margin-top: 10%;
+            }
+            h4{
+                margin-top: 10%;
+            }
+            
+            .area{
+                margin-top: 20%;
+            }
+            body{
+                overflow-y: auto;
+            }
+            .health{
+                margin-top: 10%;
+            }
+            .score{
+                margin-top: 10%;
+            }
+            .info{
+                margin-top: 50%;
+            }
+            
+        }
 
     </style>
 
@@ -281,38 +314,43 @@
             
     
         </div>
-        
+    
 
     </div>
+
+    
+    
     <div class = "info">
         <article id = "Troposphere">
             <h2>Troposphere</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+            <p>The troposphere is the lowest layer of Earth's atmosphere. It extends from Earth's surface to an average height of about 12 km, although this altitude varies from about 9 km at the geographic poles to 17 km  at the Equator, with some variation due to weather.
+            Although variations do occur, the temperature usually declines with increasing altitude in the troposphere because the troposphere is mostly heated through energy transfer from the surface. Thus, the lowest part of the troposphere is typically the warmest section of the troposphere. This promotes vertical mixing  tropos. The troposphere contains roughly 80% of the mass of Earth's atmosphere.[27] The troposphere is denser than all its overlying layers because a larger atmospheric weight sits on top of the troposphere and causes it to be most severely compressed.
+            </p>
         </article>
 
         <article id = "Stratosphere">
             <h2>Stratosphere</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+            <p>The stratosphere is the second-lowest layer of Earth's atmosphere. It lies above the troposphere and is separated from it by the tropopause. This layer extends from the top of the troposphere at roughly 12 km above Earth's surface to the stratopause at an altitude of about 50 to 55 km.The stratospheric temperature profile creates very stable atmospheric conditions, so the stratosphere lacks the weather-producing air turbulence that is so prevalent in the troposphere. Consequently, the stratosphere is almost completely free of clouds and other forms of weather. However, polar stratospheric or nacreous clouds are occasionally seen in the lower part of this layer of the atmosphere where the air is coldest. The stratosphere is the highest layer that can be accessed by jet-powered aircraft.</p>
         </article>
 
         <article id = "Mesosphere">
             <h2>Mesosphere</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+            <p>Just below the mesopause, the air is so cold that even the very scarce water vapor at this altitude can sublimate into polar-mesospheric noctilucent clouds of ice particles. These are the highest clouds in the atmosphere and may be visible to the naked eye if sunlight reflects off them about an hour or two after sunset or similarly before sunrise. They are most readily visible when the Sun is around 4 to 16 degrees below the horizon..</p>
         </article>
 
         <article id = "Thermosphere">
             <h2>Thermosphere</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+            <p>The thermosphere is the second-highest layer of Earth's atmosphere. It extends from the mesopause at an altitude of about 80 km up to the thermopause at an altitude range of 500–1000 km. The height of the thermopause varies considerably due to changes in solar activity. Because the thermopause lies at the lower boundary of the exosphere, it is also referred to as the exobase. The lower part of the thermosphere, from 80 to 550 kilometres above Earth's surface, contains the ionosphere.</p>
         </article>
 
         <article id = "Exosphere">
             <h2>Exosphere</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+            <p>The exosphere is the outermost layer of Earth's atmosphere. It extends from the thermopause, at the top of the thermosphere at an altitude of about 700 km above sea level, to about 10,000 km, where it merges into the solar wind.</p>
         </article>
 
         <article id = "Space">
             <h2>Space</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris velit. Suspendisse malesuada ex congue nisl fringilla, ac volutpat mi malesuada. Vestibulum feugiat vel eros vel malesuada. Donec convallis sagittis est, a pretium tortor luctus vel. Nam blandit dui non tristique pharetra. Fusce pellentesque arcu sed tempor rhoncus. Maecenas rhoncus leo orci, eget congue purus efficitur a. Mauris accumsan, magna non rhoncus imperdiet, enim mi tincidunt nunc, eu semper risus nulla quis lorem.</p>
+            <p>Space is the boundless three-dimensional extent in which objects and events have relative position and direction. In classical physics, physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime..</p>
         </article>
 
     </div>
