@@ -8,22 +8,24 @@
 }
 
 :root { /* light mode */
-    --primary-color: #0F393B;
-    --secondary-color: #EA7F4A;
-    --font-color: #d1cfcf;
-    --bg-color: linear-gradient(135deg, #fb9b2d 0%, #024769 100%);
+    --primary-color: #014F86;
+    --secondary-color: #CAF0F8; /* #ADE8F4 */
+    --links-hover: #90E0EF;
+    --font-color: #dddddd;
+    --bg-color: radial-gradient(#e6b35b 40%, #014FF6 80%);
     --heading-color: #292922;
     --btn-color: linear-gradient(135deg, #70F570 10%, #49C628 100%);
-    --btn-hover-color: #f8793a;
-    --login-bg-color-left: #e6b35b;
-    --login-bg-color-right: #9FB5C3;
-    --text-color: #5f5f5f;
-    --span-color: #024769;
+    --btn-hover-color: #90E0EF;
+    --login-bg-color-left: #e6b35b; /* #e6b35b #c6eff7*/
+    --login-bg-color-right: #014F86;
+    --text-color: #CAF0F8;
+    --span-color: #000000;
     --remember-me-color: #0da849;
     --facebook-bg-color: #4267B2;
     --twitter-bg-color: #1dcaff;
-    --input-bg-color: #f1f1f1;
+    --input-bg-color: #CAF0F8;
     --input-color: #000000;
+    --placeholder-color: #222222;
 }
 
 [data-theme="dark"] { /* dark mode */
@@ -51,6 +53,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     background-color: var(--primary-color); /* #24252a originalno */
+	font-size: 130%;
 }
 
 .logo {
