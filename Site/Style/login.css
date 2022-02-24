@@ -12,7 +12,7 @@
     --secondary-color: #CAF0F8; /* #ADE8F4 */
     --links-hover: #90E0EF;
     --font-color: #dddddd;
-    --bg-color: radial-gradient(#e6b35b 40%, #014FF6 80%);
+    --bg-color: radial-gradient(#e6b35b 25%, #014FF6 80%);
     --heading-color: #292922;
     --btn-color: linear-gradient(135deg, #70F570 10%, #49C628 100%);
     --btn-hover-color: #90E0EF;
