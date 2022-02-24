@@ -37,7 +37,7 @@
             justify-content: center;
             align-items: flex-end;
             background-color: #8ffdfd;
-            border-radius: 0% 10%  0%  10%;
+            border-radius: 0% 00%  10%  10%;
             
         }
         #hero{
@@ -103,11 +103,12 @@
         }
         .score{
             position: absolute;
-            left: -1%;
-            top: -9%;
+            left: 10.5%;
+            top: -1%;
             width: 200px;
             height: 50px;
             z-index: 101;
+            font-size: 1.5rem;  
             background-color: #8ffdfd;
 
         }
@@ -231,6 +232,30 @@
             
 
         }
+        h3{
+            position: absolute;
+            left:10.5%;
+            top:-8%;
+            font-size: 1.2rem;
+            
+        }
+        h4{
+            position: absolute;
+            left:82%;
+            top:-8%;
+            font-size: 1.2rem;
+        }
+        .health{
+            position: absolute;
+            left: 81.8%;
+            top: -1%;
+            background-color: #8ffdfd;
+            width: 100px;
+            height: 50px;
+            display: grid;
+            font-size: 1.5rem;
+            place-items: center;
+        }
         
 
     </style>
@@ -239,7 +264,10 @@
 <body>
     <script src = "js.js"></script>
     <h1>Earth</h1>
+    <h3>Metres</h3>
+    <h4>Health</h4>
     <div class = "score"></div>
+    <div class = "health"></div>
     <div class = "area">
         
         <div id = "hero"><img src = "bird.gif"></div>

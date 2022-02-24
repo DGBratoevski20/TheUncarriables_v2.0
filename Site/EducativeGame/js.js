@@ -4,9 +4,12 @@ var int2, int3;
 var up = 0;
 var counter = 0;
 var t3, t4;
-var helperOn = 1000;
+var helperOn = 100;
 var left = 46;
-var health = 1000;
+var health = 700;
+
+
+
 
 
 window.addEventListener("keydown", function(e)
@@ -18,7 +21,7 @@ window.addEventListener("keydown", function(e)
             document.querySelector('#hero').style.transition = 'none'
             document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
             document.querySelector('#hero').style.transition = 'all 400ms'
-                left-=30;
+                left-=25;
 
                 break;
         }
@@ -27,7 +30,7 @@ window.addEventListener("keydown", function(e)
             document.querySelector('#hero').style.transition = 'none'
             document.querySelector('#hero').style.transform = 'rotateY(0deg)';
             document.querySelector('#hero').style.transition = 'all 400ms'
-                left+=30
+                left+=25
                 break;
         }
         case 'ArrowUp':
@@ -70,7 +73,7 @@ window.addEventListener("keydown", function(e)
                     {   
                        
                         document.querySelector('#bomb').style.animation = "none"
-                        document.querySelector('#bomb').style.left =  Math.round(Math.random() * 90 + 1) + "%"
+                        document.querySelector('#bomb').style.left =  Math.round(Math.random() * 40 + 50) + "%"
                         
                         clearTimeout(t3)
                     }, 3000)
@@ -79,7 +82,7 @@ window.addEventListener("keydown", function(e)
                 setInterval(function()
                     {
                          
-                    document.querySelector('#bomb2').style.animation = "clouds 2s infinite" 
+                    document.querySelector('#bomb2').style.animation = "clouds 2500s infinite" 
                    
                    
 
@@ -90,11 +93,11 @@ window.addEventListener("keydown", function(e)
                     {   
                        
                         document.querySelector('#bomb2').style.animation = "none"
-                        document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 90 + 1) + "%"
+                        document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 40 + 1) + "%"
                         
                         clearTimeout(t4)
-                    }, 2000)
-                }, 2000)
+                    }, 2500)
+                }, 2500)
 
                 int3 = setInterval(function()
                 {
@@ -104,7 +107,7 @@ window.addEventListener("keydown", function(e)
                         
                         if(counter >= 12000 && counter < 50000)
                         {
-                            helperOn = 10;
+                            helperOn = 1000;
                             document.querySelector('h1').innerHTML = 'Stratosphere';
                             document.querySelector('#cloud').style.animation = "none"
                             document.querySelector('#cloud').style.animation = "clouds 8s infinite"
@@ -137,7 +140,7 @@ window.addEventListener("keydown", function(e)
                         }
                         else if(counter >= 80000 && counter < 700000)
                         {
-                            
+                            helperOn = 5000;
                             document.querySelector('h1').innerHTML = 'Thermosphere';
                             document.querySelector('.area').style.backgroundColor = 'rgb(102, 102, 255)'
 
@@ -153,7 +156,7 @@ window.addEventListener("keydown", function(e)
                         }
                         else if(counter >= 700000 && counter < 10000000)
                         {
-                            helperOn += 100000;
+                            helperOn += 10000;
                             document.querySelector('h1').innerHTML = 'Exosphere';
                             document.querySelector('.area').style.backgroundColor = '#000066'
 
@@ -185,7 +188,7 @@ window.addEventListener("keydown", function(e)
 
                         
                     
-                }, 100)
+                }, 400)
             }
                 
                 
@@ -197,6 +200,14 @@ window.addEventListener("keydown", function(e)
         }
     }
 })
+
+
+
+
+
+
+
+
 //Find Collusion
 setInterval(function()
 {
@@ -204,6 +215,8 @@ setInterval(function()
     var h = document.querySelector('#hero').getBoundingClientRect();
     var b = document.querySelector('#bomb').getBoundingClientRect();
     var b2 = document.querySelector('#bomb2').getBoundingClientRect();
+
+    
     function Bomb1()
     {
         if((Math.round(b.left) - Math.round(h.left) >= -40 && Math.round(b.left) - Math.round(h.left) <= 60 ) && (Math.round(b.top) - Math.round(h.top) >= -40 && Math.round(b.top) < Math.round(h.top) + 60) )
@@ -253,16 +266,22 @@ setInterval(function()
     {
         document.querySelector('#bomb').style.animation = 'none'
         console.log('Hello')
-        health -= 200;
+        health -= 50;
     }
     else if(Bomb2())
     {
         document.querySelector('#bomb2').style.animation = 'none'
         console.log('Hello')
-        health -= 200;
+        health -= 50;
     }
     
 }, 1)
+
+
+
+
+
+
 int2 = setInterval(function()
 {
     if(health <= 0)
@@ -323,7 +342,7 @@ int2 = setInterval(function()
         clearInterval(int2);
         clearInterval(int3);
     }
-    console.log(health)
+    document.querySelector('.health').innerText = `${health}`;
     document.querySelector('#hero').style.left = left + "%"
 }, 1);
 
