@@ -8,32 +8,9 @@ var helperOn = 100;
 var left = 46;
 var health = 700;
 
-
-window.addEventListener("keydown", function(e)
+function UP()
 {
-    switch(e.key)
-    {
-        case 'ArrowLeft':
-        {   
-            document.querySelector('#hero').style.transition = 'none'
-            document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
-            document.querySelector('#hero').style.transition = 'all 400ms'
-                left-=25;
-
-                break;
-        }
-        case 'ArrowRight':
-        {
-            document.querySelector('#hero').style.transition = 'none'
-            document.querySelector('#hero').style.transform = 'rotateY(0deg)';
-            document.querySelector('#hero').style.transition = 'all 400ms'
-                left+=25
-                break;
-        }
-        case 'ArrowUp':
-        {
-            up++;
-            if(up == 1)
+    if(up == 1)
             {
                 document.querySelector('h1').innerHTML = 'Troposphere';
                 setInterval(function()
@@ -108,7 +85,7 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('h1').innerHTML = 'Stratosphere';
                             document.querySelector('#cloud').style.animation = "none"
                             document.querySelector('#cloud').style.animation = "clouds 8s infinite"
-                            document.querySelector('#cloud').style.backgroundImage = "url('baloon.png')"
+                            document.querySelector('#cloud').style.backgroundImage = "url('images/baloon.png')"
                             document.querySelector('.area').style.backgroundColor = '#1a8cff'
                               
                             
@@ -126,8 +103,8 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('#cloud2').style.animation = "none"
                             document.querySelector('#cloud2').style.animation = "right-left 6s infinite"
 
-                            document.querySelector('#cloud').style.backgroundImage = "url('aircraft.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft2.png')"
+                            document.querySelector('#cloud').style.backgroundImage = "url('images/aircraft.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft2.png')"
                             
                             
                             
@@ -147,8 +124,8 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('#cloud2').style.animation = "none"
                             document.querySelector('#cloud2').style.animation = "right-left 8s infinite"
 
-                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft.png')"
+                            document.querySelector('#cloud').style.backgroundImage = "url('images/alient.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft.png')"
 
                         }
                         else if(counter >= 700000 && counter < 10000000)
@@ -163,8 +140,8 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('#cloud2').style.animation = "none"
                             document.querySelector('#cloud2').style.animation = "right-left 10s infinite"
 
-                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('aircraft.png')"
+                            document.querySelector('#cloud').style.backgroundImage = "url('images/alient.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft.png')"
 
                         }
                         else if(counter > 10000000)
@@ -179,8 +156,8 @@ window.addEventListener("keydown", function(e)
                             document.querySelector('#cloud2').style.animation = "none"
                             document.querySelector('#cloud2').style.animation = "right-left 12s infinite"
 
-                            document.querySelector('#cloud').style.backgroundImage = "url('alient.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('comet.png')"
+                            document.querySelector('#cloud').style.backgroundImage = "url('images/alient.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('images/comet.png')"
                         }
 
                         
@@ -193,6 +170,32 @@ window.addEventListener("keydown", function(e)
             document.querySelector('.engine').style.top = '100%'
             document.querySelector('#cloud').style.animation = "clouds 4s infinite"
             document.querySelector('#cloud2').style.animation = "clouds 3s infinite"
+}
+window.addEventListener("keydown", function(e)
+{
+    switch(e.key)
+    {
+        case 'ArrowLeft':
+        {   
+            document.querySelector('#hero').style.transition = 'none'
+            document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
+            document.querySelector('#hero').style.transition = 'all 400ms'
+                left-=25;
+
+                break;
+        }
+        case 'ArrowRight':
+        {
+            document.querySelector('#hero').style.transition = 'none'
+            document.querySelector('#hero').style.transform = 'rotateY(0deg)';
+            document.querySelector('#hero').style.transition = 'all 400ms'
+                left+=25
+                break;
+        }
+        case 'ArrowUp':
+        {
+            up++;
+            UP();
             break;
         }
     }
@@ -267,22 +270,54 @@ setInterval(function()
     {
         document.querySelector('#bomb').style.animation = 'none'
         console.log('Hello')
-        health -= 40;
+        health -= 50;
     }
     else if(Bomb2())
     {
         document.querySelector('#bomb2').style.animation = 'none'
         console.log('Hello')
-        health -= 40;
+        health -= 50;
     }
     
 }, 1)
 
 
+//Mobile Buttons
+
+  
+window.addEventListener('touchstart',function(g)
+{
+    var j = document.querySelector('#Left').getBoundingClientRect()
+    var d = document.querySelector('#Right').getBoundingClientRect()
+    var p = document.querySelector('#Start').getBoundingClientRect()
+    var r = g.touches[0].clientX;
+    var t = g.touches[0].clientY;
+    if(r >= Math.round(j.left) && r <= Math.round(j.left) + 100)
+    {
+        document.querySelector('#hero').style.transition = 'none'
+        document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
+        document.querySelector('#hero').style.transition = 'all 400ms'
+        left-=10;
+    }
+    else if(r >= Math.round(d.left) && r <= Math.round(d.left) + 100)
+    {
+        document.querySelector('#hero').style.transition = 'none'
+        document.querySelector('#hero').style.transform = 'rotateY(0deg)';
+        document.querySelector('#hero').style.transition = 'all 400ms'
+        left+=10;
+    }
+    else if(t >= Math.round(p.top) && t <= Math.round(p.top) + 100)
+    {
+        up = 1;
+        UP();
+    }
+
+
+})
 
 
 
-
+//The End of the game
 int2 = setInterval(function()
 {
     if(health <= 0)
@@ -350,4 +385,5 @@ int2 = setInterval(function()
     document.querySelector('.health').innerText = `${health}`;
     document.querySelector('#hero').style.left = left + "%"
 }, 1);
+
 

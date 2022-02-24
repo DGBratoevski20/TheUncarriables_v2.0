@@ -1,0 +1,305 @@
+.engine{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+
+    background-color: #8ffdfd;
+    background-image: url('images/forest.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
+
+body{
+    margin: 5%;
+    background-color: antiquewhite;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.area{
+    width: 70vw;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+    box-shadow: 100px, 100px, 100px,black;
+    display: flex;
+    transition: all 2s;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #8ffdfd;
+    border-radius: 0% 0%  10%  10%;
+    
+}
+#hero{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    left: 46%;
+    padding: 0%;
+    transform: rotateY(-180deg);
+    top:79%;
+
+    
+    margin: 0%;
+    transition: all 400ms;
+    z-index: 100;
+    margin-bottom: 10%;
+}
+h1{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+
+}
+#point{
+    
+    position: absolute;
+    left: 50%;
+    top:-20%;
+    width: 50px;
+    height: 50px;
+    
+    z-index: 100;
+    padding: 0;
+    margin: 0%;
+    
+    border-radius: 100%;
+    background-color: transparent;
+}
+#cloud2{
+    position: absolute;
+    left: 0%;
+    top:-30%;
+    width: 100px;
+    height: 100px;
+    z-index: 99;
+    
+    transition: all 1s;
+    background-image: url('images/cloud.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+#cloud{
+    position: absolute;
+    left: 80%;
+    width: 100px;
+    height: 100px;
+    top:-50%;
+    z-index: 99;
+    transition: all 1s;
+    background-image: url('images/cloud.png');
+    background-size: cover;
+}
+.score{
+    position: absolute;
+    left: 10.5%;
+    top: -1%;
+    width: 150px;
+    height: 50px;
+    z-index: 101;
+    font-size: 1.5rem;  
+    background-color: #8ffdfd;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    transform: scale(2.2, 2.2);
+}
+#bomb{
+    position: absolute;
+    left: 20%;
+    top:-10%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 100;
+    padding: 0;
+    margin: 0%;
+    
+    border-radius: 100%;
+    
+}
+#bomb2{
+    position: absolute;
+    left: 80%;
+    top:-10%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 100;
+    padding: 0;
+    margin: 0%;
+    display: block;
+    
+    border-radius: 100%;
+    
+}
+.info{
+    
+    display: grid;
+    grid-template-rows: repeat(6, 50%);
+    row-gap: 1cm;
+    position: absolute;
+    width: 1000px;
+    height:500px;
+    left:10%;
+    top:10%;
+    
+    margin: auto;
+    margin-top: 5%;
+}
+article
+{
+    background-color: rgb(96, 134, 167);
+
+    opacity: 0;
+    width: 80vw;
+    transition: all 2s;
+}
+
+
+@keyframes clouds {
+    0%{top:-30%;
+        opacity: 1;
+    
+    }
+    90%{
+        top:100%;
+        opacity: 1;
+    }
+    100%
+    {
+        top: 100%;
+        opacity: 0;
+    }
+    
+
+}
+@keyframes left-right {
+    0%{ left:-30%;
+        top:10%;
+        opacity: 1;
+    
+    }
+    90%{
+        left:100%;
+        top:10%;
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        top:10%;
+        left: 100%;
+       
+        
+    }
+    
+    
+
+}
+@keyframes right-left {
+    0%{ left: 100%;
+        top:30%;
+        opacity: 1;
+    
+    }
+    90%{
+        left: -30%;
+        top:30%;
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        top:30%;
+        left: -300%;
+       
+        
+    }
+    
+    
+
+}
+h3{
+    position: absolute;
+    left:10.5%;
+    top:-8%;
+    font-size: 1.2rem;
+    
+}
+h4{
+    position: absolute;
+    left:82%;
+    top:-8%;
+    font-size: 1.2rem;
+}
+.health{
+    position: absolute;
+    left: 81.8%;
+    top: -1%;
+    background-color: #8ffdfd;
+    width: 100px;
+    height: 50px;
+    display: grid;
+    font-size: 1.5rem;
+    place-items: center;
+}
+.btns{
+    display: grid;
+    width: 200px;
+    opacity: 0;
+    margin: auto;
+    margin-top: 2%;
+    grid-template-rows: repeat(2, 50%);
+}
+.line{
+    display: grid;
+    margin-left: -30%;
+    grid-template-columns: repeat(2, 1fr);
+}
+button{
+    display: inline;
+    width: 100px;
+    height:100px;
+}
+
+
+@media only screen and (max-width:930px)
+{
+
+    
+    
+    body{
+        overflow-y: auto;
+    }
+    
+    .info{
+        margin-top: 80%;
+        display: grid;
+        grid-template-rows: repeat(6, 60%);
+        row-gap: 1cm;
+        
+    }
+    
+    
+}
+@media only screen and (max-width:1000px)
+{
+
+    .btns{
+        opacity: 1;
+    }
+}
