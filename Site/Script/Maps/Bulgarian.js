@@ -5,15 +5,15 @@ attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> co
 }).addTo(map);
 
 L.marker([42.145, 24.75]).addTo(map)
-.bindPopup('<b>Plovdiv.</b><hr><i> The oldest city in Europe.</i>')
+.bindPopup('<b>Plovdiv.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
 .openPopup();
 
 L.marker([42.698, 23.32222222]).addTo(map)
-.bindPopup('<b>Sofia.</b><hr><i> The capital of Bulgaria.</i>')
+.bindPopup('<b>Sofia.</b><hr><i> The capital city of Bulgaria.</i>')
 .openPopup();
 
 L.marker([43.20645, 27.91536333]).addTo(map)
-.bindPopup('<b>Varna.</b><hr><i> The sea capital of Bulgaria.</i>')
+.bindPopup('<b>Varna.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
 .openPopup();
 
 L.marker([42.4923, 27.47136333]).addTo(map)
@@ -21,7 +21,7 @@ L.marker([42.4923, 27.47136333]).addTo(map)
 .openPopup();
 
 L.marker([43.0822, 25.63136333]).addTo(map)
-.bindPopup('<b>Veliko Tarnovo.</b><hr><i> The oldest capital in Bulgaria.</i>')
+.bindPopup('<b>Veliko Tarnovo.</b><hr><i>  One of the biggest cities in Bulgaria.</i>')
 .openPopup();
 
 L.marker([42.423871, 25.6272]).addTo(map)
