@@ -298,14 +298,14 @@ window.addEventListener('touchstart',function(TouchEvent)
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
-        left-=10;
+        left-=15;
     }
     else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + 100)
     {
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(0deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
-        left+=10;
+        left+=15;
     }
     else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + 100)
     {
@@ -383,7 +383,19 @@ FirstvarForInterval = setInterval(function()
         clearInterval(FirstvarForInterval);
         clearInterval(SecondVarForInterval);
     }
-    document.querySelector('.health').innerText = `${health}`;
+    document.querySelector('.health').innerText = `${health}`
+    if(left < -20)
+    {
+        document.querySelector('#hero').style.transition = 'none';
+        left = 100
+       
+        
+    }
+    else if(left > 120)
+    {
+        document.querySelector('#hero').style.transition = 'none';
+        left = -10
+    }
     document.querySelector('#hero').style.left = left + "%"
 }, 1);
 
