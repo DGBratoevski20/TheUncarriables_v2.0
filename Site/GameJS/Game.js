@@ -284,9 +284,10 @@ setInterval(function()
 
 //Mobile Buttons
 
-  
+up = 0;
 window.addEventListener('touchstart',function(g)
 {
+  
     var j = document.querySelector('#Left').getBoundingClientRect()
     var d = document.querySelector('#Right').getBoundingClientRect()
     var p = document.querySelector('#Start').getBoundingClientRect()
@@ -308,7 +309,7 @@ window.addEventListener('touchstart',function(g)
     }
     else if(t >= Math.round(p.top) && t <= Math.round(p.top) + 100)
     {
-        up = 1;
+        up++;
         UP();
     }
 
