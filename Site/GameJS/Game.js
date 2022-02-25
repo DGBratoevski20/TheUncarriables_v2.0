@@ -1,16 +1,16 @@
-var t;
-var t2;
-var int2, int3;
-var up = 0;
-var counter = 0;
-var t3, t4;
-var helperOn = 100;
+
+var FirstVarForTimeOut;
+var FirstvarForInterval, SecondVarForInterval;
+var CheckArrowUp = 0;
+var counterForMetres = 0;
+var SecondVarForTimeOut, ThirdVarForTimeOut;
+var helperOncounterForMetres = 100;
 var left = 46;
 var health = 700;
 
 function UP()
 {
-    if(up == 1)
+    if(CheckArrowUp == 1)
             {
                 document.querySelector('h1').innerHTML = 'Troposphere';
                 setInterval(function()
@@ -22,13 +22,13 @@ function UP()
                     
                     
                     
-                    t2 = setTimeout(function()
+                    FirstVarForTimeOut = setTimeout(function()
                     {   
                         
                         document.querySelector('#point').style.animation = "none"
                         document.querySelector('#point').style.left =  Math.round(Math.random() * 90 + 1) + "%"
                         
-                        clearTimeout(t2)
+                        clearTimeout(FirstVarForTimeOut)
                     }, 2000)
                 }, 2000)
                 
@@ -43,13 +43,13 @@ function UP()
 
                     
                     
-                    t3 = setTimeout(function()
+                    SecondVarForTimeOut = setTimeout(function()
                     {   
                        
                         document.querySelector('#bomb').style.animation = "none"
                         document.querySelector('#bomb').style.left =  Math.round(Math.random() * 40 + 50) + "%"
                         
-                        clearTimeout(t3)
+                        clearTimeout(SecondVarForTimeOut)
                     }, 3000)
                 }, 3000)
                 //bomb2
@@ -63,25 +63,25 @@ function UP()
 
                     
                     
-                    t4 = setTimeout(function()
+                    ThirdVarForTimeOut = setTimeout(function()
                     {   
                        
                        
                         document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 40 + 1) + "%"
                         
-                        clearTimeout(t4)
+                        clearTimeout(ThirdVarForTimeOut)
                     }, 1500)
                 }, 1500)
 
-                int3 = setInterval(function()
+                SecondVarForInterval = setInterval(function()
                 {
-                    counter += helperOn;
-                    document.querySelector('.score').innerText = `${counter}`;
+                    counterForMetres += helperOncounterForMetres;
+                    document.querySelector('.score').innerText = `${counterForMetres}`;
                    
                         
-                        if(counter >= 12000 && counter < 50000)
+                        if(counterForMetres >= 12000 && counterForMetres < 50000)
                         {
-                            helperOn = 1000;
+                            helperOncounterForMetres = 1000;
                             document.querySelector('h1').innerHTML = 'Stratosphere';
                             document.querySelector('#cloud').style.animation = "none"
                             document.querySelector('#cloud').style.animation = "clouds 8s infinite"
@@ -91,9 +91,9 @@ function UP()
                             
 
                         }
-                        else if(counter >= 50000 && counter < 80000)
+                        else if(counterForMetres >= 50000 && counterForMetres < 80000)
                         {
-                            helperOn = 1000;
+                            helperOncounterForMetres = 1000;
                             document.querySelector('h1').innerHTML = 'Mesosphere';
                             document.querySelector('.area').style.backgroundColor = '#0059b3'
 
@@ -112,9 +112,9 @@ function UP()
                             document.querySelector('#cloud2').style.backgroundSize = 'cover'
                             document.querySelector('#cloud').style.backgroundSize = 'cover'
                         }
-                        else if(counter >= 80000 && counter < 700000)
+                        else if(counterForMetres >= 80000 && counterForMetres < 700000)
                         {
-                            helperOn = 5000;
+                            helperOncounterForMetres = 5000;
                             document.querySelector('h1').innerHTML = 'Thermosphere';
                             document.querySelector('.area').style.backgroundColor = 'rgb(102, 102, 255)'
 
@@ -128,9 +128,9 @@ function UP()
                             document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft.png')"
 
                         }
-                        else if(counter >= 700000 && counter < 10000000)
+                        else if(counterForMetres >= 700000 && counterForMetres < 10000000)
                         {
-                            helperOn += 10000;
+                            helperOncounterForMetres += 10000;
                             document.querySelector('h1').innerHTML = 'Exosphere';
                             document.querySelector('.area').style.backgroundColor = '#000066'
 
@@ -144,7 +144,7 @@ function UP()
                             document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft.png')"
 
                         }
-                        else if(counter > 10000000)
+                        else if(counterForMetres > 10000000)
                         {
                             
                             document.querySelector('h1').innerHTML = 'Space';
@@ -171,9 +171,9 @@ function UP()
             document.querySelector('#cloud').style.animation = "clouds 4s infinite"
             document.querySelector('#cloud2').style.animation = "clouds 3s infinite"
 }
-window.addEventListener("keydown", function(e)
+window.addEventListener("keydown", function(mouseEvent)
 {
-    switch(e.key)
+    switch(mouseEvent.key)
     {
         case 'ArrowLeft':
         {   
@@ -194,7 +194,7 @@ window.addEventListener("keydown", function(e)
         }
         case 'ArrowUp':
         {
-            up++;
+            CheckArrowUp++;
             UP();
             break;
         }
@@ -215,15 +215,15 @@ window.addEventListener("keydown", function(e)
 //Find Collusion
 setInterval(function()
 {
-    var p = document.querySelector('#point').getBoundingClientRect();
-    var h = document.querySelector('#hero').getBoundingClientRect();
-    var b = document.querySelector('#bomb').getBoundingClientRect();
-    var b2 = document.querySelector('#bomb2').getBoundingClientRect();
+    var point = document.querySelector('#point').getBoundingClientRect();
+    var hero = document.querySelector('#hero').getBoundingClientRect();
+    var firstBomb = document.querySelector('#bomb').getBoundingClientRect();
+    var secondBomb = document.querySelector('#bomb2').getBoundingClientRect();
 
     
     function Bomb1()
     {
-        if((Math.round(b.left) - Math.round(h.left) >= -40 && Math.round(b.left) - Math.round(h.left) <= 60 ) && (Math.round(b.top) - Math.round(h.top) >= -40 && Math.round(b.top) < Math.round(h.top) + 60) )
+        if((Math.round(firstBomb.left) - Math.round(hero.left) >= -40 && Math.round(firstBomb.left) - Math.round(hero.left) <= 60 ) && (Math.round(firstBomb.top) - Math.round(hero.top) >= -40 && Math.round(firstBomb.top) < Math.round(hero.top) + 60) )
         {
 
             return true;
@@ -232,20 +232,20 @@ setInterval(function()
     }
     function Bomb2()
     {
-        if((Math.round(b2.left) - Math.round(h.left) >= -40 && Math.round(b2.left) - Math.round(h.left) <= 60 ) && (Math.round(b2.top) - Math.round(h.top) >= -40 && Math.round(b2.top) < Math.round(h.top) + 60) )
+        if((Math.round(secondBomb.left) - Math.round(hero.left) >= -40 && Math.round(secondBomb.left) - Math.round(hero.left) <= 60 ) && (Math.round(secondBomb.top) - Math.round(hero.top) >= -40 && Math.round(secondBomb.top) < Math.round(hero.top) + 60) )
         {
             return true;
         }
     }
-    if((Math.round(p.left) - Math.round(h.left) >= -40 && Math.round(p.left) - Math.round(h.left) <= 60 ) && (Math.round(p.top) - Math.round(h.top) >= -40 && Math.round(p.top) < Math.round(h.top) + 50))
+    if((Math.round(point.left) - Math.round(hero.left) >= -40 && Math.round(point.left) - Math.round(hero.left) <= 60 ) && (Math.round(point.top) - Math.round(hero.top) >= -40 && Math.round(point.top) < Math.round(hero.top) + 50))
     {
        
         document.querySelector('#point').style.animation = 'none'
-        console.log('Hello')
-        counter += helperOn;
+        
+        counterForMetres += helperOncounterForMetres;
 
         
-        if(counter < 12000)
+        if(counterForMetres < 12000)
         {   document.querySelector('#cloud').style.animation= 'none'
             document.querySelector('#cloud2').style.animation ='none'
 
@@ -262,20 +262,20 @@ setInterval(function()
 
      
 
-        document.querySelector('.score').innerText = `${counter}`;
+        document.querySelector('.score').innerText = `${counterForMetres}`;
         
         
     }
     else if(Bomb1())
     {
         document.querySelector('#bomb').style.animation = 'none'
-        console.log('Hello')
+
         health -= 50;
     }
     else if(Bomb2())
     {
         document.querySelector('#bomb2').style.animation = 'none'
-        console.log('Hello')
+        
         health -= 50;
     }
     
@@ -284,32 +284,32 @@ setInterval(function()
 
 //Mobile Buttons
 
-up = 0;
-window.addEventListener('touchstart',function(g)
+CheckArrowUp = 0;
+window.addEventListener('touchstart',function(TouchEvent)
 {
   
-    var j = document.querySelector('#Left').getBoundingClientRect()
-    var d = document.querySelector('#Right').getBoundingClientRect()
-    var p = document.querySelector('#Start').getBoundingClientRect()
-    var r = g.touches[0].clientX;
-    var t = g.touches[0].clientY;
-    if(r >= Math.round(j.left) && r <= Math.round(j.left) + 100)
+    var ButtonLeft = document.querySelector('#Left').getBoundingClientRect()
+    var ButtonRight = document.querySelector('#Right').getBoundingClientRect()
+    var buttonStartGame = document.querySelector('#Start').getBoundingClientRect()
+    var XOftouching = TouchEvent.touches[0].clientX;
+    var YOftouching = TouchEvent.touches[0].clientY;
+    if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + 100)
     {
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
         left-=10;
     }
-    else if(r >= Math.round(d.left) && r <= Math.round(d.left) + 100)
+    else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + 100)
     {
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(0deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
         left+=10;
     }
-    else if(t >= Math.round(p.top) && t <= Math.round(p.top) + 100)
+    else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + 100)
     {
-        up++;
+        CheckArrowUp++;
         UP();
     }
 
@@ -319,16 +319,16 @@ window.addEventListener('touchstart',function(g)
 
 
 //The End of the game
-int2 = setInterval(function()
+FirstvarForInterval = setInterval(function()
 {
     if(health <= 0)
     {
         
         document.querySelector('.area').style.display = "none";
         
-        var con = document.querySelector('h1').innerText
-        document.querySelector('h1').innerText = `GameOver! You reaches ${con} with metres ${counter}`
-        switch(con)
+        var contentOfH1 = document.querySelector('h1').innerText
+        document.querySelector('h1').innerText = `GameOver! You reaches ${contentOfH1} with metres ${counterForMetres}`
+        switch(contentOfH1)
         {
             case "Troposphere":
             {
@@ -379,9 +379,9 @@ int2 = setInterval(function()
         }
         
         
-        helperOn = 0;
-        clearInterval(int2);
-        clearInterval(int3);
+        helperOncounterForMetres = 0;
+        clearInterval(FirstvarForInterval);
+        clearInterval(SecondVarForInterval);
     }
     document.querySelector('.health').innerText = `${health}`;
     document.querySelector('#hero').style.left = left + "%"
