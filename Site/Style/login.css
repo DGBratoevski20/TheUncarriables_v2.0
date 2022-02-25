@@ -195,6 +195,7 @@ body {
     flex: 1 1 100%;
     align-items: stretch;
     justify-content: space-between;
+	box-shadow: 1px 1.7px 1px 1px;
 }
 
 @media (max-width: 90%) {
@@ -255,8 +256,18 @@ span {
     padding: 14px 40px;
     border-radius: 100px;
     display: inline-block;
-    box-shadow: 0 2px 4px 1px #042d4657;
+    box-shadow: 1px 1px #000000;
+	position: relative;
+    top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    transition: all 0.4s cubic-bezier(0.3, 0.7, 0.1, 1.9);
 }
+
+.box-form .left .overlay span a:hover{
+	top: 15px;
+} 
 
 .box-form .left .overlay span a:last-child {
     background: var(--twitter-bg-color);
