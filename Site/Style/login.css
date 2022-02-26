@@ -1,33 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-* { /* taka da ostane */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-image: var(--bg-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--heading-color);
+}
+
 :root { /* light mode */
-    --primary-color: #0047ab;
-    --secondary-color: #CAF0F8; /* #ADE8F4 */
+    --primary-color: #014F86;
+    --secondary-color: #CAF0F8;
     --links-hover: #90E0EF;
     --font-color: #dddddd;
     --bg-color: radial-gradient(#e6b35b 25%, #014FF6 80%);
+    --heading-left-color: #303336;
+	--heading-right-color: #CAF0F8;
+	--login-box-shadow: #292922;
     --btn-color: linear-gradient(135deg, #70F570 10%, #49C628 100%);
     --btn-hover-color: #90E0EF;
-    --login-bg-color-left: #fab123; /* #e6b35b #c6eff7*/
+    --login-bg-color-left: #fab123;
     --login-bg-color-right: #014F86;
     --text-color: #CAF0F8;
-    --span-color: #000000;
+    --span-color: #48CAE4;
     --remember-me-color: #0da849;
     --facebook-bg-color: #4267B2;
     --twitter-bg-color: #1dcaff;
     --input-bg-color: #CAF0F8;
     --input-color: #000000;
     --placeholder-color: #222222;
-	--h1-left: #000000;
-	--h1-right: #CAF0F8;
-	
 }
 
 [data-theme="dark"] { /* dark mode */
@@ -35,10 +44,13 @@
     --secondary-color: #6E6AEE;
     --font-color: #E1E1FF;
     --bg-color: linear-gradient(135deg, #292929 0%, #000000 100%);
+    --heading-left-color: #6560ff;
+	--heading-right-color: #6560ff;
+	--login-box-shadow: #6560ff;
     --btn-color: linear-gradient(135deg, #670594 10%, #c629e6 100%);
     --btn-hover-color: #6560ff;
-    --login-bg-color-left: #28262b; /* moje i #28262b, 121212 */
-    --login-bg-color-right: #121212; /* moje i 121212 */
+    --login-bg-color-left: #28262b;
+    --login-bg-color-right: #121212;
     --text-color: #c4c4c4;
     --span-color: #0da849;
     --remember-me-color: #0da849;
@@ -46,8 +58,7 @@
     --twitter-bg-color: #146d88;
     --input-bg-color: #9b9b9b;
     --input-color: #f2f2f2;
-	--h1-left: #6560ff;
-	--h1-right: #6560ff;
+	--placeholder-color: #f1f1f1;
 }
 
 header {
@@ -68,6 +79,10 @@ header {
     height: auto;
 }
 
+#logoInForm {
+    width: 60%;
+	height: auto;
+}
 
 .nav-links {
     list-style: none;
@@ -78,7 +93,7 @@ header {
 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: var(--font-color); /* #edf0f1 originalno */
+    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -91,17 +106,17 @@ header {
 }
 
 .nav-links li a:hover {
-    color: var(--secondary-color); /* #0088a9 originalno */
+    color: var(--secondary-color);
 }
 
 .cta {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: var(--primary-color); /* #edf0f1 originalno */
+    color: var(--primary-color);
     text-decoration: none;
-    margin-left: 1%;
+    margin-left: 20px;
     padding: 9px 25px;
-    background-color: var(--secondary-color); /* #0088a9 originalno */
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -109,7 +124,7 @@ header {
 }
 
 .cta:hover {
-    background-color: var(--btn-hover-color); /* #0088a9cc originalno */
+    background-color: var(--btn-hover-color);
 }
 
 ::-webkit-scrollbar {
@@ -126,14 +141,24 @@ header {
     border-radius: 10px;
 }
 
+::placeholder {
+	color: var(--placeholder-color);
+	opacity: 0.8;
+}
+
 
 /* Toggle slider */
 
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center; /* toogle to be in center of the navbar*/
+}
+
 .theme-switch {
     display: inline-block;
-    height: 1.8em;
+    height: 42px;
     position: relative;
-    width: 6%;
+    width: 4.1em;
     margin-left: 20px;
 }
 
@@ -142,7 +167,7 @@ header {
 }
 
 .slider {
-    background-color: #ccc; /* #ccc da stoi taka */
+    background-color: #ccc;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -153,23 +178,22 @@ header {
 }
 
 .slider:before {
-    background-color: #fff; /* #fff da stoi taka */
-    bottom: 3px;
-    content: ""; /* da moje da pokazva toggle */
-    height: 1.5em;
-    left: 4%;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 34px;
+    left: 4px;
     position: absolute;
     transition: .4s;
-    width: 40%;
-	
+    width: 34px;
 }
 
 input:checked + .slider {
-    background-color: #66bb6a; /* #66bb6a originalno */
+    background-color: #66bb6a;
 }
 
 input:checked + .slider:before {
-    transform: translateX(130%); /* drizhenieto na slidera */
+    transform: translateX(130%);
 }
 
 .slider.round {
@@ -180,25 +204,11 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-body {
-    background-image: var(--bg-color); /* originalno fb9b2d 024769*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--heading-color);
-}
-
-#h1-left{
-	color: var(--h1-left);
-}
-
-#h1-right{
-	color: var(--h1-right);
-}
 
 .box-form {
     margin: 0 auto;
+	margin-top: 6%;
+	margin-bottom: 6%;
     width: 80%;
     background: var(--login-bg-color-right);
     border-radius: 40px;
@@ -207,7 +217,7 @@ body {
     flex: 1 1 100%;
     align-items: stretch;
     justify-content: space-between;
-	box-shadow: 1px 1.7px 1px 1px;
+	box-shadow: 1px 1.7px 1px 1px var(--login-box-shadow);
 }
 
 @media (max-width: 90%) {
@@ -226,16 +236,10 @@ body {
 .box-form .left {
     text-align: center;
     width: 65%;
-	height: auto;
     background-color: var(--login-bg-color-left);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-}
-
-#logoInForm {
-    width: 60%;
-	height: auto;
 }
 
 span {
@@ -255,6 +259,7 @@ span {
     font-weight: 900;
     margin-top: 40px;
     margin-bottom: 20px;
+	color: var(--heading-left-color);
 }
 
 .box-form .left .overlay span p {
@@ -265,21 +270,21 @@ span {
 .box-form .left .overlay span a {
     background: var(--facebook-bg-color);
     color: white;
-    margin-top: 5%;
-    padding: 10px 40px;
+    margin-top: 10px;
+    padding: 14px 40px;
     border-radius: 100px;
     display: inline-block;
     box-shadow: 1px 1px #000000;
 	position: relative;
-    top: -25px;
-    margin-left: 1%;
-    margin-right: 1%;
+    top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     color: #fff;
     transition: all 0.4s cubic-bezier(0.3, 0.7, 0.1, 1.9);
 }
 
 .box-form .left .overlay span a:hover{
-	top: -30px;
+	top: 15px;
 } 
 
 .box-form .left .overlay span a:last-child {
@@ -310,6 +315,7 @@ span {
     line-height: 0;
     margin-top: 20%;
     margin-bottom: 40%;
+	color: var(--heading-right-color);
 }
 
 .box-form .right p {
