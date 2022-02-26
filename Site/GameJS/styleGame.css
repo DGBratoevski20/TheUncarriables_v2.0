@@ -15,7 +15,7 @@
 }
 
 body{
-    margin: 5%;
+    margin: 6%;
     background-color: antiquewhite;
     position: relative;
     overflow-y: auto;
@@ -28,7 +28,7 @@ body{
     overflow: hidden;
     position: relative;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 7%;
     box-shadow: 100px, 100px, 100px,black;
     display: flex;
     transition: all 2s;
@@ -59,6 +59,7 @@ h1{
     text-align: center;
     width: 300px;
     margin: auto;
+    font-size: 1rem;
 
 }
 #point{
@@ -108,6 +109,9 @@ h1{
     width: 150px;
     height: 50px;
     z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: start;
     font-size: 1.5rem;  
     background-color: #8ffdfd;
 
@@ -163,7 +167,7 @@ img{
 article
 {
     background-color: rgb(96, 134, 167);
-
+    overflow: auto;
     opacity: 0;
     width: 80vw;
     transition: all 2s;
@@ -236,15 +240,16 @@ article
 h3{
     position: absolute;
     left:10.5%;
-    top:-8%;
-    font-size: 1.2rem;
+    top:-20mm;
+    overflow: hidden;
+    font-size: 1rem;
     
 }
 h4{
     position: absolute;
     left:82%;
-    top:-8%;
-    font-size: 1.2rem;
+    top:-20mm;
+    font-size: 1rem;
 }
 .health{
     position: absolute;
@@ -253,40 +258,51 @@ h4{
     background-color: #8ffdfd;
     width: 100px;
     height: 50px;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: start;
     font-size: 1.5rem;
-    place-items: center;
+    
 }
 .btns{
     display: grid;
     width: 200px;
     opacity: 0;
     margin: auto;
-    
+    margin-top: -110px;
     grid-template-rows: repeat(2, 50%);
 }
 .line{
     display: grid;
-    
-    margin-left: -45%;
+    margin-top: -40px;
+    margin-left: -80%;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50%;
 }
 button{
     display: block;
-    width: 100px;
-    height:100px;
+    width: 200px;
+    height: 200px;
     margin: 30%;
+}
+#Start
+{
+    margin-left: 2%;
 }
 
 
-@media only screen and (max-width:930px)
+@media only screen and (max-width:1200px)
 {
-
-    
-    
-    body{
-        overflow-y: auto;
+    h3{
+        top: -1%;
+        left: -2%;
+    }
+    h4{
+        top: -1.5%;
+        left: 98%;
+    }
+    .btns{
+        opacity: 1;
     }
     
     .info{
@@ -297,12 +313,77 @@ button{
         
     }
     
-    
 }
-@media only screen and (max-width:1000px)
+@media only screen and (max-width:900px)
 {
-
-    .btns{
-        opacity: 1;
+     .health{
+         top:0%;
+         margin: 1%;
+         left:70%;
+         text-align: left;
+         font-size: 1rem;
+         float: right;
+         width: 30%;
+         height:3%;
+     }
+     .score{
+         top:0%;
+         left:-5%;
+         font-size: 1rem;
+         margin: 1%;
+         
+         width: 30%;
+         height:3%;
+     }
+     h4{
+         left:92%;
+         top:-10mm;
+     }
+     h3{
+        top:-10mm;
     }
 }
+@media only screen and (max-width:900px)
+{
+    .btns{
+        opacity: 0;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    .area{
+        margin-top: 50%;
+    }
+    h4{
+        left:70%;
+        top:50px;
+    }
+    h3{
+       top:50px;
+    }
+    .score{
+        top:90px;
+    }
+    .health{
+        top:90px;
+    }
+}
+@media only screen and (max-height:820px)
+{
+    button{
+        width: 60px;
+        height: 60px;
+    }
+    #Start{
+        transform: translateY(60px);
+    }
+    #bomb{
+        top:-40%;
+    }
+    #bomb2{
+        top:-40%;
+
+    }
+
+}
+    

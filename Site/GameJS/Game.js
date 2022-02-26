@@ -4,10 +4,10 @@ var FirstvarForInterval, SecondVarForInterval;
 var CheckArrowUp = 0;
 var counterForMetres = 0;
 var SecondVarForTimeOut, ThirdVarForTimeOut;
-var helperOncounterForMetres = 100;
+var helperOncounterForMetres = 1000;
 var left = 46;
 var health = 700;
-
+document.querySelector('.score').innerText = '0'
 function UP()
 {
     if(CheckArrowUp == 1)
@@ -284,30 +284,32 @@ setInterval(function()
 
 //Mobile Buttons
 
-CheckArrowUp = 0;
-window.addEventListener('touchstart',function(TouchEvent)
-{
-  
+CheckArrowUp = 0
     var ButtonLeft = document.querySelector('#Left').getBoundingClientRect()
     var ButtonRight = document.querySelector('#Right').getBoundingClientRect()
     var buttonStartGame = document.querySelector('#Start').getBoundingClientRect()
+window.addEventListener('touchstart',function(TouchEvent)
+{
+  
+    
     var XOftouching = TouchEvent.touches[0].clientX;
     var YOftouching = TouchEvent.touches[0].clientY;
-    if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + 100)
+    if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + ButtonLeft.width)
     {
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
-        left-=15;
+        left-=20;
+        
     }
-    else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + 100)
+    else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + ButtonRight.width)
     {
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(0deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
-        left+=15;
+        left+=20;
     }
-    else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + 100)
+    else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + buttonStartGame.height)
     {
         CheckArrowUp++;
         UP();
@@ -325,6 +327,8 @@ FirstvarForInterval = setInterval(function()
     {
         
         document.querySelector('.area').style.display = "none";
+        document.querySelector('.btns').style.opacity = "0";
+        document.querySelector('h1').style.transform = "translateY(100%)"
         
         var contentOfH1 = document.querySelector('h1').innerText
         document.querySelector('h1').innerText = `GameOver! You reaches ${contentOfH1} with metres ${counterForMetres}`
@@ -384,14 +388,14 @@ FirstvarForInterval = setInterval(function()
         clearInterval(SecondVarForInterval);
     }
     document.querySelector('.health').innerText = `${health}`
-    if(left < -20)
+    if(left < -50)
     {
         document.querySelector('#hero').style.transition = 'none';
         left = 100
        
         
     }
-    else if(left > 120)
+    else if(left > 170)
     {
         document.querySelector('#hero').style.transition = 'none';
         left = -10
