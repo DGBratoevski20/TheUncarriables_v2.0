@@ -35,10 +35,10 @@ body {
     --links-hover: #6E6AEE;
     --font-color: #E1E1FF;
     --bg-color: #000000;
-    --heading-color: #6E6AEE;
+    --heading-color: #6560ff;
     --cta-hover-color: #6560ff;
     --card-title-color: #F2F2F2;
-    --card-title-bg-color: #827ee6;
+    --card-title-bg-color: #6560ff;
     --card-hover-bg-color: #1a1a1a;
 }
 
@@ -53,12 +53,8 @@ header {
     margin-bottom: 4%;
 }
 
-.logo {
-    margin-right: auto;
-}
-
 #logoInNavbar {
-    width: 20%;
+    width: 25%;
     height: auto;
 }
 
