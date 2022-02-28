@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>European Union</title>
+  <link rel="stylesheet" href="Style/contact-us.css">
+  <script language="javascript" src="Script/changeTheme.js"></script>
+  <script>
+    function refreshPage()
+    {
+      alert("Your email was successfuly sent!");
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <a class="logo" href="#"><img id="logoInNavbar" src="Images/navbar-logo.png" alt="logo"></a>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <a class="cta" href="#">Contact</a>
+
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round" onclick = "changeTheme()"></div>
+      </label>
+    </div>
+
+  </header>
+
+  <div id="contact">
+
+    <div id="title">
+      <h1>Contact us</h1>
+    </div>
+
+    <div id="form">
+      
+      <form method="post">
+      
+          <div class="formgroup" id="name-form">
+              <label for="name">Your name*</label>
+              <input type="text" id="name" name="name"/>
+          </div>
+          
+          <div class="formgroup" id="email-form">
+              <label for="email">Your e-mail*</label>
+              <input type="email" id="email" name="email"/>
+          </div>
+          
+          <div class="formgroup" id="message-form">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message"></textarea>
+          </div>
+      
+          <input type="submit" value="Send your message!" onclick="refreshPage()">
+
+      </form>
+
+    </div>
+
+  </div>
+    
+</body>
+
+</html>
