@@ -14,7 +14,6 @@ body {
     flex-direction: column;
     background-image: var(--bg-color);
     background-size: cover;
-    backdrop-filter: blur(4px);
     height: 100%;
 }
 
@@ -23,15 +22,34 @@ body {
     --secondary-color: #CAF0F8;
     --links-hover: #90E0EF;
     --font-color: #dddddd;
-    --bg-color: url("https://i.pinimg.com/originals/df/0a/3e/df0a3e2ec30abb1c92d145ef165b714f.gif");
+    --bg-color: url("https://cdn.dribbble.com/users/1069548/screenshots/6658499/nature-view-sunrise-800x600.gif");
     --cta-hover-color: #90E0EF;
     --heading-color: #ff9900;
     --text-color: #676767;
     --form-border-color: #fffada;
-    --form-bg-color: #ffffffb3;
+    --form-bg-color: #000000b3;
     --form-group-border-color: #c9c9c9;
     --label-color: #fc6a03;
+	--input-bg-color: #f0f0f0b3;
     --submit-color: #ff9900;
+    --submit-color-hover: #55d228;
+}
+
+/* dark mode */
+[data-theme="dark"] {
+    --primary-color: #121212;
+    --secondary-color: #6E6AEE;
+    --font-color: #E1E1FF;
+    --bg-color: url("https://i.pinimg.com/originals/df/0a/3e/df0a3e2ec30abb1c92d145ef165b714f.gif");
+    --cta-hover-color: #6560ff;
+    --heading-color: #6560ff;
+    --text-color: #c4c4c4;
+    --form-border-color: #ffffff;
+    --form-bg-color: #000000f3;
+    --form-group-border-color: #c9c9c9;
+    --label-color: #6E6AEE;
+	--input-bg-color: #808080;
+    --submit-color: #6E6AEE;
     --submit-color-hover: #55d228;
 }
 
@@ -222,6 +240,7 @@ input, textarea {
     font-family: 'Sniglet', cursive;
     font-size: 1em;
     color: var(--text-color);
+	background-color: var(--input-bg-color);
     border: solid 3px var(--form-group-border-color);
 }
 
