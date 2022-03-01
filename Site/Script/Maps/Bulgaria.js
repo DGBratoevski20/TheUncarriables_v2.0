@@ -8,10 +8,6 @@ L.marker([42.145, 24.75]).addTo(map)
 .bindPopup('<b>Plovdiv.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
 .openPopup();
 
-L.marker([42.698, 23.32222222]).addTo(map)
-.bindPopup('<b>Sofia.</b><hr><i> The capital city of Bulgaria.</i>')
-.openPopup();
-
 L.marker([43.20645, 27.91536333]).addTo(map)
 .bindPopup('<b>Varna.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
 .openPopup();
@@ -30,6 +26,10 @@ L.marker([42.423871, 25.6272]).addTo(map)
 
 L.marker([43.8476, 25.954]).addTo(map)
 .bindPopup('<b>Ruse.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
+.openPopup();
+
+L.marker([42.698, 23.32222222]).addTo(map)
+.bindPopup('<b>Sofia.</b><hr><i> The capital city of Bulgaria.</i>')
 .openPopup();
 
 L.marker([43.409, 24.617999]).addTo(map)
