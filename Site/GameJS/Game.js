@@ -4,12 +4,14 @@ var FirstvarForInterval, SecondVarForInterval;
 var CheckArrowUp = 0;
 var counterForMetres = 0;
 var SecondVarForTimeOut, ThirdVarForTimeOut;
-var helperOncounterForMetres = 1000;
+var helperOncounterForMetres = 100;
 var left = 46;
 var health = 700;
 var ButtonLeft
 var ButtonRight
 var buttonStartGame; 
+var helperOnLeftComp = 15;
+var helperOnLeftMob = 15;
 document.querySelector('.score').innerText = '0'
 function UP()
 {
@@ -29,7 +31,7 @@ function UP()
                     {   
                         
                         document.querySelector('#point').style.animation = "none"
-                        document.querySelector('#point').style.left =  Math.round(Math.random() * 90 + 1) + "%"
+                        document.querySelector('#point').style.left =  Math.round(Math.random() * 80 + 1) + "%"
                         
                         clearTimeout(FirstVarForTimeOut)
                     }, 2000)
@@ -180,19 +182,42 @@ window.addEventListener("keydown", function(mouseEvent)
     {
         case 'ArrowLeft':
         {   
+                    if(left < 10)
+                    {
+                        
+                        helperOnLeftComp = 0
+                    
+                        
+                    }
+                    else 
+                    {
+                    
+                     helperOnLeftComp = 15;
+                    }
+                    console.log(left)
             document.querySelector('#hero').style.transition = 'none'
             document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
             document.querySelector('#hero').style.transition = 'all 400ms'
-                left-=25;
+                left-=helperOnLeftComp;
+                
 
                 break;
         }
         case 'ArrowRight':
         {
+            if(left > 80)
+            {
+            
+                helperOnLeftComp = 0;
+            }
+            else{
+                helperOnLeftComp = 15;
+            }
+            console.log(left)
             document.querySelector('#hero').style.transition = 'none'
             document.querySelector('#hero').style.transform = 'rotateY(0deg)';
             document.querySelector('#hero').style.transition = 'all 400ms'
-                left+=25
+                left+=helperOnLeftComp
                 break;
         }
         case 'ArrowUp':
@@ -304,19 +329,43 @@ window.addEventListener('touchstart',function(TouchEvent)
     var YOftouching = TouchEvent.touches[0].clientY;
     if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + ButtonLeft.width)
     {
+        if(left < 10)
+        {
+            
+            helperOnLeftMob = 0
+        
+            
+        }
+        else 
+        {
+        
+            helperOnLeftMob = 15;
+        }
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
-        left-=20;
+        left-=helperOnLeftMob;
         console.log('45')
         
     }
     else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + ButtonRight.width)
     {
+        if(left > 80)
+        {
+            
+            helperOnLeftMob = 0
+        
+            
+        }
+        else 
+        {
+        
+            helperOnLeftMob = 15;
+        }
         document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(0deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
-        left+=20;
+        left+=helperOnLeftMob;
         console.log('44')
     }
     else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + buttonStartGame.height)
@@ -398,18 +447,7 @@ FirstvarForInterval = setInterval(function()
         clearInterval(SecondVarForInterval);
     }
     document.querySelector('.health').innerText = `${health}`
-    if(left < -50)
-    {
-        document.querySelector('#hero').style.transition = 'none';
-        left = 100
-       
-        
-    }
-    else if(left > 170)
-    {
-        document.querySelector('#hero').style.transition = 'none';
-        left = -10
-    }
+    
     document.querySelector('#hero').style.left = left + "%"
 }, 1);
 
