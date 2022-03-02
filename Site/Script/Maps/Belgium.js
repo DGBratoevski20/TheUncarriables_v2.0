@@ -4,26 +4,32 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([51.05966, 3.72912]).addTo(map)
+let leafletIcon = L.icon ({
+    iconUrl: '../Images/Marker.png',
+    iconSize: [50,50],
+    iconAnchor: [25,20],
+});
+
+L.marker([51.05966, 3.72912],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Ghent.</b><hr><i> One of the biggest cities in Belgium.</i>')
 .openPopup();
 
-L.marker([51.22878, 4.40136112]).addTo(map)
+L.marker([51.22878, 4.40136112],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Antwerpen.</b><hr><i> One of the biggest cities in Belgium.</i>')
 .openPopup();
 
-L.marker([51.21080, 3.224591]).addTo(map)
+L.marker([51.21080, 3.224591],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Brugge.</b><hr><i> One of the biggest cities in Belgium.</i>')
 .openPopup();
 
-L.marker([50.63255, 5.56805]).addTo(map)
+L.marker([50.63255, 5.56805],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Liege.</b><hr><i> One of the biggest cities in Belgium.</i>')
 .openPopup();
 
-L.marker([50.46641, 4.86376]).addTo(map)
+L.marker([50.46641, 4.86376],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Namur.</b><hr><i> One of the biggest cities in Belgium.</i>')
 .openPopup();
 
-L.marker([50.85017, 4.36192]).addTo(map)
+L.marker([50.85017, 4.36192],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Brussels.</b><hr><i> The capital city of Belgium.</i>')
 .openPopup();
