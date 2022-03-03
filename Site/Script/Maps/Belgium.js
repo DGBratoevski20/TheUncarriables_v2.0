@@ -7,7 +7,7 @@ attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> co
 let leafletIcon = L.icon ({
     iconUrl: '../Images/m.png',
     iconSize: [35,35],
-    iconAnchor: [20,14],
+    iconAnchor: [17.5, 35],
 });
 
 L.marker([51.05966, 3.72912],{icon:leafletIcon}).addTo(map)

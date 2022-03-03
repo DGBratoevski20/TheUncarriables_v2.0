@@ -7,10 +7,10 @@ attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> co
 let leafletIcon = L.icon ({
     iconUrl: '../Images/m.png',
     iconSize: [35,35],
-    iconAnchor: [20,14],
+    iconAnchor: [17.5,35],
 });
 
-L.marker([42.21, 24.75],{icon:leafletIcon}).addTo(map)
+L.marker([42.15525946577863, 24.75],{icon:leafletIcon}).addTo(map)
 .bindPopup('<b>Plovdiv.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
 .openPopup();
 
