@@ -7,11 +7,12 @@ var SecondVarForTimeOut, ThirdVarForTimeOut;
 var helperOncounterForMetres = 100;
 var left = 46;
 var health = 700;
-var ButtonLeft
-var ButtonRight
+var ButtonLeft;
+var ButtonRight;
 var buttonStartGame; 
 var helperOnLeftComp = 15;
 var helperOnLeftMob = 15;
+var eighty = 80;
 document.querySelector('.score').innerText = '0'
 function UP()
 {
@@ -195,9 +196,9 @@ window.addEventListener("keydown", function(mouseEvent)
                      helperOnLeftComp = 15;
                     }
                     console.log(left)
-            document.querySelector('#hero').style.transition = 'none'
+           
             document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
-            document.querySelector('#hero').style.transition = 'all 400ms'
+                    
                 left-=helperOnLeftComp;
                 
 
@@ -205,7 +206,7 @@ window.addEventListener("keydown", function(mouseEvent)
         }
         case 'ArrowRight':
         {
-            if(left > 80)
+            if(left > eighty)
             {
             
                 helperOnLeftComp = 0;
@@ -214,9 +215,9 @@ window.addEventListener("keydown", function(mouseEvent)
                 helperOnLeftComp = 15;
             }
             console.log(left)
-            document.querySelector('#hero').style.transition = 'none'
+            
             document.querySelector('#hero').style.transform = 'rotateY(0deg)';
-            document.querySelector('#hero').style.transition = 'all 400ms'
+            
                 left+=helperOnLeftComp
                 break;
         }
@@ -327,7 +328,8 @@ window.addEventListener('touchstart',function(TouchEvent)
     
     var XOftouching = TouchEvent.touches[0].clientX;
     var YOftouching = TouchEvent.touches[0].clientY;
-    if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + ButtonLeft.width)
+    if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + ButtonLeft.width &&
+    YOftouching >= Math.round(ButtonLeft.top) && YOftouching <= Math.round(ButtonLeft.top) + ButtonLeft.height)
     {
         if(left < 10)
         {
@@ -348,7 +350,8 @@ window.addEventListener('touchstart',function(TouchEvent)
         console.log('45')
         
     }
-    else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + ButtonRight.width)
+    else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + ButtonRight.width &&
+    YOftouching >= Math.round(ButtonRight.top) && YOftouching <= Math.round(ButtonRight.top) + ButtonRight.height)
     {
         if(left > 80)
         {
@@ -368,7 +371,7 @@ window.addEventListener('touchstart',function(TouchEvent)
         left+=helperOnLeftMob;
         console.log('44')
     }
-    else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + buttonStartGame.height)
+    else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + buttonStartGame.height && XOftouching >= Math.round(buttonStartGame.left) && XOftouching <= Math.round(buttonStartGame.left) + buttonStartGame.width)
     {
         CheckArrowUp++;
         UP();
@@ -445,6 +448,14 @@ FirstvarForInterval = setInterval(function()
         helperOncounterForMetres = 0;
         clearInterval(FirstvarForInterval);
         clearInterval(SecondVarForInterval);
+    }
+    if(document.body.clientWidth < 1100)
+    {
+        eighty = 76;
+    }
+    if(document.body.clientWidth < 600)
+    {
+        eighty = 70;
     }
     document.querySelector('.health').innerText = `${health}`
     
