@@ -441,12 +441,6 @@ footer {
     font-size: 120%;
 }
 
-.footer-map {
-    width: 20em;
-    height: 12em;
-    background-color: red;
-}
-
 .footer-right {
     float: right;
     margin-right: -60px;
