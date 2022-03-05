@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script src="script.js"></script>
+<html lang="en">
+	<head>
+	 
+	  <title>The Uncarriables v2.0</title>
+	  
+	  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="Style/main.css">
 
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="Style/main.css">
-
-</head>
-  
-<body id="main-page">
-
-	<div id="main">
-		<a href="country-cards.html">
-		<img id="main-left" src="https://www.wallpapertip.com/wmimgs/154-1542247_iphone-earth-wallpaper-3d.jpg">
+	</head>
+	<body>
+	  
+	  <div class="carousel-wrapper">
+		
+		<span id="item-1"></span>
+		<span id="item-2"></span>
+		<span id="item-3"></span>
+		
+		<a href="country-cards.html" class="photo">
+		  <div class="carousel-item item-1">
+			<h1 id="geography-text">GEOGRAPHY</h1>
+			<a href="#item-3" class="arrow-prev arrow"></a>
+			<a href="#item-2" class="arrow-next arrow"></a>
+		  </div>
 		</a>
-		<a href="history-cards.html">  
-		<img id="main-right"  src="https://www.ancient-code.com/wp-content/uploads/2015/09/pyramids_by_ramyhits.jpg">
-		</a>
-	</div>
-</body>
 
+		<a href="history-cards.html" class="photo">
+		  <div class="carousel-item item-2">
+			<h1 id="history-text">HISTORY</h1>
+			<a href="#item-1" class="arrow-prev arrow"></a>
+			<a href="#item-3" class="arrow-next arrow"></a>
+		  </div>
+		</a>
+
+		<a href="GameJs/game.html" class="photo">
+		  <div class="carousel-item item-3">
+			<h1 id="game-text">GAME</h1>
+			<a href="#item-2" class="arrow-prev arrow"></a>
+			<a href="#item-1" class="arrow-next arrow"></a>
+		  </div>
+		</a>
+
+	  </div>
+	</body>
 </html>
