@@ -37,7 +37,7 @@ body {
     --input-bg-color: #CAF0F8;
     --input-color: #000000;
     --placeholder-color: #222222;
-	--footer-divider: #141414;
+	--footer-divider: #CAF0F8;
     --map-icon-bg: #CAF0F8;
 	--map-icon: #014F86;
 	--icons-bg: #014F86;
@@ -459,7 +459,7 @@ footer {
 .footer-map {
     width: 20em;
     height: 12em;
-    background-color: red;
+    background-color: #ffffff;
 }
 
 .footer-right {
