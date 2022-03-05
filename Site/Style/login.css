@@ -38,7 +38,8 @@ body {
     --input-color: #000000;
     --placeholder-color: #222222;
 	--footer-divider: #141414;
-    --map-icon: #272727;
+    --map-icon-bg: #CAF0F8;
+	--map-icon: #014F86;
 }
 
 [data-theme="dark"] { /* dark mode */
@@ -62,7 +63,8 @@ body {
     --input-color: #f2f2f2;
 	--placeholder-color: #f1f1f1;
 	--footer-divider: #727272;
-    --map-icon: #504aff;
+	--map-icon-bg: #6E6AEE;
+    --map-icon: #ffffff;
 }
 
 header {
@@ -422,8 +424,8 @@ footer {
 }
 
 .footer-left i {
-    background-color: var(--map-icon);
-    color: #ffffff;
+    background-color: var(--map-icon-bg);
+    color: var(--map-icon);
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -439,6 +441,12 @@ footer {
     vertical-align: middle;
     margin: 0;
     font-size: 120%;
+}
+
+.footer-map {
+    width: 20em;
+    height: 12em;
+    background-color: red;
 }
 
 .footer-right {
@@ -470,4 +478,134 @@ footer {
     padding: 0.3em;
     color: var(--footer-divider);
     font-size: 130%;
+}
+
+.footer-icons {
+    width: 155%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 1em;
+	transform: translate(-50%, -50%);
+	
+}
+
+.footer-icons li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.footer-icons li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background-color: #014F86;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #CAF0F8;
+    transition: .5s;
+}
+
+.footer-icons li #instagram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: orange;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.footer-icons li #instagram:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px orange;
+}
+
+.footer-icons li #instagram:hover {
+    color: orange;
+    box-shadow: 0 0 5px orange;
+    text-shadow: 0 0 5px orange;
+}
+
+
+.footer-icons li #twitter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: cyan;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.footer-icons li #twitter:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px cyan;
+}
+
+.footer-icons li #twitter:hover {
+    color: cyan;
+    box-shadow: 0 0 5px cyan;
+    text-shadow: 0 0 5px cyan;
+}
+
+.footer-icons li #github::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #03c04a;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.footer-icons li #github:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #03c04a;
+}
+
+.footer-icons li #github:hover {
+    color: #03c04a;
+    box-shadow: 0 0 5px #03c04a;
+    text-shadow: 0 0 5px #03c04a;
+}
+
+.footer-icons li #facebook::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #0072ff;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.footer-icons li #facebook:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #0072ff;
+}
+
+.footer-icons li #facebook:hover {
+    color: #0072ff;
+    box-shadow: 0 0 5px #0072ff;
+    text-shadow: 0 0 5px #0072ff;
 }
