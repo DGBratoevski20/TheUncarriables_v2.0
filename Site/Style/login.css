@@ -40,6 +40,12 @@ body {
 	--footer-divider: #141414;
     --map-icon-bg: #CAF0F8;
 	--map-icon: #014F86;
+	--icons-bg: #014F86;
+	--icons: #CAF0F8;
+	--instagram-icon: #FFA500;
+	--twitter-icon: #00FFFF;
+	--github-icon: #03c04a;
+	--facebook-icon: #0072ff;
 }
 
 [data-theme="dark"] { /* dark mode */
@@ -64,7 +70,13 @@ body {
 	--placeholder-color: #f1f1f1;
 	--footer-divider: #727272;
 	--map-icon-bg: #6E6AEE;
+	--icons-bg: #121212;
+	--icons: #CAF0F8;
     --map-icon: #ffffff;
+	--instagram-icon: #FFFF00;
+	--twitter-icon: cyan;
+	--github-icon: #03c04a;
+	--facebook-icon: #0072ff;
 }
 
 header {
@@ -421,6 +433,7 @@ footer {
 .footer-left {
     float: left;
     text-align: center;
+	width: 28%;
 }
 
 .footer-left i {
@@ -440,7 +453,7 @@ footer {
     color: var(--font-color);
     vertical-align: middle;
     margin: 0;
-    font-size: 120%;
+    font-size: 130%;
 }
 
 .footer-map {
@@ -502,10 +515,10 @@ footer {
     height: 60px;
     text-align: center;
     line-height: 63px;
-    background-color: #014F86;
+    background-color: var(--icons-bg);
     border-radius: 50%;
     font-size: 30px;
-    color: #CAF0F8;
+    color: var(--icons);
     transition: .5s;
 }
 
@@ -517,7 +530,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: orange;
+    background: var(--instagram-icon);
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -525,13 +538,13 @@ footer {
 
 .footer-icons li #instagram:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px orange;
+    box-shadow: 0 0 15px var(--instagram-icon);
 }
 
 .footer-icons li #instagram:hover {
-    color: orange;
-    box-shadow: 0 0 5px orange;
-    text-shadow: 0 0 5px orange;
+    color: var(--instagram-icon);
+    box-shadow: 0 0 5px var(--instagram-icon);
+    text-shadow: 0 0 5px var(--instagram-icon);
 }
 
 
@@ -543,7 +556,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: cyan;
+    background: var(--twitter-icon);
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -551,13 +564,13 @@ footer {
 
 .footer-icons li #twitter:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px cyan;
+    box-shadow: 0 0 15px var(--twitter-icon);
 }
 
 .footer-icons li #twitter:hover {
-    color: cyan;
-    box-shadow: 0 0 5px cyan;
-    text-shadow: 0 0 5px cyan;
+    color: var(--twitter-icon);
+    box-shadow: 0 0 5px var(--twitter-icon);
+    text-shadow: 0 0 5px var(--twitter-icon);
 }
 
 .footer-icons li #github::before {
@@ -568,7 +581,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #03c04a;
+    background: var(--github-icon);
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -576,13 +589,13 @@ footer {
 
 .footer-icons li #github:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #03c04a;
+    box-shadow: 0 0 15px var(--github-icon);
 }
 
 .footer-icons li #github:hover {
-    color: #03c04a;
-    box-shadow: 0 0 5px #03c04a;
-    text-shadow: 0 0 5px #03c04a;
+    color: var(--github-icon);
+    box-shadow: 0 0 5px var(--github-icon);
+    text-shadow: 0 0 5px var(--github-icon);
 }
 
 .footer-icons li #facebook::before {
@@ -593,7 +606,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #0072ff;
+    background: var(--facebook-icon);
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -601,11 +614,11 @@ footer {
 
 .footer-icons li #facebook:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #0072ff;
+    box-shadow: 0 0 15px var(--facebook-icon);
 }
 
 .footer-icons li #facebook:hover {
-    color: #0072ff;
-    box-shadow: 0 0 5px #0072ff;
-    text-shadow: 0 0 5px #0072ff;
+    color: var(--facebook-icon);
+    box-shadow: 0 0 5px var(--facebook-icon);
+    text-shadow: 0 0 5px var(--facebook-icon);
 }
