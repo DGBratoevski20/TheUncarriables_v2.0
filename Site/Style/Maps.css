@@ -5,6 +5,13 @@
     margin-top: 2.5%;
   }
 
+  #chartdiv {
+	width: 90%;
+	height: 90vh;
+	margin-left: 3%;
+	margin-top: 10.5%;
+  }
+
   /* required styles */
 
 .leaflet-pane,
