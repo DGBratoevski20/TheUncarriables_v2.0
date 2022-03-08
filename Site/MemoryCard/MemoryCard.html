@@ -49,77 +49,70 @@
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
 
-                <span><img src = "https://static.wikia.nocookie.net/nonentity/images/a/aa/Gren_Squr.png/revision/latest?cb=20170312023000"></span>
+                <span><img src = "turtle.png"></span>
             </div>
             <div id = "divImg">
                 
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "turtle.png"></span>
             </div>
 
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "fox.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "fox.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "koal.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "koal.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "farm.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "farm.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "bird.png"></span>
             </div>
             <div id = "divImg">
                 <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
-                <span><img src = ""></span>
+                <span><img src = "bird.png"></span>
             </div>
             
         </div>
         <script>
             
-            let randAr = [[1, 1], [2 , 2], [3 , 3], [4 , 4], [5 , 5]];
+           
             var rand;
-            let countre
+            var Massive = [];
+            var MassiveF = [];
+            var t;
+            let countre = 0;
+            var checkIfdoublecard = 0;
+            var spanall = document.querySelectorAll('span');
             let area = document.querySelector('.cardArea');
             let mother = document.querySelectorAll('#divImg');
             
-        let arr = {
-               
-                "1": "https://static.wikia.nocookie.net/nonentity/images/a/aa/Gren_Squr.png/revision/latest?cb=20170312023000",
-                
-                "2": "https://www.apple.com/ac/structured-data/images/open_graph_logo.png?201809270954",
-                
-                "3": "https://argaamplus.s3.amazonaws.com/1e17b919-c657-4e97-abc4-f7cd749c9ff1.jpg",
-                "4": "https://yt3.ggpht.com/ytc/AKedOLRXpOeeNKU9PlIEyWyloxeokUIBuHPIqRy6SklD0A=s900-c-k-c0x00ffffff-no-rj",
-                
-                
-                "5": "https://yt3.ggpht.com/ytc/AKedOLSoDONs0ZJI2OUsZBVFV1gwgHvKNl-AlzwcfY9h1w=s900-c-k-c0x00ffffff-no-rj",
-
-        
-        
-        }
+     
             mother.forEach(function(item)
             {
                 item.addEventListener('click', ()=>
                 {
                    item.style.transform = "rotateY(180deg)"
-                   console.log(arr["1"])
+                   checkIfdoublecard++;
+                   
+                  
                 })
             })
             setInterval(function()
@@ -128,48 +121,54 @@
                 {
                     if(seg.style.transform == "rotateY(180deg)")
                     {
-                        setTimeout(function()
+                        t = setTimeout(function()
                         {
                             let span = seg.querySelector('span')
                             span.style.transition = 'all 200ms'
                             
                             span.style.opacity = 1;
-                            
+                            clearTimeout(t);
 
                         },500)
                         
                     }
                 })
             },1)
-            function l()
+           function l()
             {
+               
+
+                
+                countre = 0
                 mother.forEach(function(seg)
                 {
-                    let span = seg.querySelector('span')
-                    span.style.transition = 'all 200ms'
-                    rand = Math.round(Math.random() * 4 + 1);
-                    
-                    againRand();
-                    
-                    console.log("Out"+ rand + '\n')
-                    span.querySelector('img').src = arr[`${rand}`];
-
-                    
-                    
-                    
-                })
-                console.log(randAr)
-            }
-            function againRand()
-            {
+                        let span = seg.querySelector('span')
+                        var img = span.querySelector('img')
+                        Massive.push(img.src);
+                    }
+                )
+                console.log(Massive);
                 
-                rand = Math.round(Math.random() * 4 + 1);
-                console.log("IN" + rand)
-                for(let i in randAr)
+ 
+                
+                for(var i = 0; i <  Massive.length; i++)
                 {
-                   console.log(i)
+                    rand = Math.floor(Math.random() * Massive.length)
+                    var temp = Massive[rand];
+                    Massive[rand] = Massive[i];
+                    Massive[i] = temp;
                 }
+                
+                for(let i of spanall)
+                {
+                    i.querySelector('img').src = Massive[countre]
+                    countre++;
+                }
+                
+
             }
+            
+            
             
            
                 
