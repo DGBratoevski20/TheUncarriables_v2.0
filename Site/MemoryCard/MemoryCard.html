@@ -168,6 +168,13 @@
                     if(arr[0] == arr[1])
                     {
                         console.log("Match Bro")
+                        setTimeout(function()
+                        {
+                            for(let i of mother)
+                            {
+                                    i.classList.remove('dis')
+                            }
+                        },500)
                     }
                     else{
                         setTimeout(function()
