@@ -191,9 +191,9 @@ input:checked + .slider:before {
 .card-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-  max-width: 1200px;
+  grid-column-gap: 170px;
+  grid-row-gap: 40px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -212,6 +212,7 @@ input:checked + .slider:before {
 .card{
   list-style: none;
   position: relative;
+  width: 140%;
 }
 
 .card:before{

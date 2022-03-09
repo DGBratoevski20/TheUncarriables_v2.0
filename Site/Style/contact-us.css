@@ -21,17 +21,17 @@ body {
     --secondary-color: #CAF0F8;
     --links-hover: #90E0EF;
     --font-color: #dddddd;
-    --bg-image: url("../Images/BG-Images/contact-us-light-mode.png");
+    --bg-image: url("../Images/BG-Images/contact-light.gif");
     --cta-hover-color: #90E0EF;
     --heading-color: #ff9900;
     --text-color: #676767;
-    --form-border-color: #fffada;
+    --form-border-color: #014F86;
     --form-bg-color: #ffffffb3;
     --form-group-border-color: #c9c9c9;
 	--input-textarea-bg-color: #f1f1f1;
     --label-color: #fc6a03;
     --submit-color: #ff9900;
-    --submit-color-hover: #55d228;
+    --submit-color-hover: #014F86;
 }
 
 [data-theme="dark"] {
@@ -39,17 +39,17 @@ body {
     --secondary-color: #6E6AEE;
     --links-hover: #6E6AEE;
     --font-color: #E1E1FF;
-    --bg-image: url("../Images/BG-Images/contact-us-dark-mode.png");
+    --bg-image: url("../Images/BG-Images/contact-dark.gif");
     --cta-hover-color: #6560ff;
     --heading-color: #6E6AEE;
     --text-color: #ffffff;
-    --form-border-color: #4b4b4b;
+    --form-border-color: #6E6AEE;
     --form-bg-color: #131313b3;
     --form-group-border-color: #818181;
     --input-textarea-bg-color: #686868;
     --label-color: #8e8af0;
     --submit-color: #6E6AEE;
-    --submit-color-hover: #6560ff;
+    --submit-color-hover: #412722;
 }
 
 
@@ -60,7 +60,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     background-color: var(--primary-color);
-    font-size: 130%;
+    font-size: 131%;
     width: 100%;
     margin-bottom: 4%;
 }
@@ -70,7 +70,7 @@ header {
 }
 
 #logoInNavbar {
-    width: 20%;
+    width: 25%;
     height: auto;
 }
 
