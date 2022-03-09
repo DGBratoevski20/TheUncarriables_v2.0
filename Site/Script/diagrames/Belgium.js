@@ -46,7 +46,7 @@ am5.ready(function() {
       sequencedInterpolation: true,
       categoryXField: "year",
       tooltip: am5.Tooltip.new(root, {
-        labelText:"{valueY}"
+        labelText:"{valueY} millions"
       })
     }));
     
@@ -62,43 +62,43 @@ am5.ready(function() {
     
     var data = [{
         year: "1900",
-        value: 3990
+        value: 6720
       }, {
         year: "1910",
-        value: 4520
+        value: 7440
       }, {
           year: "1920",
-          value: 5090
+          value: 7570
       }, {
           year: "1930",
-          value: 6000
+          value: 8050
       }, {
           year: "1940",
-          value: 6660
+          value: 8340
       }, {
           year: "1950",
-          value: 7251
+          value: 8637.52
       }, {
           year: "1960",
-          value: 7885
+          value: 9267.36
       }, {
           year: "1970",
-          value: 8507
+          value: 9632.18
       }, {
         year: "1980",
-        value: 8878
+        value: 9869
       }, {
         year: "1990",
-        value: 8841
+        value: 10006.55
       }, {
         year: "2000",
-        value: 7997
+        value: 10282.05
       }, {
         year: "2010",
-        value: 7425
+        value: 10938.74
       }, {
         year: "2020",
-        value: 6948
+        value: 11539.33
       }];
       
       xAxis.data.setAll(data);
