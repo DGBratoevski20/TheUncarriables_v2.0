@@ -45,6 +45,10 @@
                 width: 100%;
                 height: 100%;
             }
+            .dis{
+                pointer-events: none;
+
+            }
             
 
             
@@ -128,25 +132,7 @@
             
             mother.forEach(function(item)
             {
-                function match(arr, arr1)
-                {
-                
-                if(arr[0] == arr[1])
-                {
-                    console.log("Match Bro")
-                }
-                else{
-                    setTimeout(function()
-                    {
-                        
-                        arr1[0].style.cssText = 'transform: rotateY(0)'
-                        arr1[1].style.cssText = "transform: rotateY(0)"
-                        string = "rotateY(180deg)";
-                    }, 1000)
-                }
-            
-                }
-                item.addEventListener('click', ()=>
+                function Click()
                 {
             
                     item.style.transform = string
@@ -155,20 +141,51 @@
                     counter++;
                     otherY[co] = item;
                     co++;
-                   if(checkIfdouble % 2 == 0)
+                   if(checkIfdouble == 2)
                    {
-                    string = "Ebi se w gasa";
+                    
                     counter = 0;
                     
                     match(otherM, otherY);
                     co = 0
+                    checkIfdouble = 0
                     console.log(otherM)
                     console.log(otherY)
+                    for(let i of mother)
+                    {
+
+                        
+                        i.classList.add('dis')
+                    }
                    }
                    
                    
                   
-                })
+                }
+                function match(arr, arr1)
+                {
+                
+                    if(arr[0] == arr[1])
+                    {
+                        console.log("Match Bro")
+                    }
+                    else{
+                        setTimeout(function()
+                        {
+                            
+                            arr1[0].style.cssText = 'transform: rotateY(0)'
+                            arr1[1].style.cssText = "transform: rotateY(0)"
+                            string = "rotateY(180deg)";
+                            for(let i of mother)
+                            {
+                                i.classList.remove('dis')
+                            }
+                        }, 1000)
+                    }
+            
+                }
+                item.addEventListener('click', Click)
+
             })
             
             
