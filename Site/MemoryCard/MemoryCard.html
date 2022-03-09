@@ -18,7 +18,7 @@
                 margin: 1%;
                 position: relative;
                 transition: all 1s;
-             
+                transform-style: preserve-3d;
                 
             }
             img{
@@ -27,17 +27,23 @@
                 
                 z-index: 100;
             }
+            
             span{
                 position:absolute;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
-                opacity: 0;
+                opacity:1;
                 transform: rotateY(180deg);
+                backface-visibility: hidden;
                 
                 
-                
+            }
+            aside{
+                position: absolute;
+                width: 100%;
+                height: 100%;
             }
             
 
@@ -47,46 +53,58 @@
     <body onload="l()">
         <div class = "cardArea">
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
 
                 <span><img src = "turtle.png"></span>
             </div>
             <div id = "divImg">
                 
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                </aside>
                 <span><img src = "turtle.png"></span>
+                
             </div>
 
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
                 <span><img src = "fox.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
                 <span><img src = "fox.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
                 <span><img src = "koal.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
                 <span><img src = "koal.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
                 <span><img src = "farm.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                    </aside>
                 <span><img src = "farm.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+               <aside> <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                </aside>
                 <span><img src = "bird.png"></span>
             </div>
             <div id = "divImg">
-                <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+               <aside> <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
+                </aside>
                 <span><img src = "bird.png"></span>
             </div>
             
@@ -96,44 +114,64 @@
            
             var rand;
             var Massive = [];
-            var MassiveF = [];
-            var t;
             let countre = 0;
-            var checkIfdoublecard = 0;
-            var spanall = document.querySelectorAll('span');
+            let counter =0
+            let co = 0;
+            let otherM = new Array(2);
+            let otherY = new Array(2);
+            var string = "rotateY(180deg)";
+            var checkIfdouble = 0;
+            var SpanAll = document.querySelectorAll('span');
             let area = document.querySelector('.cardArea');
             let mother = document.querySelectorAll('#divImg');
             
-     
+            
             mother.forEach(function(item)
             {
+                function match(arr, arr1)
+                {
+                
+                if(arr[0] == arr[1])
+                {
+                    console.log("Match Bro")
+                }
+                else{
+                    setTimeout(function()
+                    {
+                        
+                        arr1[0].style.cssText = 'transform: rotateY(0)'
+                        arr1[1].style.cssText = "transform: rotateY(0)"
+                        string = "rotateY(180deg)";
+                    }, 1000)
+                }
+            
+                }
                 item.addEventListener('click', ()=>
                 {
-                   item.style.transform = "rotateY(180deg)"
-                   checkIfdoublecard++;
+            
+                    item.style.transform = string
+                    checkIfdouble++;
+                    otherM[counter] = item.querySelector('span').querySelector('img').src;
+                    counter++;
+                    otherY[co] = item;
+                    co++;
+                   if(checkIfdouble % 2 == 0)
+                   {
+                    string = "Ebi se w gasa";
+                    counter = 0;
+                    
+                    match(otherM, otherY);
+                    co = 0
+                    console.log(otherM)
+                    console.log(otherY)
+                   }
+                   
                    
                   
                 })
             })
-            setInterval(function()
-            {
-                mother.forEach(function(seg)
-                {
-                    if(seg.style.transform == "rotateY(180deg)")
-                    {
-                        t = setTimeout(function()
-                        {
-                            let span = seg.querySelector('span')
-                            span.style.transition = 'all 200ms'
-                            
-                            span.style.opacity = 1;
-                            clearTimeout(t);
-
-                        },500)
-                        
-                    }
-                })
-            },1)
+            
+            
            function l()
             {
                
@@ -159,7 +197,7 @@
                     Massive[i] = temp;
                 }
                 
-                for(let i of spanall)
+                for(let i of SpanAll)
                 {
                     i.querySelector('img').src = Massive[countre]
                     countre++;
