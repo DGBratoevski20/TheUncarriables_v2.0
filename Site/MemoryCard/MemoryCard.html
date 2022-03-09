@@ -49,6 +49,10 @@
                 pointer-events: none;
 
             }
+            .disFor{
+                pointer-events: none !important;
+            }
+            
             
 
             
@@ -172,9 +176,20 @@
                         {
                             for(let i of mother)
                             {
-                                    i.classList.remove('dis')
+                                
+                                    
+                                        i.classList.remove('dis')
+                                    
+                                    
+                                        
+                                    
+                                    
                             }
+                            arr1[0].classList.add('disFor')
+                            arr1[1].classList.add('disFor')
                         },500)
+                        
+                        
                     }
                     else{
                         setTimeout(function()
