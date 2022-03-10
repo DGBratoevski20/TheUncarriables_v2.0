@@ -62,43 +62,43 @@ am5.ready(function() {
     
     var data = [{
         year: "1900",
-        value: 3990
+        value: 2150
       }, {
         year: "1910",
-        value: 4520
+        value: 2450
       }, {
           year: "1920",
-          value: 5090
+          value: 1860
       }, {
           year: "1930",
-          value: 6000
+          value: 1880
       }, {
           year: "1940",
-          value: 6660
+          value: 1930
       }, {
           year: "1950",
-          value: 7251
+          value: 1927
       }, {
           year: "1960",
-          value: 7885
+          value: 2130
       }, {
           year: "1970",
-          value: 8507
+          value: 2378
       }, {
         year: "1980",
-        value: 8878
+        value: 2521
       }, {
         year: "1990",
-        value: 8841
+        value: 2664
       }, {
         year: "2000",
-        value: 7997
+        value: 2384
       }, {
         year: "2010",
-        value: 7425
+        value: 2119
       }, {
         year: "2020",
-        value: 6948
+        value: 1886
       }];
       
       xAxis.data.setAll(data);
