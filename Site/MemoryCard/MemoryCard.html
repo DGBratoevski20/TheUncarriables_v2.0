@@ -1,62 +1,6 @@
 <html>
     <head>
-        <style>
-            .cardArea{
-                width: 60vw;
-                height:60vh;
-                background-color: antiquewhite;
-                display: grid;
-                margin: auto;
-                margin-top: 10%;
-                grid-template-columns: repeat(5, 20%);
-                
-               
-                
-            }
-            #divImg
-            {
-                margin: 1%;
-                position: relative;
-                transition: all 1s;
-                transform-style: preserve-3d;
-                
-            }
-            img{
-                height: 100%;
-                width:100%;
-                
-                z-index: 100;
-            }
-            
-            span{
-                position:absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                opacity:1;
-                transform: rotateY(180deg);
-                backface-visibility: hidden;
-                
-                
-            }
-            aside{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-            .dis{
-                pointer-events: none;
-
-            }
-            .disFor{
-                pointer-events: none !important;
-            }
-            
-            
-
-            
-        </style>
+        <link href = "MemoryCardStyle.css" rel = "stylesheet">
     </head>
     <body onload="l()">
         <div class = "cardArea">
@@ -64,192 +8,59 @@
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
 
-                <span><img src = "turtle.png"></span>
+                <span><img src = "images/turtle.png"></span>
             </div>
             <div id = "divImg">
                 
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                 </aside>
-                <span><img src = "turtle.png"></span>
+                <span><img src = "images/turtle.png"></span>
                 
             </div>
 
             <div id = "divImg">
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
-                <span><img src = "fox.png"></span>
+                <span><img src = "images/fox.png"></span>
             </div>
             <div id = "divImg">
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
-                <span><img src = "fox.png"></span>
+                <span><img src = "images/fox.png"></span>
             </div>
             <div id = "divImg">
 
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
-                <span><img src = "koal.png"></span>
+                <span><img src = "images/koal.png"></span>
             </div>
             <div id = "divImg">
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
-                <span><img src = "koal.png"></span>
+                <span><img src = "images/koal.png"></span>
             </div>
             <div id = "divImg">
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
-                <span><img src = "farm.png"></span>
+                <span><img src = "images/farm.png"></span>
             </div>
             <div id = "divImg">
                 <aside><img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                     </aside>
-                <span><img src = "farm.png"></span>
+                <span><img src = "images/farm.png"></span>
             </div>
             <div id = "divImg">
                <aside> <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                 </aside>
-                <span><img src = "bird.png"></span>
+                <span><img src = "images/bird.png"></span>
             </div>
             <div id = "divImg">
                <aside> <img src = "https://png.pngtree.com/png-vector/20200328/ourlarge/pngtree-banana-icon-design-illustration-png-image_2166298.jpg">
                 </aside>
-                <span><img src = "bird.png"></span>
+                <span><img src = "images/bird.png"></span>
             </div>
             
         </div>
-        <script>
-            
-           
-            var rand;
-            var Massive = [];
-            let countre = 0;
-            let counter =0
-            let co = 0;
-            let otherM = new Array(2);
-            let otherY = new Array(2);
-            var string = "rotateY(180deg)";
-            var checkIfdouble = 0;
-            var SpanAll = document.querySelectorAll('span');
-            let area = document.querySelector('.cardArea');
-            let mother = document.querySelectorAll('#divImg');
-            
-            
-            mother.forEach(function(item)
-            {
-                function Click()
-                {
-            
-                    item.style.transform = string
-                    checkIfdouble++;
-                    otherM[counter] = item.querySelector('span').querySelector('img').src;
-                    counter++;
-                    otherY[co] = item;
-                    co++;
-                   if(checkIfdouble == 2)
-                   {
-                    
-                    counter = 0;
-                    
-                    match(otherM, otherY);
-                    co = 0
-                    checkIfdouble = 0
-                    console.log(otherM)
-                    console.log(otherY)
-                    for(let i of mother)
-                    {
-
-                        
-                        i.classList.add('dis')
-                    }
-                   }
-                   
-                   
-                  
-                }
-                function match(arr, arr1)
-                {
-                
-                    if(arr[0] == arr[1])
-                    {
-                        console.log("Match Bro")
-                        setTimeout(function()
-                        {
-                            for(let i of mother)
-                            {
-                                
-                                    
-                                        i.classList.remove('dis')
-                                    
-                                    
-                                        
-                                    
-                                    
-                            }
-                            arr1[0].classList.add('disFor')
-                            arr1[1].classList.add('disFor')
-                        },500)
-                        
-                        
-                    }
-                    else{
-                        setTimeout(function()
-                        {
-                            
-                            arr1[0].style.cssText = 'transform: rotateY(0)'
-                            arr1[1].style.cssText = "transform: rotateY(0)"
-                            string = "rotateY(180deg)";
-                            for(let i of mother)
-                            {
-                                i.classList.remove('dis')
-                            }
-                        }, 1000)
-                    }
-            
-                }
-                item.addEventListener('click', Click)
-
-            })
-            
-            
-           function l()
-            {
-               
-
-                
-                countre = 0
-                mother.forEach(function(seg)
-                {
-                        let span = seg.querySelector('span')
-                        var img = span.querySelector('img')
-                        Massive.push(img.src);
-                    }
-                )
-                console.log(Massive);
-                
- 
-                
-                for(var i = 0; i <  Massive.length; i++)
-                {
-                    rand = Math.floor(Math.random() * Massive.length)
-                    var temp = Massive[rand];
-                    Massive[rand] = Massive[i];
-                    Massive[i] = temp;
-                }
-                
-                for(let i of SpanAll)
-                {
-                    i.querySelector('img').src = Massive[countre]
-                    countre++;
-                }
-                
-
-            }
-            
-            
-            
-           
-                
-      
-            </script>
+        <script src = "MemoryCardJS.js"></script>
     </body>
 </html>
