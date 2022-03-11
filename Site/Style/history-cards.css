@@ -191,9 +191,9 @@ input:checked + .slider:before {
 .card-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 170px;
-  grid-row-gap: 40px;
-  max-width: 1400px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -212,7 +212,7 @@ input:checked + .slider:before {
 .card{
   list-style: none;
   position: relative;
-  width: 140%;
+  width: 100%;
 }
 
 .card:before{
@@ -222,7 +222,7 @@ input:checked + .slider:before {
   width: 100%;
 }
 
-.card__background{
+.card-background{
   background-size: cover;
   background-position: center;
   border-radius: 24px;
@@ -239,29 +239,29 @@ input:checked + .slider:before {
     transform 200ms linear;
 }
 
-.card:hover .card__background{
+.card:hover .card-background{
   transform: scale(1.05) translateZ(0);
 }
 
-.card-grid:hover > .card:not(:hover) .card__background{
+.card-grid:hover > .card:not(:hover) .card-background{
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(3px);
 }
 
-.card__content{
+.card-content{
   left: 0;
   padding: 24px;
   position: absolute;
   top: 0;
 }
 
-.card__category{
+.card-category{
   color: rgba(255,255,255,0.6);
   font-size: 0.9rem;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
 
-.card__heading{
+.card-heading{
   color: white;
   font-size: 1.3rem;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
