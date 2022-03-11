@@ -46,7 +46,7 @@ am5.ready(function() {
       sequencedInterpolation: true,
       categoryXField: "year",
       tooltip: am5.Tooltip.new(root, {
-        labelText:"{valueY} millions"
+        labelText:"{valueY} thousands"
       })
     }));
     
