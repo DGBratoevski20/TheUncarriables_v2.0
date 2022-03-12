@@ -18,8 +18,8 @@ body{
     margin: 6%;
     background: linear-gradient(284deg, #121212 10%, purple 90%);
     position: relative;
-	overflow: hidden;
-
+    overflow: hidden;
+	
 }
 .area{
     width: 70vw;
@@ -27,7 +27,7 @@ body{
     overflow: hidden;
     position: relative;
     margin: auto;
-    margin-top: 7%;
+    margin-top: 5%;
     box-shadow: 100px, 100px, 100px,black;
     display: flex;
     transition: all 2s;
@@ -316,7 +316,7 @@ button{
     }
     
     .info{
-        margin-top: 80%;
+        margin-top: 50%;
         display: grid;
         grid-template-rows: repeat(6, 60%);
         row-gap: 1cm;
@@ -362,7 +362,7 @@ button{
 @media only screen and (max-width:500px)
 {
     .area{
-        margin-top: 50%;
+        margin-top: 34%;
     }
     h4{
         left:70%;
@@ -377,6 +377,10 @@ button{
     .health{
         top:90px;
     }
+    article{
+        height: 500px;
+    }
+    
 }
 @media only screen and (max-height:820px)
 {

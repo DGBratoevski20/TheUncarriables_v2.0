@@ -195,7 +195,7 @@ window.addEventListener("keydown", function(mouseEvent)
                     
                      helperOnLeftComp = 15;
                     }
-                    console.log(left)
+                    
            
             document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
                     
@@ -214,7 +214,7 @@ window.addEventListener("keydown", function(mouseEvent)
             else{
                 helperOnLeftComp = 15;
             }
-            console.log(left)
+            
             
             document.querySelector('#hero').style.transform = 'rotateY(0deg)';
             
@@ -347,7 +347,7 @@ window.addEventListener('touchstart',function(TouchEvent)
         document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
         left-=helperOnLeftMob;
-        console.log('45')
+      
         
     }
     else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + ButtonRight.width &&
@@ -369,7 +369,7 @@ window.addEventListener('touchstart',function(TouchEvent)
         document.querySelector('#hero').style.transform = 'rotateY(0deg)';
         document.querySelector('#hero').style.transition = 'all 400ms'
         left+=helperOnLeftMob;
-        console.log('44')
+        
     }
     else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + buttonStartGame.height && XOftouching >= Math.round(buttonStartGame.left) && XOftouching <= Math.round(buttonStartGame.left) + buttonStartGame.width)
     {
@@ -390,9 +390,16 @@ FirstvarForInterval = setInterval(function()
         
         document.querySelector('.area').style.display = "none";
         document.querySelector('.btns').style.opacity = "0";
+        document.querySelector('body').style.overflow = "auto";
         
         var contentOfH1 = document.querySelector('h1').innerText
-        document.querySelector('h1').innerText = `Game Over! You reached th ${contentOfH1} with ${counterForMetres} metres.`
+        
+        if(document.body.clientWidth < 860 && document.body.clientWidth > 400)
+        {
+            document.querySelector('h1').style.fontSize = "0.8rem"
+            document.querySelector('h1').style.width = '100px'; 
+        }
+        document.querySelector('h1').innerText = `Game Over! You reached the ${contentOfH1} with ${counterForMetres} metres.`
         switch(contentOfH1)
         {
             case "Troposphere":
