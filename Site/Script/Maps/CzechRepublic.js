@@ -16,6 +16,38 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+//monuments
+L.marker([50.09129619422601, 14.401595040864906],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Prague Castle</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.openPopup();
+
+L.marker([48.84581740699147, 14.37374551022646],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Ceský Krumlov Castle</b><hr><i>One of the most popular tourist destiantions in Austria.</i>")
+.openPopup();
+
+L.marker([49.19136195208444, 16.60766116172839],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Cathedral of St. Peter and Paul</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.openPopup();
+
+L.marker([50.22555749045453, 12.882115443540892],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Mill Colonnade</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.openPopup();
+
+L.marker([50.086760451190536, 14.389165667851483],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Strahov Monastery</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.openPopup();
+
+L.marker([49.98379824361703, 15.265126097000048],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Kutná Hora</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.openPopup();
+
+L.marker([50.586797492487506, 15.157591777110193],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>The Bohemian Paradise</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.openPopup();
+
+
+//cities
 L.marker([49.82526,18.25952],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Ostrava.</b><hr><i> One of the biggest cities in Czech Republic.</i>')
 .openPopup();

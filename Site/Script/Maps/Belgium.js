@@ -16,6 +16,38 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+//monuments
+L.marker([50.84709578238636, 4.352481425544326],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Grand-Place de Bruxelles</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>')
+.openPopup();
+
+L.marker([51.22610210683549, 3.281152709019281],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Belfry of Bruges</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>")
+.openPopup();
+
+L.marker([51.05768427970214, 3.721069292465888],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Gravensteen</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>')
+.openPopup();
+
+L.marker([51.053216768706605, 3.727584811505701],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Saint Bavo's Cathedral</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>")
+.openPopup();
+
+L.marker([51.20835608984874, 3.2271026980168456],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Basilica of the Holy Blood</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>')
+.openPopup();
+
+L.marker([50.88541882987309, 4.712136557500243],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Saint Peter's Church of Leuven</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>")
+.openPopup();
+
+L.marker([50.722472689331646, 4.378496844247709],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Waterloo</b><hr><i>One of the most popular tourist destiantions in Belgium.</i>')
+.openPopup();
+
+
+//cities
 L.marker([51.05966, 3.72912],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Ghent.</b><hr><i> One of the biggest cities in Belgium.</i>')
 .openPopup();
