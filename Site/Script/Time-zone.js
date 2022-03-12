@@ -32,7 +32,7 @@ am5.ready(function() {
   });
   
   areaPolygonTemplate.states.create("hover", { fillOpacity: 0.8 });
-
+  
   var zoneSeries = chart.series.push(
     am5map.MapPolygonSeries.new(root, {
       geoJSON: am5geodata_worldTimeZonesLow
@@ -47,7 +47,7 @@ am5.ready(function() {
   var zonePolygonTemplate = zoneSeries.mapPolygons.template;
   zonePolygonTemplate.setAll({ interactive: true, tooltipText: "{id}" });
   zonePolygonTemplate.states.create("hover", { fillOpacity: 0.3 });
-
+  
   var labelSeries = chart.series.push(am5map.MapPointSeries.new(root, {}));
   labelSeries.bullets.push(() => {
     return am5.Bullet.new(root, {
@@ -60,7 +60,7 @@ am5.ready(function() {
       })
     });
   });
-
+  
   zoneSeries.events.on("datavalidated", () => {
     am5.array.each(zoneSeries.dataItems, (dataItem) => {
       var centroid = dataItem.get("mapPolygon").visualCentroid();
@@ -75,6 +75,7 @@ am5.ready(function() {
   });
   
   chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+  
 
   var cont = chart.children.push(
     am5.Container.new(root, {
