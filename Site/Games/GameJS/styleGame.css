@@ -49,7 +49,7 @@ body{
     transform: rotateY(-180deg);
     top:79%;
     margin: 0%;
-    transition: all 400ms;
+    transition: all 100ms;
     z-index: 100;
     margin-bottom: 10%;
 }
@@ -284,8 +284,13 @@ h4{
     display: grid;
     margin-top: -40px;
     margin-left: -80%;
+    font-size: 2rem;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50%;
+}
+.line >#Right, .line > #Left
+{
+    font-size: 20px;
 }
 button{
     display: block;
@@ -297,6 +302,7 @@ button{
 #Start
 {
     margin-left: 2%;
+    font-size: 20px;
 	border: 5px solid #ceff00;
 }
 

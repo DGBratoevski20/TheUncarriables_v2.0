@@ -10,9 +10,11 @@ var health = 700;
 var ButtonLeft;
 var ButtonRight;
 var buttonStartGame; 
-var helperOnLeftComp = 15;
-var helperOnLeftMob = 15;
-var eighty = 80;
+var helperOnLeftComp = 1;
+var helperOnLeftMob = 0;
+var eighty = 93;
+let boolRight = 0;
+let boolLeft = 0;
 document.querySelector('.score').innerText = '0'
 function UP()
 {
@@ -177,48 +179,72 @@ function UP()
             document.querySelector('#cloud').style.animation = "clouds 4s infinite"
             document.querySelector('#cloud2').style.animation = "clouds 3s infinite"
 }
+// Interval for Left-Right Hero
+
 window.addEventListener("keydown", function(mouseEvent)
 {
     switch(mouseEvent.key)
     {
         case 'ArrowLeft':
         {   
-                    if(left < 10)
+                    
+            
+      
+            
+                document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
+                let ebalsumgo = setInterval(function()
+                {
+                    if(left < 1)
                     {
-                        
-                        helperOnLeftComp = 0
-                    
-                        
+                    helperOnLeftComp = 0
+                
                     }
-                    else 
+                    else
                     {
-                    
-                     helperOnLeftComp = 15;
+                        helperOnLeftComp = 1;
                     }
-                    
-           
-            document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
-                    
-                left-=helperOnLeftComp;
+                    left-=helperOnLeftComp;
+                    document.querySelector('#hero').style.left = left + "%"
+                    boolLeft++;
+                    if(boolLeft > 10)
+                    {
+                        boolLeft = 0
+                        clearInterval(ebalsumgo)
+                    }
+                },1)   
+                
                 
 
                 break;
         }
         case 'ArrowRight':
         {
-            if(left > eighty)
-            {
             
-                helperOnLeftComp = 0;
-            }
-            else{
-                helperOnLeftComp = 15;
-            }
+            
             
             
             document.querySelector('#hero').style.transform = 'rotateY(0deg)';
             
-                left+=helperOnLeftComp
+            let ebalsumgo2 = setInterval(function()
+                {
+                    if(left > eighty)
+                    {
+                        helperOnLeftComp = 0
+                
+                    }
+                    else
+                    {
+                        helperOnLeftComp = 1;
+                    }
+                    left+=helperOnLeftComp;
+                    document.querySelector('#hero').style.left = left + "%"
+                    boolLeft++;
+                    if(boolLeft > 15)
+                    {
+                        boolLeft = 0
+                        clearInterval(ebalsumgo2)
+                    }
+                },1)
                 break;
         }
         case 'ArrowUp':
@@ -331,44 +357,59 @@ window.addEventListener('touchstart',function(TouchEvent)
     if(XOftouching >= Math.round(ButtonLeft.left) && XOftouching <= Math.round(ButtonLeft.left) + ButtonLeft.width &&
     YOftouching >= Math.round(ButtonLeft.top) && YOftouching <= Math.round(ButtonLeft.top) + ButtonLeft.height)
     {
-        if(left < 10)
-        {
-            
-            helperOnLeftMob = 0
         
-            
-        }
-        else 
-        {
         
-            helperOnLeftMob = 15;
-        }
-        document.querySelector('#hero').style.transition = 'none'
         document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
-        document.querySelector('#hero').style.transition = 'all 400ms'
-        left-=helperOnLeftMob;
+        let ebalsumgo = setInterval(function()
+                {
+                    if(left < 1)
+                    {
+                    helperOnLeftComp = 0
+                
+                    }
+                    else
+                    {
+                        helperOnLeftComp = 1;
+                    }
+                    left-=helperOnLeftComp;
+                    document.querySelector('#hero').style.left = left + "%"
+                    boolLeft++;
+                    if(boolLeft > 10)
+                    {
+                        boolLeft = 0
+                        clearInterval(ebalsumgo)
+                    }
+                },1) 
+        
       
         
     }
     else if(XOftouching >= Math.round(ButtonRight.left) && XOftouching <= Math.round(ButtonRight.left) + ButtonRight.width &&
     YOftouching >= Math.round(ButtonRight.top) && YOftouching <= Math.round(ButtonRight.top) + ButtonRight.height)
     {
-        if(left > 80)
-        {
-            
-            helperOnLeftMob = 0
-        
-            
-        }
-        else 
-        {
-        
-            helperOnLeftMob = 15;
-        }
-        document.querySelector('#hero').style.transition = 'none'
+       
         document.querySelector('#hero').style.transform = 'rotateY(0deg)';
-        document.querySelector('#hero').style.transition = 'all 400ms'
-        left+=helperOnLeftMob;
+        let ebalsumgo = setInterval(function()
+                {
+                    if(left > 90)
+                    {
+                    helperOnLeftComp = 0
+                
+                    }
+                    else
+                    {
+                        helperOnLeftComp = 1;
+                    }
+                    left+=helperOnLeftComp;
+                    document.querySelector('#hero').style.left = left + "%"
+                    boolLeft++;
+                    if(boolLeft > 10)
+                    {
+                        boolLeft = 0
+                        clearInterval(ebalsumgo)
+                    }
+                },1) 
+        
         
     }
     else if(YOftouching >= Math.round(buttonStartGame.top) && YOftouching <= Math.round(buttonStartGame.top) + buttonStartGame.height && XOftouching >= Math.round(buttonStartGame.left) && XOftouching <= Math.round(buttonStartGame.left) + buttonStartGame.width)
@@ -457,15 +498,19 @@ FirstvarForInterval = setInterval(function()
     }
     if(document.body.clientWidth < 1100)
     {
-        eighty = 76;
+        eighty = 90;
     }
     if(document.body.clientWidth < 600)
     {
         eighty = 70;
     }
+    if(document.body.clientWidth > 1100)
+    {
+        eighty = 91;
+    }
     document.querySelector('.health').innerText = `${health}`
     
-    document.querySelector('#hero').style.left = left + "%"
+    
 }, 1);
 
 
