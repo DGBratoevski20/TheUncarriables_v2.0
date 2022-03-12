@@ -12,7 +12,7 @@ let CitiesMarkerIcon = L.icon ({
 });
 
 let TouristDestinationsMarkerIcon = L.icon ({
-    iconUrl: '../Images/castle.png',
+    iconUrl: '../Images/monument.png',
     iconSize: [35,35],
     iconAnchor: [17.5,35],
 });
