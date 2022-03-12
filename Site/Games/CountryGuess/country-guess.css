@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color: #121212;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color: #c9c9c9;
+  background: linear-gradient(135deg, #000000 10%, #616161 90%);
+  font-family: 'Poppins', sans-serif;
+  width: 30%;
+  font-size: 30px;
+  display: inline-block;
+  border-radius: 200px;
+}
+
+section {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+  align-items: flex-start;
+}
+
+#container {
+	display: grid;
+  height: 100%;
+	grid-template-columns: 500px 500px 500px;
+	grid-template-rows: 300px 300px 300px 300px 300px 300px;
+	border: 10px solid #616161;
+  border-radius: 5px;
+  justify-items: center;
+}
+
+#container div {
+	border: 5px solid #616161;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) { 
+        #container {
+                grid-template-columns: 130px 130px;
+                grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+        }
+        h1{
+          width: 60%;
+          font-size: 25px;
+        }
+        
+}
+
+#Germany{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png");
+  background-size: cover;
+}
+
+#France{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png");
+  background-size: cover;
+}
+
+#Afghanistan{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a8/Afghanistan_Flag.jpg");
+  background-size: 105% 100%;
+}
+
+#Gabon{
+  background-image: url("https://cdn.britannica.com/85/7185-004-EBE5DBE5/Flag-Gabon.jpg");
+  background-size: 100% 100%;
+}
+
+#Portugal{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png");
+  background-size: cover;
+}
+
+#Bulgaria{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/1200px-Flag_of_Bulgaria.svg.png");
+  background-size: cover;
+}
+
+#Turkey{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/2560px-Flag_of_Turkey.svg.png");
+  background-size: cover;
+}
+
+#Malta{
+  background-image: url("https://www.prntr.com/images/malta-flag-1.jpg");
+  background-size: cover;
+}
+
+#Italy{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png");
+  background-size: cover;
+}
+
+#Oman{
+  background-image: url("https://cdn.britannica.com/73/5773-004-F7C13E3D/Flag-Oman.jpg");
+  background-size: cover;
+}
+
+#Honduras{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/1200px-Flag_of_Honduras.svg.png");
+  background-size: 100% 100%;
+}
+
+#Costa-Rica{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Costa_Rica_%28state%29.svg/1280px-Flag_of_Costa_Rica_%28state%29.svg.png");
+  background-size: cover;
+}
+
+#Spain{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png");
+  background-size: cover;
+}
+
+#Qatar{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Qatar_%283-2%29.svg/2560px-Flag_of_Qatar_%283-2%29.svg.png");
+  background-size: cover;
+}
+
+#Iran{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/2560px-Flag_of_Iran.svg.png");
+  background-size: cover;
+}
+
+#North-Korea{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/1024px-Flag_of_North_Korea.svg.png");
+  background-size: cover;
+}
+
+#China{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1280px-Flag_of_the_People%27s_Republic_of_China.svg.png");
+  background-size: cover;
+}
+
+#Angola{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/2560px-Flag_of_Angola.svg.png");
+  background-size: cover;
+}
+
+.country{
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  transform-origin: center;
+  transform: scale(0.9);
+  transition: 0.7s;
+}
+
+.country:hover
+{
+  transform: scale(1.05);
+  z-index: 999;
+}
+
+div:hover > .country:not(:hover){
+  filter: brightness(0.6) saturate(0) contrast(1.2) blur(3px);
+}
