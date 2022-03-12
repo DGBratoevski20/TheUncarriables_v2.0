@@ -1,10 +1,58 @@
+
+.timer{
+    position: absolute;
+    top:4%;
+    left:4%;
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    background-color: whitesmoke;
+    border: solid;
+    height: 15%;
+    margin-bottom:20px;
+    
+   
+    
+}
+i{
+    font-size: 2.5rem;
+}
+.gameOverScreen{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+    z-index: 100;
+   
+}
+.timer > p{
+    margin-right: 20px;
+}
+article{
+    opacity: 1 !important;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    background-color: blanchedalmond;
+}
+article > aside{
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+body{
+    background-color: aqua;
+    margin: 0;
+}
 .cardArea{
     width: 60vw;
     height:60vh;
     background-color: antiquewhite;
     display: grid;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     grid-template-columns: repeat(5, 20%);
     
    

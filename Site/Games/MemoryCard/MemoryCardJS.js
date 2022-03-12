@@ -11,8 +11,13 @@
             var checkIfdouble = 0;
             var SpanAll = document.querySelectorAll('span');
             let area = document.querySelector('.cardArea');
+            let timer = document.querySelector('.timer');
             let mother = document.querySelectorAll('#divImg');
-            
+            let seconds = 0, minute = 0, hours = 0;
+            let findGameOver = 0;
+            let intervalForTimer;
+            let intervalForGameOver;
+            timer.querySelector('p').innerText = `Hours:${hours} Min:${minute} Sec:${seconds}`
             
             mother.forEach(function(item)
             {
@@ -97,7 +102,21 @@
            function l()
             {
                
-
+                intervalForTimer = setInterval(function()
+                {
+                    seconds++;
+                    if(seconds % 60 == 0)
+                    {
+                        minute++;
+                        
+                    }
+                    else if (minute % 60 == 0 && minute > 0)
+                    {
+                        hours++;
+                        
+                    }                  
+                   timer.querySelector('p').innerText = `Hours:${hours} Min:${minute} Sec:${seconds}`
+                }, 1000)
                 
                 countre = 0
                 mother.forEach(function(seg)
@@ -124,7 +143,31 @@
                     i.querySelector('img').src = Massive[countre]
                     countre++;
                 }
-                
+                intervalForGameOver = setInterval(function()
+                {
+                    for(let i of mother)
+                    {
+                        
+                        if(i.classList.contains('disFor'))
+                        {
+                            findGameOver++;
+                        }
+                    }
+                    if(findGameOver == mother.length)
+                    {   
+                        
+                        document.querySelector('.gameOverScreen').style.display = 'block';
+                        area.remove();
+                        timer.remove();
+                        clearInterval(intervalForTimer);
+                        clearInterval(intervalForGameOver);
+                        document.querySelector('.gameOverScreen').querySelector('article').querySelector('p').innerText += timer.querySelector('p').innerText;
+
+                    }
+                    else{
+                        findGameOver = 0;
+                    }
+                },100)
 
             }
             
