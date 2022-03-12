@@ -107,14 +107,14 @@ header {
 }
 
 #logoInNavbar {
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
 .nav-links  {
   list-style: none;
   display: flex;
-  font-size: 80%;
+  font-size: 100%;
 }
 
 .nav-links a {
@@ -146,7 +146,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-size: 80%;
+  font-size: 100%;
 }
 
 .cta:hover {
