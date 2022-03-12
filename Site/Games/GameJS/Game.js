@@ -390,10 +390,9 @@ FirstvarForInterval = setInterval(function()
         
         document.querySelector('.area').style.display = "none";
         document.querySelector('.btns').style.opacity = "0";
-        document.querySelector('h1').style.transform = "translateY(100%)"
         
         var contentOfH1 = document.querySelector('h1').innerText
-        document.querySelector('h1').innerText = `GameOver! You reaches ${contentOfH1} with metres ${counterForMetres}`
+        document.querySelector('h1').innerText = `Game Over! You reached th ${contentOfH1} with ${counterForMetres} metres.`
         switch(contentOfH1)
         {
             case "Troposphere":
