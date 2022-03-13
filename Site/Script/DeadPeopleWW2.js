@@ -15,7 +15,7 @@ am5.ready(function() {
   var series = chart.series.push(
     am5percent.PieSeries.new(root, {
       valueField: "value",
-      categoryField: "category",
+      categoryField: "country",
       endAngle: 270
     })
   );
@@ -25,26 +25,35 @@ am5.ready(function() {
   });
   
   series.data.setAll([{
-    category: "Lithuania",
-    value: 501.9
+    country: "British Commonwealth",
+    value: 0.466
   }, {
-    category: "Czechia",
-    value: 301.9
+    country: "United Kingdom",
+    value: 0.357
   }, {
-    category: "Ireland",
-    value: 201.1
+    country: "Hungary",
+    value: 0.490
   }, {
-    category: "Germany",
-    value: 165.8
+    country: "Romania",
+    value: 0.500
   }, {
-    category: "Australia",
-    value: 139.9
+    country: "France",
+    value: 0.563
   }, {
-    category: "Austria",
-    value: 128.3
+    country: "Poland",
+    value: 5.800
   }, {
-    category: "UK",
-    value: 99
+    country: "U.S.S.R",
+    value: 18.000
+  }, {
+    country: "Yugoslavia",
+    value: 1.505
+  }, {
+	country: "Germany",
+	value: 4.200
+  }, {
+    country: "Japan",
+    value: 1.972
   }]);
   
   series.appear(1000, 100);
