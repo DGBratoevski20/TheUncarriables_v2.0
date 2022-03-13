@@ -381,7 +381,7 @@ var polygon2 = [
           ]
     ]
 ]
-//poygons
+//polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
 .bindPopup('<b>Nature preserve "Srebarna".</b><hr><i> One of the nature preserves in Bulgaria.</i>')
 .openPopup();
@@ -396,6 +396,31 @@ var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
 
 var polygon = L.polygon(polygon4, {color: 'red'}).addTo(map)
 .bindPopup('<b>Nature preserve "Leshnica".</b><hr><i> One of the nature preserves in Bulgaria.</i>')
+.openPopup();
+
+//monuments
+L.marker([42.13331272396505, 23.549941201410448],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Rila.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
+.openPopup();
+
+L.marker([41.52435646089968, 23.39132024911288],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Melnik.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
+.openPopup();
+
+L.marker([43.083809981708264, 25.65247580232216],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Tsarevets.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
+.openPopup();
+
+L.marker([43.3610206224683, 28.46580744769052],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Cape Kaliakra.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
+.openPopup();
+
+L.marker([42.712749643027895, 24.8944921659984726],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Central Balkan National Park.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
+.openPopup();
+
+L.marker([44.0965768614296, 27.063071411637523],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Srebarna.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
 .openPopup();
 
 //cities
@@ -427,30 +452,7 @@ L.marker([43.409, 24.617999],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Pleven.</b><hr><i>  One of the biggest cities in Bulgaria.</i>')
 .openPopup();
 
-//destinations
-L.marker([42.13331272396505, 23.549941201410448],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Rila.</b><hr><i>One of the most popular tourist destiantions in Bulgaria.</i>')
-.openPopup();
 
-L.marker([41.52435646089968, 23.39132024911288],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Melnik.</b><hr><i>One of the most popular tourist destiantions in Bulgaria.</i>')
-.openPopup();
-
-L.marker([43.083809981708264, 25.65247580232216],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Tsarevets.</b><hr><i>One of the most popular tourist destiantions in Bulgaria.</i>')
-.openPopup();
-
-L.marker([43.3610206224683, 28.46580744769052],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Cape Kaliakra.</b><hr><i>One of the most popular tourist destiantions in Bulgaria.</i>')
-.openPopup();
-
-L.marker([42.712749643027895, 24.8944921659984726],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Central Balkan National Park.</b><hr><i>One of the most popular tourist destiantions in Bulgaria.</i>')
-.openPopup();
-
-L.marker([44.0965768614296, 27.063071411637523],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Srebarna.</b><hr><i>One of the most popular tourist destiantions in Bulgaria.</i>')
-.openPopup();
 
 L.marker([42.698, 23.32222222],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Sofia.</b><hr><i> The capital city of Bulgaria.</i>')

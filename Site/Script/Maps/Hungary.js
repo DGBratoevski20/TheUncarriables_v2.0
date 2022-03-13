@@ -16,6 +16,36 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//monuments
+L.marker([47.79894666403113, 18.736386911702017],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Esztergom Basilica</b><hr><i>One of the most popular tourist destinations in Hungary.</i>")
+.openPopup();
+
+L.marker([47.4963917084481, 19.039867670075118],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Buda Castle</b><hr><i>One of the most popular tourist destinations in Hungary.</i>")
+.openPopup();
+
+L.marker([46.9148279159877, 17.8867929848323],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Tihany</b><hr><i>One of the most popular tourist destinations in Hungary.</i>')
+.openPopup();
+
+L.marker([47.6812249955421, 16.584335084791793],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Sopron</b><hr><i>One of the most popular tourist destinations in Hungary.</i>')
+.openPopup();
+
+L.marker([47.90412864104972, 20.379536447722977],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Eger Castle</b><hr><i>One of the most popular tourist destinations in Hungary.</i>')
+.openPopup();
+
+L.marker([47.79146275616612, 18.974137602542605],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Visegrád Royal Palace</b><hr><i>One of the most popular tourist destinations in Hungary.</i>')
+.openPopup();
+
+L.marker([47.692191234658495, 19.045383265448866],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Szentendre Skanzen Village Museum</b><hr><i>One of the most popular tourist destinations in Hungary.</i>')
+.openPopup();
+
+// cities
 L.marker([47.10603,17.90582],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Veszprém.</b><hr><i> One of the biggest cities in Hungary.</i>')
 .openPopup();

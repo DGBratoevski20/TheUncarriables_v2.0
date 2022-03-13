@@ -19,31 +19,31 @@ let TouristDestinationsMarkerIcon = L.icon ({
 
 //monuments
 L.marker([48.18590830273777, 16.312726798011717],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Schönbrunn Palace</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.bindPopup('<b>Schönbrunn Palace</b><hr><i>One of the most popular tourist destinations in Austria.</i>')
 .openPopup();
 
 L.marker([47.57502065180503, 14.463938790519144],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup("<b>Admont Abbey Library</b><hr><i>One of the most popular tourist destiantions in Austria.</i>")
+.bindPopup("<b>Admont Abbey Library</b><hr><i>One of the most popular tourist destinations in Austria.</i>")
 .openPopup();
 
 L.marker([48.205822236398724, 16.365123621220913],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>The Hofburg</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.bindPopup('<b>The Hofburg</b><hr><i>One of the most popular tourist destinations in Austria.</i>')
 .openPopup();
 
 L.marker([48.22972291760557, 15.333901765399311],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Melk Abbey</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.bindPopup('<b>Melk Abbey</b><hr><i>One of the most popular tourist destinations in Austria.</i>')
 .openPopup();
 
 L.marker([48.20768733249617, 16.39507730347872],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Hundertwasser House</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.bindPopup('<b>Hundertwasser House</b><hr><i>One of the most popular tourist destinations in Austria.</i>')
 .openPopup();
 
 L.marker([47.79560640939358, 13.01559186693563],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Hangar-7</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.bindPopup('<b>Hangar-7</b><hr><i>One of the most popular tourist destinations in Austria.</i>')
 .openPopup();
 
 L.marker([46.56257167074994, 13.27861449471774],{icon:TouristDestinationsMarkerIcon}).addTo(map)
-.bindPopup('<b>Nassfeld-Pressegger</b><hr><i>One of the most popular tourist destiantions in Austria.</i>')
+.bindPopup('<b>Nassfeld-Pressegger</b><hr><i>One of the most popular tourist destinations in Austria.</i>')
 .openPopup();
 
 
