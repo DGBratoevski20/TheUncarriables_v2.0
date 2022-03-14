@@ -39,16 +39,17 @@ body{
     
 }
 #hero{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     border-radius: 100%;
     position: absolute;
     left: 46%;
     padding: 0%;
-    transform: rotateY(-180deg);
+ 
     top:79%;
     margin: 0%;
+    border: solid;
     transition: all 100ms;
     z-index: 100;
     margin-bottom: 10%;
@@ -73,6 +74,9 @@ h1{
     margin: 0%;
     border-radius: 100%;
     background-color: transparent;
+}
+#hero > img{
+    transform: scale(1.8, 1.8)
 }
 #cloud2{
     position: absolute;
@@ -329,6 +333,7 @@ button{
         
     }
     
+    
 }
 @media only screen and (max-width:900px)
 {
@@ -358,11 +363,23 @@ button{
      h3{
         top:-10mm;
     }
+    .btns{
+        opacity: 0;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    #hero{
+        width: 30px;
+        height:30px;
+    }
 }
 @media only screen and (max-width:900px)
 {
-    .btns{
-        opacity: 0;
+   
+    #hero{
+        width: 40px;
+        height:40px;
     }
 }
 @media only screen and (max-width:500px)
@@ -404,6 +421,6 @@ button{
         top:-40%;
 
     }
+    
 
 }
-    

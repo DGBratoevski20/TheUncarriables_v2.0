@@ -191,7 +191,7 @@ window.addEventListener("keydown", function(mouseEvent)
             
       
             
-                document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
+                 
                 let ebalsumgo = setInterval(function()
                 {
                     if(left < 1)
@@ -359,7 +359,7 @@ window.addEventListener('touchstart',function(TouchEvent)
     {
         
         
-        document.querySelector('#hero').style.transform = 'rotateY(-180deg)';
+         
         let ebalsumgo = setInterval(function()
                 {
                     if(left < 1)
@@ -502,7 +502,7 @@ FirstvarForInterval = setInterval(function()
     }
     if(document.body.clientWidth < 600)
     {
-        eighty = 70;
+        eighty = 84;
     }
     if(document.body.clientWidth > 1100)
     {
@@ -512,5 +512,4 @@ FirstvarForInterval = setInterval(function()
     
     
 }, 1);
-
 
