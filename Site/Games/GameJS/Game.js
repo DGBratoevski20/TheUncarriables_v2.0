@@ -10,11 +10,10 @@ var health = 700;
 var ButtonLeft;
 var ButtonRight;
 var buttonStartGame; 
-var helperOnLeftComp = 1;
-var helperOnLeftMob = 0;
+var helperOnLeftComp = 15;
+var helperOnLeftMob = 15;
 var eighty = 93;
-let boolRight = 0;
-let boolLeft = 0;
+
 document.querySelector('.score').innerText = '0'
 function UP()
 {
@@ -34,7 +33,7 @@ function UP()
                     {   
                         
                         document.querySelector('#point').style.animation = "none"
-                        document.querySelector('#point').style.left =  Math.round(Math.random() * 80 + 1) + "%"
+                        document.querySelector('#point').style.left =  Math.round(Math.random() * 99+ 1) + "%"
                         
                         clearTimeout(FirstVarForTimeOut)
                     }, 2000)
@@ -55,7 +54,7 @@ function UP()
                     {   
                        
                         document.querySelector('#bomb').style.animation = "none"
-                        document.querySelector('#bomb').style.left =  Math.round(Math.random() * 40 + 50) + "%"
+                        document.querySelector('#bomb').style.left =  Math.round(Math.random() * 1 + 50) + "%"
                         
                         clearTimeout(SecondVarForTimeOut)
                     }, 3000)
@@ -75,7 +74,7 @@ function UP()
                     {   
                        
                        
-                        document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 40 + 1) + "%"
+                        document.querySelector('#bomb2').style.left =  Math.round(Math.random() * 50 + 40) + "%"
                         
                         clearTimeout(ThirdVarForTimeOut)
                     }, 1500)
@@ -192,26 +191,20 @@ window.addEventListener("keydown", function(mouseEvent)
       
             
                  
-                let ebalsumgo = setInterval(function()
-                {
-                    if(left < 1)
+                
+                    if(left < 15)
                     {
                     helperOnLeftComp = 0
                 
                     }
                     else
                     {
-                        helperOnLeftComp = 1;
+                        helperOnLeftComp = 15;
                     }
                     left-=helperOnLeftComp;
-                    document.querySelector('#hero').style.left = left + "%"
-                    boolLeft++;
-                    if(boolLeft > 10)
-                    {
-                        boolLeft = 0
-                        clearInterval(ebalsumgo)
-                    }
-                },1)   
+                    
+                    
+                   
                 
                 
 
@@ -223,28 +216,19 @@ window.addEventListener("keydown", function(mouseEvent)
             
             
             
-            document.querySelector('#hero').style.transform = 'rotateY(0deg)';
+           
             
-            let ebalsumgo2 = setInterval(function()
-                {
-                    if(left > eighty)
-                    {
-                        helperOnLeftComp = 0
-                
-                    }
-                    else
-                    {
-                        helperOnLeftComp = 1;
-                    }
-                    left+=helperOnLeftComp;
-                    document.querySelector('#hero').style.left = left + "%"
-                    boolLeft++;
-                    if(boolLeft > 15)
-                    {
-                        boolLeft = 0
-                        clearInterval(ebalsumgo2)
-                    }
-                },1)
+            if(left > 76)
+            {
+            helperOnLeftComp = 0
+        
+            }
+            else
+            {
+                helperOnLeftComp = 15;
+            }
+            left+=helperOnLeftComp;
+            
                 break;
         }
         case 'ArrowUp':
@@ -359,27 +343,16 @@ window.addEventListener('touchstart',function(TouchEvent)
     {
         
         
-         
-        let ebalsumgo = setInterval(function()
-                {
-                    if(left < 1)
-                    {
-                    helperOnLeftComp = 0
-                
-                    }
-                    else
-                    {
-                        helperOnLeftComp = 1;
-                    }
-                    left-=helperOnLeftComp;
-                    document.querySelector('#hero').style.left = left + "%"
-                    boolLeft++;
-                    if(boolLeft > 10)
-                    {
-                        boolLeft = 0
-                        clearInterval(ebalsumgo)
-                    }
-                },1) 
+        if(left < 15)
+        {
+        helperOnLeftMob= 0
+    
+        }
+        else
+        {
+            helperOnLeftMob = 15;
+        }
+        left-=helperOnLeftMob;
         
       
         
@@ -388,27 +361,16 @@ window.addEventListener('touchstart',function(TouchEvent)
     YOftouching >= Math.round(ButtonRight.top) && YOftouching <= Math.round(ButtonRight.top) + ButtonRight.height)
     {
        
-        document.querySelector('#hero').style.transform = 'rotateY(0deg)';
-        let ebalsumgo = setInterval(function()
-                {
-                    if(left > 90)
-                    {
-                    helperOnLeftComp = 0
-                
-                    }
-                    else
-                    {
-                        helperOnLeftComp = 1;
-                    }
-                    left+=helperOnLeftComp;
-                    document.querySelector('#hero').style.left = left + "%"
-                    boolLeft++;
-                    if(boolLeft > 10)
-                    {
-                        boolLeft = 0
-                        clearInterval(ebalsumgo)
-                    }
-                },1) 
+        if(left > 76)
+        {
+        helperOnLeftMob= 0
+    
+        }
+        else
+        {
+            helperOnLeftMob = 15;
+        }
+        left+=helperOnLeftMob;
         
         
     }
@@ -509,6 +471,7 @@ FirstvarForInterval = setInterval(function()
         eighty = 91;
     }
     document.querySelector('.health').innerText = `${health}`
+    document.querySelector('#hero').style.left = left + "%"
     
     
 }, 1);
