@@ -16,6 +16,9 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+
+
 //monuments
 L.marker([48.80494576172443, 2.120157413583311],{icon:TouristDestinationsMarkerIcon}).addTo(map)
 .bindPopup("<b>Château de Versailles</b><hr><i>One of the most popular tourist destinations in France.</i>")
