@@ -49,7 +49,7 @@ body{
  
     top:79%;
     margin: 0%;
-    border: solid;
+    
     transition: all 100ms;
     z-index: 100;
     margin-bottom: 10%;
@@ -128,7 +128,7 @@ img{
     top:-10%;
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: transparent;
     z-index: 100;
     padding: 0;
     margin: 0%;
@@ -142,7 +142,7 @@ img{
     top:-10%;
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: transparent;
     z-index: 100;
     padding: 0;
     margin: 0%;
@@ -150,6 +150,12 @@ img{
     
     border-radius: 100%;
     
+}
+#bomb > img{
+    transform: scale(1.2, 1.2);
+}
+#bomb2 > img{
+    transform: scale(1.2, 1.2);
 }
 .info{
     
@@ -182,12 +188,12 @@ article
     
     }
     90%{
-        top:100%;
+        top:120%;
         opacity: 1;
     }
     100%
     {
-        top: 100%;
+        top: 120%;
         opacity: 0;
     }
     

@@ -54,9 +54,9 @@ body{
     display: grid;
     margin: auto;
     margin-top: 15%;
-    border-radius: 15% 15% 15% 15%;
-    padding: 50px 50px;
-    grid-template-columns: repeat(5, 20%);
+ 
+    padding: 20px 20px;
+    grid-template-columns: repeat(7, 1fr);
     
    
     

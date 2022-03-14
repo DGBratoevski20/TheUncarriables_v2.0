@@ -108,6 +108,7 @@
                     if(seconds % 60 == 0)
                     {
                         minute++;
+                        seconds = 0;
                         
                     }
                     else if (minute % 60 == 0 && minute > 0)

@@ -394,10 +394,10 @@ FirstvarForInterval = setInterval(function()
         document.querySelector('.area').style.display = "none";
         document.querySelector('.btns').style.opacity = "0";
         document.querySelector('body').style.overflow = "auto";
-        
+        document.querySelector('.info').style.marginLeft = '-5%'
         var contentOfH1 = document.querySelector('h1').innerText
         
-        if(document.body.clientWidth < 860 && document.body.clientWidth > 400)
+        if(document.body.clientWidth < 2060 && document.body.clientWidth > 400)
         {
             document.querySelector('h1').style.fontSize = "0.8rem"
             document.querySelector('h1').style.width = '100px'; 
