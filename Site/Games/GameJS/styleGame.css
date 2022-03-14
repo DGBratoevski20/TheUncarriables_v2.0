@@ -22,13 +22,12 @@ body{
 	
 }
 .area{
-    width: 100vw;
-    height: 50vh;
+    width: 70vw;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     margin: auto;
     margin-top: 5%;
-    margin-left: -6.5%;
     box-shadow: 100px, 100px, 100px,black;
     display: flex;
     transition: all 2s;
