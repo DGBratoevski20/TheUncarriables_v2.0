@@ -253,16 +253,18 @@ var polygon3 = [
     ]
   ]
 
+
+
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b>Nature preserve "Srebarna".</b><hr><i> One of the nature preserves in Bulgaria.</i>')
+.bindPopup('<b>National "Cabrera".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b>Nature preserve "Srebarna".</b><hr><i> One of the nature preserves in Bulgaria.</i>')
+.bindPopup('<b>National park "Parque Nacional de Los Picos de Europa".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>Nature preserve "Srebarna".</b><hr><i> One of the nature preserves in Bulgaria.</i>')
+.bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
 
 L.marker([41.39171025016631, 2.1736045997546922],{icon:CitiesMarkerIcon}).addTo(map)

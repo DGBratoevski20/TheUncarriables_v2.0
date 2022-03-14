@@ -264,15 +264,15 @@ var polygon3 = [
       16.6278076171875
     ]
   ]
-  var polygon = L.polygon(polygon3, {color: 'purple'}).addTo(map)
+  var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
   .bindPopup('<b>Abisko National Park.</b><hr><i> One of the nature preserves in Sweden.</i>')
   .openPopup();
 
-  var polygon = L.polygon(polygon2, {color: 'purple'}).addTo(map)
+  var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
   .bindPopup('<b>Tyresta National Park.</b><hr><i> One of the nature preserves in Sweden.</i>')
   .openPopup();
 
-  var polygon = L.polygon(polygon1, {color: 'purple'}).addTo(map)
+  var polygon = L.polygon(polygon1, {color: 'red'}).addTo(map)
   .bindPopup('<b>Padjelanta National Park.</b><hr><i> One of the nature preserves in Sweden.</i>')
   .openPopup();
 
