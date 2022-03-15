@@ -1,12 +1,13 @@
 
 .timer{
     position: absolute;
-    top:0%;
-    left:0%;
+    top:2%;
+    left:2%;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     background-color: whitesmoke;
-    border: solid;
+    
+    
     height: auto;
     margin-bottom:20px;
     padding-right: 20px;
@@ -44,13 +45,13 @@ article > aside{
     grid-template-rows: repeat(2, 50%);
 }
 body{
-    background-color: aqua;
+    background-color: rgb(133, 134, 119);
     margin: 0;
 }
 .cardArea{
     width: 60vw;
     height:60vh;
-    background-color: antiquewhite;
+    background-color: transparent;
     display: grid;
     margin: auto;
     margin-top: 15%;
@@ -63,9 +64,9 @@ body{
 }
 #divImg
 {
-    margin: 1%;
+    margin: 10%;
     position: relative;
-    background-color: tan;
+    background-color: rgb(189, 210, 140);
     transition: all 1s;
     border-radius: 15% 15% 15% 15%;
     transform-style: preserve-3d;
@@ -82,7 +83,7 @@ span{
     position:absolute;
     left: 0;
     top: 0;
-    background-color: tan;
+    background-color: rgb(189, 210, 140);
     width: 100%;
     height: 100%;
     border-radius: 15% 15% 15% 15%;
@@ -106,6 +107,12 @@ aside{
 .disFor{
     pointer-events: none !important;
 }
-
+@media only screen and (max-width:980px){
+    .cardArea{
+        margin-left: -1%;
+        grid-template-columns: repeat(7, 20%);
+        
+    }
+}
 
 

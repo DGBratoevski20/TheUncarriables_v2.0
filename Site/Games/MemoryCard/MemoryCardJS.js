@@ -38,8 +38,6 @@
                     match(otherM, otherY);
                     co = 0
                     checkIfdouble = 0
-                    console.log(otherM)
-                    console.log(otherY)
                     for(let i of mother)
                     {
 
@@ -59,7 +57,7 @@
                 
                     if(arr[0] == arr[1])
                     {
-                        console.log("Match Bro")
+                        
                         setTimeout(function()
                         {
                             for(let i of mother)
@@ -127,7 +125,7 @@
                         Massive.push(img.src);
                     }
                 )
-                console.log(Massive);
+                
                 
  
                 
