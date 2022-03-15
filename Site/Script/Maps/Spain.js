@@ -256,7 +256,7 @@ var polygon3 = [
 
 
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b>National "Cabrera".</b><hr><i> One of the nature preserves in Spain.</i>')
+.bindPopup('<b>National park "Cabrera".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
