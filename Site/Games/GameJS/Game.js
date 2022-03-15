@@ -309,13 +309,13 @@ setInterval(function()
     {
         document.querySelector('#bomb').style.animation = 'none'
 
-        health -= 50;
+        health -= 700;
     }
     else if(Bomb2())
     {
         document.querySelector('#bomb2').style.animation = 'none'
         
-        health -= 50;
+        health -= 700;
     }
     
 }, 1)
@@ -393,16 +393,19 @@ FirstvarForInterval = setInterval(function()
         
         document.querySelector('.area').style.display = "none";
         document.querySelector('.btns').style.opacity = "0";
-        document.querySelector('body').style.overflow = "auto";
+        document.querySelector('body').style.overflowX = "hidden";
         document.querySelector('.info').style.marginLeft = '-5%'
+        document.querySelector('.info').style.marginTop = '20%'
+        
         var contentOfH1 = document.querySelector('h1').innerText
+        document.querySelector('h1').style.opacity = 0
         
         if(document.body.clientWidth < 2060 && document.body.clientWidth > 400)
         {
-            document.querySelector('h1').style.fontSize = "0.8rem"
-            document.querySelector('h1').style.width = '100px'; 
+            document.querySelector('.info').querySelector('h1').style.fontSize = "1.3rem"
+            
         }
-        document.querySelector('h1').innerText = `Game Over! You reached the ${contentOfH1} with ${counterForMetres} metres.`
+        document.querySelector('.info').querySelector('h1').innerText = `Game Over! You reached the ${contentOfH1} with ${counterForMetres} metres.`
         switch(contentOfH1)
         {
             case "Troposphere":
