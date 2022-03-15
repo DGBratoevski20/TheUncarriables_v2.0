@@ -15,7 +15,6 @@
   --bg-color: linear-gradient( 135deg, #023047 10%, #CAF0F8 100%);
   --heading-color: #292922;
   --cta-hover-color: #90E0EF;
-  --footer-divider: #CAF0F8;
   --map-icon-bg: #CAF0F8;
   --map-icon: #014F86;
   --icons-bg: #014F86;
@@ -33,7 +32,6 @@
   --font-color: #E1E1FF;
   --bg-color: linear-gradient(135deg, #000000 10%, #808080 100%);
   --cta-hover-color: #6560ff;
-  --footer-divider: #727272;
   --map-icon-bg: #6E6AEE;
   --icons-bg: #121212;
   --icons: #CAF0F8;
@@ -63,14 +61,19 @@ header {
   font-size: 150%;
 }
 
+.logo {
+  margin-right: auto;
+}
+
 #logoInNavbar {
-  width: 25%;
+  width: 30%;
   height: auto;
 }
 
 .nav-links  {
   list-style: none;
   display: flex;
+  font-size: 100%;
 }
 
 .nav-links a {
@@ -102,6 +105,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-size: 100%;
 }
 
 .cta:hover {
@@ -179,6 +183,8 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
 
 .card-section{
   align-items: flex-start;
@@ -272,7 +278,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 21em;
+    height: 30em;
     background-color: var(--primary-color);
     padding: 30px 10%;
     text-align: center;
@@ -282,6 +288,8 @@ footer {
     float: left;
     text-align: center;
 	width: 28%;
+	margin-left: -20px;
+	margin-top: 55px;
 }
 
 .footer-left i {
@@ -300,24 +308,26 @@ footer {
     display: inline-block;
     color: var(--font-color);
     vertical-align: middle;
-    margin: 0;
-    font-size: 130%;
+    font-size: 1.5rem;
 }
 
 .footer-map {
-    width: 20em;
-    height: 12em;
-    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+iframe {
+  width: 440px;
+  height: 200px;
 }
 
 .footer-right {
     float: right;
-    margin-right: -60px;
+    margin-right: -120px;
 }
 
 .footer-links {
-    padding: 2em;
-    font-size: 150%;
+    padding: 3em;
+    font-size: 140%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +347,7 @@ footer {
 .footer-links p {
     display: inline-block;
     padding: 0.3em;
-    color: var(--footer-divider);
+    color: var(--font-color);
     font-size: 130%;
 }
 
@@ -346,7 +356,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-top: 1em;
+    margin-top: 6em;
 	transform: translate(-50%, -50%);
 	
 }
@@ -469,4 +479,72 @@ footer {
     color: var(--facebook-icon);
     box-shadow: 0 0 5px var(--facebook-icon);
     text-shadow: 0 0 5px var(--facebook-icon);
+}
+
+@media only screen and (max-width: 1170px) {
+	
+  #logoInNavbar {
+    width: 50%;
+  }
+
+  .nav-links {
+    font-size: 80%;
+  }
+
+  .nav-links li {
+    padding: 0px 10px;
+  }
+
+  .cta {
+    font-size: 80%;
+  }
+
+  footer {
+    height: 28em;
+  }
+
+  .footer-left {
+    margin-top: 60px;
+    margin-left: -30px;
+  }
+
+  .footer-left p {
+    font-size: 1.2rem;
+  }
+  
+  .footer-left i {
+    font-size: 22px;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 160px;
+  }
+
+  .footer-right {
+    float: right;
+    margin-right: -90px;
+    margin-top: 15px;
+  }
+  
+  .footer-links {
+    font-size: 120%;
+  }
+  
+  .footer-links p {
+    padding: 0.4em;
+    font-size: 110%;
+  }
+  
+  .footer-icons {
+    width: 165%;
+    margin-top: 4em;
+  }
+
+  .footer-icons li a {
+    font-size: 34px;
+  }
 }
