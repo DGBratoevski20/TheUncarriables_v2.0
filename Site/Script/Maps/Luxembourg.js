@@ -16,6 +16,22 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+//monuments
+L.marker([49.611808724863465, 6.1342556654379345],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>National Museum of History and Art</b><hr><i>One of the most popular tourist destinations in Luxembourg.</i>")
+.openPopup();
+
+L.marker([49.61728870610536, 6.140952542149191],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Grand Duke Jean Museum of Modern Art (MUDAM)</b><hr><i>One of the most popular tourist destinations in Luxembourg.</i>")
+.openPopup();
+
+L.marker([49.90606469430512, 6.080400659348498],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Bourscheid Castle</b><hr><i>One of the most popular tourist destinations in Luxembourg.</i>')
+.openPopup();
+
+
+// cities
 L.marker([49.49989929115584, 5.968235148549869],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Esch-sur-Alzette.</b><hr><i> One of the biggest cities in Luxembourg.</i>')
 .openPopup();
