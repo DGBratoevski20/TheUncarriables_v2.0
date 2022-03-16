@@ -254,7 +254,7 @@ var polygon3 = [
   ]
 
 
-
+//polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
 .bindPopup('<b>National park "Cabrera".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
@@ -267,6 +267,34 @@ var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
 .bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
 
+
+//monuments
+L.marker([37.17831796727035, -3.585005633029134],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Generalife Gardens</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+L.marker([37.87921890901532, -4.779065036711082],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>The Great Mosque of Cordoba</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+L.marker([40.41427997599244, -3.691474308319916],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Museo Nacional del Prado</b><hr><i>One of the most popular tourist destinations in Spain.</i>')
+.openPopup();
+
+L.marker([37.38609747142907, -5.992774207886683],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Seville Cathedral</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+L.marker([43.26885867098342, -2.933378800350127],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Guggenheim Museum</b><hr><i>One of the most popular tourist destinations in Spain.</i>')
+.openPopup();
+
+L.marker([39.45546033734307, -0.3499114389807377],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Ciudad de las Artes y las Ciencias</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+
+//cities
 L.marker([41.39171025016631, 2.1736045997546922],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Barcelona.</b><hr><i> One of the biggest cities in Spain.</i>')
 .openPopup();

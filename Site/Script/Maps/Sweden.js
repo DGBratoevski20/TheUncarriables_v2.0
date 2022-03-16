@@ -264,6 +264,8 @@ var polygon3 = [
       16.6278076171875
     ]
   ]
+
+	//polygons
   var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
   .bindPopup('<b>Abisko National Park.</b><hr><i> One of the nature preserves in Sweden.</i>')
   .openPopup();
@@ -276,6 +278,30 @@ var polygon3 = [
   .bindPopup('<b>Padjelanta National Park.</b><hr><i> One of the nature preserves in Sweden.</i>')
   .openPopup();
 
+
+//monuments
+L.marker([59.328171052745624, 18.09193284059279],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Vasa Museum</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+L.marker([59.321969479362465, 17.88745401009918],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Drottningholm Palace</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+L.marker([67.84997863927966, 20.596885218137587],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Icehotel</b><hr><i>One of the most popular tourist destinations in Spain.</i>')
+.openPopup();
+
+L.marker([55.70416969659849, 13.194172467466318],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Lund Cathedral</b><hr><i>One of the most popular tourist destinations in Spain.</i>")
+.openPopup();
+
+L.marker([57.636657385781966, 18.29485565057488],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Visby</b><hr><i>One of the most popular tourist destinations in Spain.</i>')
+.openPopup();
+
+
+//cities
 L.marker([57.71093805967822, 11.965933427643622],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Gothenburg.</b><hr><i> One of the biggest cities in Sweden.</i>')
 .openPopup();
