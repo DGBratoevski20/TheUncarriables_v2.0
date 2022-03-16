@@ -247,6 +247,34 @@ iframe {
   height: 200px;
 }
 
+#phoneFooter {
+  display: none;
+  margin: 0px 0px 0px 35%;
+  width: 45%;
+}
+
+#phoneFooterIcon {
+  display: none;
+  background-color: var(--map-icon-bg);
+  color: var(--map-icon);
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  line-height: 40px;
+  vertical-align: middle;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+
+#phoneFooterText {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.1rem;
+  color: var(--font-color);
+  margin-top: -30px;
+}
+
 .footer-right {
   float: right;
   margin-right: -120px;
@@ -472,5 +500,91 @@ iframe {
 
   .footer-icons li a {
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #chartdiv {
+    width: 80%;
+  }
+
+  header{
+    margin-right: -80px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links li {
+    display: none;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  #chartdiv{
+    margin-left: 80px;
+  }
+
+  footer {
+    height: 26em;
+    width: 120.5%;
+  }
+
+  .footer-left {
+    display: none;
+  }
+
+  .footer-left p {
+    display: none;
+  }
+  
+  .footer-left i {
+    display: none;
+  }
+
+  #phoneFooter {
+    display: block;
+  }
+
+  #phoneFooterIcon {
+    display: block;
+  }
+
+  #phoneFooterText {
+    display: block;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  .footer-right {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  
+  .footer-links {
+    font-size: 80%;
+    width: 105%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-links p {
+    padding: 0.5em;
+    font-size: 80%;
+  }
+  
+  .footer-icons {
+    width: 195%;
+    margin-top: 4em;
+  }
+
+  .footer-icons li a {
+    font-size: 28px;
   }
 }
