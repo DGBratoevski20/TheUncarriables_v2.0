@@ -16,6 +16,19 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//polygons
+var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
+.bindPopup('<b>Sečovlje Saltpans Natural Park.</b><hr><i> One of the nature preserves in Spain.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
+.bindPopup('<b>National park "Parque Nacional de Los Picos de Europa".</b><hr><i> One of the nature preserves in Spain.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
+.bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Spain.</i>')
+.openPopup();
+
 //monuments
 L.marker([38.698142079760466, -9.206103086967863],{icon:TouristDestinationsMarkerIcon}).addTo(map)
 .bindPopup("<b>Mosteiro dos Jerónimos</b><hr><i>One of the most popular tourist destinations in Portugal.</i>")

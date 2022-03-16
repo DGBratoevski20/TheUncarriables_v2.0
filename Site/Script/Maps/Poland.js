@@ -16,6 +16,19 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//polygons
+var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
+.bindPopup('<b>Sečovlje Saltpans Natural Park.</b><hr><i> One of the nature preserves in Spain.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
+.bindPopup('<b>National park "Parque Nacional de Los Picos de Europa".</b><hr><i> One of the nature preserves in Spain.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
+.bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Spain.</i>')
+.openPopup();
+
 //monuments
 L.marker([50.3095646076892, 18.67856971046181],{icon:TouristDestinationsMarkerIcon}).addTo(map)
 .bindPopup("<b>Memorial and Museum Auschwitz I</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
