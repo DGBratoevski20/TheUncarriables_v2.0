@@ -21,8 +21,8 @@ Our site is about a History and Geography. It includes interesting ways for lear
 3. **HHChandar20** - **Frontend Developer**	
    > ***GitHub profile***: [***HHChandar20***](https://github.com/HHChandar20)	
 
-4. **AEBaev20** - **Designer**	
-   > ***GitHub profile***: [***AEBaev20***](https://github.com/AEBaev20)
+4. **AIBaev20** - **Designer**	
+   > ***GitHub profile***: [***AIBaev20***](https://github.com/AIBaev20)
    
  ---
 
