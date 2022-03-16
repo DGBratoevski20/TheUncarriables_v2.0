@@ -708,13 +708,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  background: var(--bg-color);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body{
   height: 100%;
   overflow-x: hidden;
-  background: var(--bg-color) no-repeat center center;
-  background-size: cover;
+  width: 100%;
 }
 
 header {
@@ -855,7 +857,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 30em;
+  height: 30.3em;
   background-color: var(--primary-color);
   padding: 30px 10%;
   text-align: center;
@@ -1137,6 +1139,7 @@ iframe {
   
   .footer-links {
     font-size: 100%;
+	margin-left: -100px;
   }
   
   .footer-links p {
@@ -1147,6 +1150,7 @@ iframe {
   .footer-icons {
     width: 165%;
     margin-top: 5em;
+	margin-left: 1em;
   }
 
   .footer-icons li a {
@@ -1155,22 +1159,6 @@ iframe {
 }
 
 @media only screen and (max-width: 425px) {
-
-	#map{
-      width: 100%;
-      margin-left: 10%;
-      margin-top: 10%;
-    }
-
-    #chartdiv {
-	  width: 90%;
-	  margin-left: 2%;
-	  margin-top: 20%;
-    }
-
-	header{
-		margin-right: -80px;
-	}
 
 	.nav-links {
 		display: none;
@@ -1183,15 +1171,7 @@ iframe {
 	.cta {
 		display: none;
 	}
-
-	#chartdiv{
-		margin-left: 80px;
-	}
-
-	footer {
-		height: 26em;
-		width: 120.5%;
-	}
+	
 
 	.footer-left {
 		display: none;
@@ -1211,40 +1191,15 @@ iframe {
 
 	#phoneFooterIcon {
 		display: block;
+		margin-left: -80px;
 	}
 
 	#phoneFooterText {
 		display: block;
+		margin-left: -80px;
 	}
 
 	iframe {
 		display: none;
-	}
-
-	.footer-right {
-		margin: 0 auto;
-		margin-top: 15px;
-	}
-
-	.footer-links {
-		font-size: 80%;
-		width: 105%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.footer-links p {
-		padding: 0.5em;
-		font-size: 80%;
-	}
-
-	.footer-icons {
-		width: 195%;
-		margin-top: 4em;
-	}
-
-	.footer-icons li a {
-		font-size: 28px;
 	}
 }
