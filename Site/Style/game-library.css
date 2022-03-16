@@ -1,92 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #121212;
+	font-family: spotify-circular,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+.wrapper {
+	margin-top: 50px;
+}
+.wrapper h1 {
+	color: #ceff00;
+	text-align: center;
+	font-weight: bold;
+  margin-bottom: 200px;
 }
 
-#title{
-  font-size: 100px;
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
-
 .card {
-  transform-style: preserve-3d;
-  width: 80%;
-  
+	width: 400px;
+	height: 240px;
+	margin: 15px;
+	position: relative;
+	min-width: 190px;
+	background: #000;
+  border: 5px solid #ceff00;
+	margin-bottom: 100px;
+}
+.card:hover .overlayer {
+	visibility: visible;
+}
+.card img {
+	width: 100%;
+	height: 100%;
+}
+.card .title  {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	margin-top: 180px;
 }
 
-.name {
-  transform: translate3d(0, 0, 50px);
-  transform-style: preserve-3d;
-  font-size: 30px;
+.card .title a {
+	top: -175px;
+	color: #fff;
+	position: relative;
+	font-size: 13px;
+	text-decoration: none;
 }
 
-.card:hover .name {
-  top: 1rem;
-  opacity: 1;
+.card .overlayer {
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	visibility: hidden;
 }
 
-.play {
-  left: 50%;
-  font-size: 20px;
-  transform: translate3d(-50%, 0, 50px);
-  transform-style: preserve-3d;
-  text-align: center;
-  width: 25%;
+.overlayer .fa-play-circle {
+	color: #ffffff;
+	font-size: 100px;
+	margin-top: 17%;
+	transition: 100ms ease-in-out;
+  color: #ceff00;
 }
-
-.card:hover .play {
-  bottom: 1rem;
-  opacity: 1;
-}
-
-.bg-memory-cards:hover {
-  background: #f0e801;
-}
-.bg-guess-the-flag:hover {
-  background: #c51110;
-}
-.bg-the-astronaut:hover {
-  background: #000000;
-}
-
-img {
-  transform-style: preserve-3d;
-}
-
-.card:hover img {
-  transform: translate3d(0, 0, 50px);
-  transform-style: preserve-3d;
-}
-
-.image::before {
-  content: "";
-  border-radius: .25rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .25rem;
-  opacity: 0;
-  transition: all .5s;
-}
-
-.card:hover .image::before {
-  opacity: .2;
-}
-
-.image-1::before {
-  background: url("https://store-images.s-microsoft.com/image/apps.54588.14444766800945903.ce1add5c-079a-4ada-ad7e-3edf619f02e2.e0d588f2-ce79-41f6-abd6-a00672d9952f?mode=scale&q=90&h=1080&w=1920");
-}
-.image-2::before {
-  background: url("https://i.pinimg.com/originals/18/21/9c/18219ce7cd64ddb22cda1352183f249b.jpg");
-}
-.image-3::before {
-  background: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80");
+.fa-play-circle:hover {
+	transform: scale(1.1);
 }
