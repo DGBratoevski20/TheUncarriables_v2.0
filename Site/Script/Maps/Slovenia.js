@@ -1,4 +1,4 @@
-var map = L.map('map').setView([48.85481212770279, 19.805606675974946], 8);
+var map = L.map('map').setView([46.03998851436525, 14.510287223533883], 8);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
@@ -230,6 +230,7 @@ var polygon3 =
   ]
 ]
 
+//polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
 .bindPopup('<b>Sečovlje Saltpans Natural Park.</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
@@ -242,26 +243,54 @@ var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
 .bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Spain.</i>')
 .openPopup();
 
-L.marker([48.311791651899036, 18.070614006567418],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Nitra.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+
+//monuments
+L.marker([45.81604296322976, 14.127523228551638],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Predjama Castle</b><hr><i>One of the most popular tourist destinations in Slovenia.</i>")
 .openPopup();
 
-L.marker([48.74167045870027, 19.1424918664681],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+L.marker([45.78330412795398, 14.204123161359602],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Postojna Cave</b><hr><i>One of the most popular tourist destinations in Slovenia.</i>")
 .openPopup();
 
-L.marker([49.217418140637655, 18.738528627520484],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Žilina.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+L.marker([45.66849610927118, 13.883560654236751],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Lipica</b><hr><i>One of the most popular tourist destinations in Slovenia.</i>')
 .openPopup();
 
-L.marker([49.002469539522856, 21.23720083735469],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Prešov.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+L.marker([45.99986758999248, 14.02292476533881],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Anthony's Shaft Mining Museum</b><hr><i>One of the most popular tourist destinations in Slovenia.</i>")
 .openPopup();
 
-L.marker([48.72203788044131, 21.256532952408698],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Košice.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+L.marker([46.049108567202026, 14.508953155544495],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Ljubljana Castle</b><hr><i>One of the most popular tourist destinations in Slovenia.</i>')
 .openPopup();
 
-L.marker([48.15043737772495, 17.100639332663736],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Bratislava.</b><hr><i> The capital city of Slovakia.</i>')
+L.marker([45.98376877023109, 14.325712054149374],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Holy Trinity Church, Vrhnika</b><hr><i>One of the most popular tourist destinations in Slovenia.</i>")
+.openPopup();
+
+
+//cities
+L.marker([46.55807749861824, 15.657039519127492],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Maribor.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.openPopup();
+
+L.marker([46.235578381336616, 15.264664258694664],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Celje.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.openPopup();
+
+L.marker([46.183360742377324, 13.729824553291953],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Tolmin.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.openPopup();
+
+L.marker([46.23808183540291, 14.3538932869235],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Kranj.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.openPopup();
+
+L.marker([46.37289315777687, 14.107914272729888],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Bled.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.openPopup();
+
+L.marker([46.03998851436525, 14.510287223533883],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Ljubljana.</b><hr><i> The capital city of Slovenia.</i>')
 .openPopup();
