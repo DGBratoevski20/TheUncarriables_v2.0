@@ -16,6 +16,33 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//monuments
+L.marker([47.722855534161866, 24.152100507081002],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Wooden church Paraschiva</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+L.marker([45.18070318849824, 28.795357965389815],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Danube Delta</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+L.marker([45.60165364485322, 25.551763203008946],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Poiana Brașov</b><hr><i>One of the most popular tourist destinations in Poland.</i>')
+.openPopup();
+
+L.marker([45.74966572896988, 22.888765380674364],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Corvin Castle</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+L.marker([47.77832135351248, 25.7115885347026],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Sucevita Monastery</b><hr><i>One of the most popular tourist destinations in Poland.</i>')
+.openPopup();
+
+L.marker([45.50267064877976, 24.249661852567126],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Transylvanian Alps</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+
+//cities
 L.marker([46.56737476701929, 26.908884041765983],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Bacău.</b><hr><i> One of the biggest cities in Romania.</i>')
 .openPopup();
