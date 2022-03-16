@@ -16,6 +16,22 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+//monuments
+L.marker([35.88504288744429, 14.4037164997512],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Mdina Gate</b><hr><i>One of the most popular tourist destinations in Malta.</i>")
+.openPopup();
+
+L.marker([36.01425614280091, 14.324268363546754],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Blue Lagoon</b><hr><i>One of the most popular tourist destinations in Malta.</i>")
+.openPopup();
+
+L.marker([35.82683334768911, 14.437019824612198],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Mnajdra Temples of the Maltese Bronze Age</b><hr><i>One of the most popular tourist destinations in Malta.</i>')
+.openPopup();
+
+
+// cities
 L.marker([35.910824921615955, 14.50280230389274],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Sliema.</b><hr><i> One of the biggest cities in Malta.</i>')
 .openPopup();

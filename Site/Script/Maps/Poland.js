@@ -16,6 +16,33 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//monuments
+L.marker([50.3095646076892, 18.67856971046181],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Memorial and Museum Auschwitz I</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+L.marker([52.25568341711586, 21.009310655114284],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Warsaw Old Town</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+L.marker([54.03999828819079, 19.028624242277974],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Malbork Castle</b><hr><i>One of the most popular tourist destinations in Poland.</i>')
+.openPopup();
+
+L.marker([50.04760870746531, 19.962045667299172],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Schindler's Factory</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+L.marker([53.21430039602068, 14.476746349648879],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Crooked Forest</b><hr><i>One of the most popular tourist destinations in Poland.</i>')
+.openPopup();
+
+L.marker([53.21430039602068, 14.476746349648879],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Wolf's Lair</b><hr><i>One of the most popular tourist destinations in Poland.</i>")
+.openPopup();
+
+
+// cities
 L.marker([54.36156691700089, 18.61455855745029],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Gdańsk.</b><hr><i> One of the biggest cities in Poland.</i>')
 .openPopup();
