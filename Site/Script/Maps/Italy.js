@@ -16,6 +16,37 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//monuments
+L.marker([41.89044179649501, 12.49225235598876],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Colosseum</b><hr><i>One of the most popular tourist destinations in Italy.</i>")
+.openPopup();
+
+L.marker([43.773377392365276, 11.256035300213906],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Cathedral of Santa Maria del Fiore</b><hr><i>One of the most popular tourist destinations in Italy.</i>")
+.openPopup();
+
+L.marker([45.435960352256124, 12.327906288926002],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>The Grand Canal in Venice</b><hr><i>One of the most popular tourist destinations in Italy.</i>')
+.openPopup();
+
+L.marker([43.72313806574941, 10.396607727199354],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Leaning Tower of Pisa</b><hr><i>One of the most popular tourist destinations in Italy.</i>')
+.openPopup();
+
+L.marker([40.63381525647895, 14.604048505482611],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Amalfi Coast</b><hr><i>One of the most popular tourist destinations in Italy.</i>')
+.openPopup();
+
+L.marker([44.12779144691539, 9.71098823711514],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Cinque Terre</b><hr><i>One of the most popular tourist destinations in Italy.</i>')
+.openPopup();
+
+L.marker([43.768041256560736, 11.255439544391535],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>The Uffizi Gallery in Florence</b><hr><i>One of the most popular tourist destinations in Italy.</i>')
+.openPopup();
+
+
+// cities
 L.marker([45.48484638001285, 9.178645255184874],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Milan.</b><hr><i> One of the biggest cities in Italy.</i>')
 .openPopup();

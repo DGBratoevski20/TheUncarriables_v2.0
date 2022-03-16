@@ -16,6 +16,37 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//monuments
+L.marker([52.97169122527151, -9.424720669231037],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>The Cliffs of Moher</b><hr><i>One of the most popular tourist destinations in Ireland.</i>")
+.openPopup();
+
+L.marker([53.344187447708755, -6.254591254515059],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Trinity College</b><hr><i>One of the most popular tourist destinations in Ireland.</i>")
+.openPopup();
+
+L.marker([51.83884453237279, -9.901277854835847],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>The Ring of Kerry</b><hr><i>One of the most popular tourist destinations in Ireland.</i>')
+.openPopup();
+
+L.marker([52.30274305227008, -7.656430666494791],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Glendalough</b><hr><i>One of the most popular tourist destinations in Ireland.</i>')
+.openPopup();
+
+L.marker([52.520259072254284, -7.890141065162641],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>The Rock of Cashel</b><hr><i>One of the most popular tourist destinations in Ireland.</i>')
+.openPopup();
+
+L.marker([51.92927701065057, -8.570339538720928],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Blarney Castle</b><hr><i>One of the most popular tourist destinations in Ireland.</i>')
+.openPopup();
+
+L.marker([52.21203111099736, -10.124309341013355],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>The Dingle Peninsula</b><hr><i>One of the most popular tourist destinations in Ireland.</i>')
+.openPopup();
+
+
+// cities
 L.marker([54.59198028047157, -5.945591399993577],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Belfast.</b><hr><i> One of the biggest cities in Ireland.</i>')
 .openPopup();
