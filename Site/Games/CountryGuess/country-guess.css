@@ -24,11 +24,11 @@ section {
 }
 
 #container {
-	display: grid;
+  display: grid;
   height: 100%;
-	grid-template-columns: 500px 500px 500px;
-	grid-template-rows: 300px 300px 300px 300px 300px 300px;
-	border: 10px solid #616161;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  border: 10px solid #616161;
   border-radius: 5px;
   justify-items: center;
 }
@@ -36,18 +36,6 @@ section {
 #container div {
 	border: 5px solid #616161;
   width: 100%;
-}
-
-@media only screen and (max-width: 767px) { 
-        #container {
-                grid-template-columns: 130px 130px;
-                grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-        }
-        h1{
-          width: 60%;
-          font-size: 25px;
-        }
-        
 }
 
 #Germany{
@@ -156,3 +144,30 @@ section {
 div:hover > .country:not(:hover){
   filter: brightness(0.6) saturate(0) contrast(1.2) blur(3px);
 }
+
+
+@media only screen and (max-width: 900px) { 
+        #container {
+                grid-template-columns: 250px 250px 250px;
+				grid-template-rows: 160px 160px 160px 160px 160px 160px;
+        }
+        h1{
+          width: 60%;
+          font-size: 25px;
+        }
+        
+}
+
+@media only screen and (max-width: 758px){ 
+        #container {
+                grid-template-columns: 150px 150px;
+                grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+        }
+        h1{
+          width: 60%;
+          font-size: 25px;
+        }
+        
+}
+
+
