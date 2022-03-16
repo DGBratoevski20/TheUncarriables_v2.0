@@ -16,12 +16,39 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//monuments
+L.marker([49.26201232241269, 19.359021509605817],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Orava Castle</b><hr><i>One of the most popular tourist destinations in Slovakia.</i>")
+.openPopup();
+
+L.marker([49.03953430529116, 19.27801123133447],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Vlkolinec</b><hr><i>One of the most popular tourist destinations in Slovakia.</i>")
+.openPopup();
+
+L.marker([49.28677743369211, 21.269835728152714],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Bardejov</b><hr><i>One of the most popular tourist destinations in Slovakia.</i>')
+.openPopup();
+
+L.marker([48.99968194348498, 20.767940851927445],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>Spis Castle</b><hr><i>One of the most popular tourist destinations in Slovakia.</i>")
+.openPopup();
+
+L.marker([48.5173973521273, 18.919174939799593],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup('<b>Banska Stiavnica</b><hr><i>One of the most popular tourist destinations in Slovakia.</i>')
+.openPopup();
+
+L.marker([49.212674124872095, 20.121167276679245],{icon:TouristDestinationsMarkerIcon}).addTo(map)
+.bindPopup("<b>High Tatras</b><hr><i>One of the most popular tourist destinations in Slovakia.</i>")
+.openPopup();
+
+
+//cities
 L.marker([48.311791651899036, 18.070614006567418],{icon:CitiesMarkerIcon}).addTo(map)
 .bindPopup('<b>Nitra.</b><hr><i> One of the biggest cities in Slovakia.</i>')
 .openPopup();
 
-L.marker([48.74167045870027, 19.1424918664681],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+L.marker([48.84204277459344, 19.158964794791576],{icon:CitiesMarkerIcon}).addTo(map)
+.bindPopup('<b>Banská Bystrica.</b><hr><i> One of the biggest cities in Slovakia.</i>')
 .openPopup();
 
 L.marker([49.217418140637655, 18.738528627520484],{icon:CitiesMarkerIcon}).addTo(map)
