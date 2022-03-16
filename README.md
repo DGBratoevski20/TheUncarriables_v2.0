@@ -8,7 +8,7 @@
   
 ## Hello, We are TheUncarriables v2.0
 
-Our site is about a History and Geography including interesting ways for learning such as quizzes, maps, diagrames, time lines and other educational games.
+Our site is about a History and Geography. It includes interesting ways for learning such as quizzes, maps, diagrames, time lines and other educational games.
 ---
  
  ## Team	<a name = "team"></a>
@@ -49,4 +49,4 @@ You can download the site from [github](https://github.com/DGBratoevski20/TheUnc
 
 # If you like our site you can star us!
 
-# Have a great time and don't forget carry the uncarriable!
+# Have a great time and don't forget: "Carry the uncarriable!"
