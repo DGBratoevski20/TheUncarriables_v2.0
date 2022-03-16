@@ -1,4 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;400&display=swap');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root { /* light mode */
+  --primary-color: #014F86;
+  --secondary-color: #CAF0F8;
+  --links-hover: #90E0EF;
+  --font-color: #dddddd;
+  --bg-color: #d4d1d1; /* #f2f2f2 */
+  --heading-color: #ffffffe6;
+  --cta-hover-color: #90E0EF;
+  --population-color: #ff9900;
+  --map-icon-bg: #CAF0F8;
+  --map-icon: #014F86;
+  --icons-bg: #014F86;
+  --icons: #CAF0F8;
+  --instagram-icon: #FFA500;
+  --twitter-icon: #00FFFF;
+  --github-icon: #03c04a;
+  --facebook-icon: #0072ff;
+}
+
+[data-theme="dark"] { /* dark mode */
+  --primary-color: #121212;
+  --secondary-color: #6E6AEE;
+  --links-hover: #6E6AEE;
+  --font-color: #E1E1FF;
+  --bg-color: #000000;
+  --heading-color: #f1f1f1;
+  --cta-hover-color: #6560ff;
+  --population-color: #dddddd;
+  --map-icon-bg: #6E6AEE;
+  --icons-bg: #121212;
+  --icons: #CAF0F8;
+  --map-icon: #ffffff;
+  --instagram-icon: #FFFF00;
+  --twitter-icon: cyan;
+  --github-icon: #03c04a;
+  --facebook-icon: #0072ff;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+body{
+  background-repeat: no-repeat;
+  height: 100%;
+  background: var(--bg-color);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--primary-color);
+  font-size: 150%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+#logoInNavbar {
+  width: 30%;
+  height: auto;
+}
+
+.nav-links  {
+  list-style: none;
+  display: flex;
+  font-size: 100%;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.nav-links li {
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: var(--links-hover);
+}
+
+.cta  {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 100%;
+}
+
+.cta:hover {
+  background-color: var(--cta-hover-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #2e2e2e; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666666; 
+  border-radius: 10px;
+}
+
+
+/* Toggle slider */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center; /* toogle to be in center of the navbar*/
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 42px;
+  position: relative;
+  width: 4.1em;
+  margin-left: 20px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 34px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 34px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(130%);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
 #chartdiv {
-    width: 100%;
-    height: 850px;
+    width: 99%;
+    height: 500px;
+	margin-top: 10em;
+	margin-bottom: 10em;
+}
+
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30em;
+  background-color: var(--primary-color);
+  padding: 30px 10%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-left {
+  float: left;
+  text-align: center;
+	width: 28%;
+  margin-left: -20px;
+  margin-top: 55px;
+}
+
+.footer-left i {
+  background-color: var(--map-icon-bg);
+  color: var(--map-icon);
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-left p {
+  display: inline-block;
+  color: var(--font-color);
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.footer-map {
+  margin: 0 auto;
+}
+
+iframe {
+  width: 440px;
+  height: 200px;
+}
+
+.footer-right {
+  float: right;
+  margin-right: -120px;
+}
+
+.footer-links {
+  padding: 3em;
+  font-size: 140%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--font-color);
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-links p {
+  display: inline-block;
+  padding: 0.3em;
+  color: var(--font-color);
+  font-size: 130%;
+}
+
+.footer-icons {
+  width: 155%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 6em;
+  transform: translate(-50%, -50%);
+}
+
+.footer-icons li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.footer-icons li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background-color: var(--icons-bg);
+  border-radius: 50%;
+  font-size: 30px;
+  color: var(--icons);
+  transition: .5s;
+}
+
+.footer-icons li #instagram::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--instagram-icon);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.footer-icons li #instagram:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--instagram-icon);
+}
+
+.footer-icons li #instagram:hover {
+  color: var(--instagram-icon);
+  box-shadow: 0 0 5px var(--instagram-icon);
+  text-shadow: 0 0 5px var(--instagram-icon);
+}
+
+
+.footer-icons li #twitter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--twitter-icon);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.footer-icons li #twitter:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--twitter-icon);
+}
+
+.footer-icons li #twitter:hover {
+  color: var(--twitter-icon);
+  box-shadow: 0 0 5px var(--twitter-icon);
+  text-shadow: 0 0 5px var(--twitter-icon);
+}
+
+.footer-icons li #github::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--github-icon);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.footer-icons li #github:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--github-icon);
+}
+
+.footer-icons li #github:hover {
+  color: var(--github-icon);
+  box-shadow: 0 0 5px var(--github-icon);
+  text-shadow: 0 0 5px var(--github-icon);
+}
+
+.footer-icons li #facebook::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--facebook-icon);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.footer-icons li #facebook:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--facebook-icon);
+}
+
+.footer-icons li #facebook:hover {
+  color: var(--facebook-icon);
+  box-shadow: 0 0 5px var(--facebook-icon);
+  text-shadow: 0 0 5px var(--facebook-icon);
+}
+
+@media (max-width: 1170px)
+{
+  #logoInNavbar {
+    width: 50%;
   }
+
+  .nav-links {
+    font-size: 80%;
+  }
+
+  .nav-links li {
+    padding: 0px 10px;
+  }
+
+  .cta {
+    font-size: 80%;
+  }
+
+  #chartdiv {
+    height: 500px;
+  }
+
+  footer {
+    height: 28em;
+  }
+
+  .footer-left {
+    margin-top: 60px;
+    margin-left: -30px;
+  }
+
+  .footer-left p {
+    font-size: 1rem;
+  }
+  
+  .footer-left i {
+    font-size: 18px;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+  }
+
+  iframe {
+    width: 280px;
+    height: 160px;
+  }
+
+  .footer-right {
+    float: right;
+    margin-right: -80px;
+    margin-top: 25px;
+  }
+  
+  .footer-links {
+    font-size: 100%;
+  }
+  
+  .footer-links p {
+    padding: 0.4em;
+    font-size: 90%;
+  }
+  
+  .footer-icons {
+    width: 165%;
+    margin-top: 5em;
+  }
+
+  .footer-icons li a {
+    font-size: 24px;
+  }
+}
