@@ -1,20 +1,21 @@
-body{
+body {
   background: #121212;
   overflow: hidden;
   text-align: center;
 }
-h1{
+
+h1 {
   font-size: 150px;
   text-transform: uppercase;
   text-align: center;
+  margin-right: -15%;
   color: #fff;
   font-family: 'Odibee Sans', cursive;
   margin-top: 10%;
-  
   transition: .6s;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -43,7 +44,7 @@ a{
   text-align: center;
 }
 
-.arrow{
+.arrow {
   border: solid white;
   border-width: 0 10px 10px 0;
   display: inline-block;
@@ -69,6 +70,7 @@ a{
 [id^= "item"] {
   display: none;
 }
+
 .item-1 {
   z-index: 2;
   opacity: 1;
@@ -85,7 +87,7 @@ a{
 }
 
 
-*:target ~ .item-1{
+*:target ~ .item-1 {
   opacity: 0;
 }
 #item-1:target ~ .item-1 {
@@ -97,7 +99,7 @@ a{
   opacity: 1;
 } 
 
-.photo{
+.photo {
   padding-left: 10%;
   width: 70%;
   height: 20%;
@@ -107,4 +109,41 @@ a{
 
 .photo:hover > h1{
   transform: scale(1.2);
+}
+
+@media (min-height: 600px) and (max-width: 1170px) {
+  
+  .carousel-wrapper {
+    height: 71em;
+    margin-right: 5%;
+  }
+
+  h1{
+    font-size: 130px;
+  }
+  .item-2 {
+    background: url('../Images/Index-Photos/index-history-tablet.jpg');
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .carousel-wrapper {
+    height: 64em;
+    width: 128%;
+  }
+
+  h1{
+    font-size: 80px;
+  }
+
+  .item-1 {
+    background: url('../Images/Index-Photos/index-geography-phone.jpg');
+  }
+  .item-2 {
+    background: url('../Images/Index-Photos/index-history-phone.jpg');
+  }
+  .item-3 {
+    background: url('../Images/Index-Photos/index-game-phone.jpg');
+  }
 }
