@@ -16,6 +16,21 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+
+//polygons
+var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
+.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
+.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
+.bindPopup('<b>.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.openPopup();
+
 //monuments
 L.marker([52.37261097249224, 4.888577296326658],{icon:TouristDestinationsMarkerIcon}).addTo(map)
 .bindPopup("<b>Canals of Amsterdam</b><hr><i>One of the most popular tourist destinations in Netherlands.</i>")

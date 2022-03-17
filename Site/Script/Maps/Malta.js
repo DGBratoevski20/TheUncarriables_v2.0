@@ -1,4 +1,4 @@
-var map = L.map('map').setView([35.93772903209806, 14.37020907020132], 11);
+ var map = L.map('map').setView([35.93772903209806, 14.37020907020132], 11);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
@@ -16,6 +16,20 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+
+
+//polygons
+var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
+.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
+.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.openPopup();
+
+var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
+.bindPopup('<b>.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.openPopup();
 
 //monuments
 L.marker([35.88504288744429, 14.4037164997512],{icon:TouristDestinationsMarkerIcon}).addTo(map)
