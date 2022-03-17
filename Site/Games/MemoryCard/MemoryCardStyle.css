@@ -65,7 +65,8 @@ body{
     margin-top: 15%;
  
     padding: 20px 20px;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
     
    
     
@@ -77,6 +78,7 @@ body{
     background-color: rgb(189, 210, 140);
     transition: all 1s;
     border-radius: 15% 15% 15% 15%;
+    
     transform-style: preserve-3d;
     
 }
@@ -101,6 +103,7 @@ span{
     
     
 }
+
 aside{
     position: absolute;
     width: 100%;
@@ -115,13 +118,6 @@ aside{
 .disFor{
     pointer-events: none !important;
 }
-@media only screen and (max-width:980px){
-    .cardArea{
-        margin-left: 5%;
-        margin-top: 40%;
-        grid-template-columns: repeat(7, 20%);
-        height: 20vh;
-    }
-}
+
 
 

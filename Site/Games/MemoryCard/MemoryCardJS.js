@@ -112,6 +112,7 @@
                     else if (minute % 60 == 0 && minute > 0)
                     {
                         hours++;
+                        minute = 0;
                         
                     }                  
                    timer.querySelector('p').innerText = `Hours:${hours} Min:${minute} Sec:${seconds}`
