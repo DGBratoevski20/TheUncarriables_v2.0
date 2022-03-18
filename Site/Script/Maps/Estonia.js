@@ -581,8 +581,6 @@ var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
   .openPopup();
 
 
-
-
 //monuments
 L.marker([59.4366043733835, 24.744334183754145],{icon:TouristDestinationsMarkerIcon}).addTo(map)
 .bindPopup("<b>Tour Tallinn's Old Town</b><hr><i>One of the most popular tourist destinations in Estonia.</i>")
