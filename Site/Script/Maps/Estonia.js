@@ -569,15 +569,15 @@ var polygon2 = [
 
 //polygons
 var polygon = L.polygon(polygon1, {color: 'red'}).addTo(map)
-  .bindPopup('<b>Soomaa National Park.</b><hr><i> One of the nature preserves in Czech Republic.</i>')
+  .bindPopup('<b>Soomaa National Park.</b><hr><i> One of the nature preserves in Estonia.</i>')
   .openPopup();
   
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-  .bindPopup('<b>Lille Vildmose National Park.</b><hr><i> One of the nature preserves in Czech Republic.</i>')
+  .bindPopup('<b>Lille Vildmose National Park.</b><hr><i> One of the nature preserves in Estonia.</i>')
   .openPopup();
   
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-  .bindPopup('<b>Jægersborg Dyrehave.</b><hr><i> One of the nature preserves in Czech Republic.</i>')
+  .bindPopup('<b>Jægersborg Dyrehave.</b><hr><i> One of the nature preserves in Estonia.</i>')
   .openPopup();
 
 
