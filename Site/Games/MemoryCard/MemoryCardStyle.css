@@ -55,6 +55,7 @@ article > aside{
 body{
     background-color: rgb(133, 134, 119);
     margin: 0;
+    overflow-x: hidden;
 }
 .cardArea{
     width: 90vw;
@@ -62,11 +63,10 @@ body{
     background-color: transparent;
     display: grid;
     margin: auto;
-    margin-top: 15%;
- 
-    padding: 20px 20px;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(4, 100px);
+    margin-top: 2%;
+    margin-left: 30%;
+    grid-template-columns: repeat(3, 15%);
+    grid-template-rows: repeat(4, 150px);
     
    
     
@@ -85,7 +85,7 @@ body{
 img{
     height: 100%;
     width:100%;
-    
+    border-radius: 15% 15% 15% 15%;
     z-index: 100;
 }
 
@@ -117,6 +117,11 @@ aside{
 }
 .disFor{
     pointer-events: none !important;
+}
+@media only screen and (max-width:980px) {
+    .cardArea{
+        margin-top:10%;
+    }
 }
 
 
