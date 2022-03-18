@@ -309,13 +309,14 @@ setInterval(function()
     {
         document.querySelector('#bomb').style.animation = 'none'
 
-        health -= 700;
+        health -= 50;
     }
     else if(Bomb2())
     {
+        
         document.querySelector('#bomb2').style.animation = 'none'
         
-        health -= 700;
+        health -= 50;
     }
     
 }, 1)
