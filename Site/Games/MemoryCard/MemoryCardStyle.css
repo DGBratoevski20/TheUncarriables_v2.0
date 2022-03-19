@@ -39,6 +39,7 @@ article > aside > button{
 
 article > aside > h1, p {
     font-size: 1.3em;
+	color: #f7fc00;
 }
 
 i{
@@ -87,6 +88,7 @@ article > aside{
     display: grid;
     margin: auto;
     margin-top: 7%;
+	justify-content: center;
     grid-template-columns: repeat(4, 290px);
     grid-template-rows: repeat(6, 280px);
 }
