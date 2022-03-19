@@ -17,6 +17,11 @@
             let findGameOver = 0;
             let intervalForTimer;
             let intervalForGameOver;
+            let buttonPlayAgain = document.querySelector('.gameOverScreen').querySelector('button');
+            buttonPlayAgain.addEventListener('click', () =>
+            {
+                location.reload();
+            })
             timer.querySelector('p').innerText = `Hours:${hours} Min:${minute} Sec:${seconds}`
             
             mother.forEach(function(item)

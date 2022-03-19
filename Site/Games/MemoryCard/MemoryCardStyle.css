@@ -14,12 +14,17 @@
 }
 /* Button for Play again*/
 article > aside > button{
-    width: auto;
+    width: 100px;
     height: 100px;
-    font-size: 2rem;
+    font-size: 1.1rem;
     padding: 1%;
+    position: absolute;
+    top: 80%;
+    left: 45%;
     background-color: tomato;
     outline: none;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
 
 }
 i{
@@ -33,7 +38,7 @@ aside > img{
     height: 100vh;
     background-color: black;
     opacity: 0.5;
-    display: none;
+    display:    none;
     z-index: 100;
    
 }
