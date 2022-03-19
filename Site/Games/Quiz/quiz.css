@@ -1,5 +1,3 @@
-
-
 img{
     width: 5.5rem;
     height: 5.2rem;
@@ -9,31 +7,40 @@ img{
     position: fixed;
 }
 .questions{
-    margin: 3rem auto;
+    margin: auto;
     width: 90vw;
     padding: 2rem;
-    background: rgba(0,255,221,0.45);
+    background: lightblue;
     cursor: default;
     border-radius: 1rem;
+    border: 10px solid #000000;
 }
 #question{
-    margin-bottom: 1rem;
+    margin-bottom: 8rem;
+	text-align: center;
 }
 .option{
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    border-bottom: solid 0.1rem blue;
+    box-shadow: 4px 5px 10px #15103d;
     width: 15rem;
-    background: lightblue;
+    background: linear-gradient(135deg, #15103d, #15190f);
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 1rem;
+    text-align: center;
+	color: red;
 }
 .option:hover{
-    color: white;
+    color: #900000;
 }
 ol{
     position: relative;
-    padding: 0 1.5rem;
-    color: rgb(1,73,73);
+    color: lightblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 span{
     display: block;
@@ -44,8 +51,17 @@ span{
     margin-top: 2.5rem;
 }
 #stat{
-    margin-top: 1.5rem;
-    color: rgb(6,17,168);
+	font-size: 1.5rem;
+    margin-top: -1.5%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    border: 5px solid red;
+    border-radius: 15px;
+    width: 30%;
+    height: 7%;
+	background: linear-gradient(135deg, #15103d, #15190f);
 }
 .buttons{
     text-align: center;
@@ -98,13 +114,13 @@ button:active{
     
 }
 #quiz-container{
-    transform: translateY(400%);
+    transform: translateY(600%);
     z-index: 1000;
+	margin-top: -100px;
 }
 body{
-
     margin: 0%;
-    background-color: rebeccapurple;
+    background-color: #020618;
     position: relative;
 }
 .obj{
@@ -117,7 +133,7 @@ body{
 }
 .leftPart{
     position: absolute;
-    background-image: url('../../Images/Nature-Photos/flower.jpg');
+    background-image: url('../../Images/Game-Photos/quiz-bg.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     width: 100%;
@@ -128,7 +144,7 @@ body{
 }
 .rightPart{
     position: absolute;
-    background-image: url('../../Images/Nature-Photos/flower.jpg');
+    background-image: url('../../Images/Game-Photos/quiz-bg.jpg');
     width: 100%;
     background-size: cover;
     margin: 0;
