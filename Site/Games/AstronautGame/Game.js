@@ -406,7 +406,7 @@ FirstvarForInterval = setInterval(function()
             document.querySelector('.info').querySelector('h1').style.fontSize = "1.3rem"
             
         }
-        document.querySelector('.info').querySelector('h1').innerText = `Game Over! You reached the ${contentOfH1} with ${counterForMetres} metres.`
+        document.querySelector('.info').querySelector('h1').innerText = `Game Over! \n You reached the ${contentOfH1} with ${counterForMetres} metres.`
         switch(contentOfH1)
         {
             case "Troposphere":
