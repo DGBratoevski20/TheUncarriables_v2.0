@@ -1,46 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body{
+    background-color: #121212;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Fredoka', sans-serif;
+}
 
 .timer{
     position: absolute;
+    width: 25em;
     top:2%;
-    left:2%;
+    left:1%;
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: whitesmoke;    
-    height: auto;
+    background-color: #f7fc00;    
+    height: 3.5em;
     margin-bottom:20px;
-    padding-right: 20px;
-   
-    
+    padding: 10px 20px 10px 20px;
 }
+
 /* Button for Play again*/
 article > aside > button{
-    width: 100px;
-    height: 100px;
-    font-size: 1.1rem;
+    width: 130px;
+    height: 130px;
+    font-size: 1.5rem;
     padding: 1%;
     position: absolute;
     top: 80%;
     left: 45%;
-    background-color: tomato;
+    background-color: #363636;
+    color: #f1f1f1;
     outline: none;
     border: none;
     border-radius: 20% 0% 20% 0%;
 
 }
+
+article > aside > h1, p {
+    font-size: 1.3em;
+}
+
 i{
     font-size: 2.5rem;
+    color: #292929;
+    padding: 0.1em;
 }
+
+.timer p {
+    color: #292929;
+}
+
 aside > img{
     transform: scale(0.6,0.6);
 }
+
 .gameOverScreen{
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    opacity: 0.5;
-    display:    none;
+    background-color: #121212;
+    opacity: 1;
+    display: none;
     z-index: 100;
-   
 }
 
 article{
@@ -51,54 +72,47 @@ article{
     text-align: center;
     display: grid;
     place-items: center;
-    background-color: blanchedalmond;
+    background-color: #121212;
 }
+
 article > aside{
     display: grid;
     grid-template-rows: repeat(2, 50%);
 }
-body{
-    background-color: rgb(133, 134, 119);
-    margin: 0;
-    overflow-x: hidden;
-}
+
 .cardArea{
     width: 90vw;
-    height:60vh;
+    height:250vh;
     background-color: transparent;
     display: grid;
     margin: auto;
-    margin-top: 2%;
-    margin-left: 30%;
-    grid-template-columns: repeat(3, 15%);
-    grid-template-rows: repeat(4, 150px);
-    
-   
-    
+    margin-top: 7%;
+    grid-template-columns: repeat(4, 290px);
+    grid-template-rows: repeat(6, 280px);
 }
-#divImg
-{
-    margin: 10%;
+
+#divImg {
+    margin: 12%;
     position: relative;
-    background-color: rgb(189, 210, 140);
+    background-color: #eaee17;
     transition: all 1s;
     border-radius: 15% 15% 15% 15%;
-    
     transform-style: preserve-3d;
-    
 }
+
 img{
     height: 100%;
     width:100%;
     border-radius: 15% 15% 15% 15%;
     z-index: 100;
+    background-color: #eaee17;
 }
 
 span{
     position:absolute;
     left: 0;
     top: 0;
-    background-color: rgb(189, 210, 140);
+    background-color: #bdd28c;
     width: 100%;
     height: 100%;
     border-radius: 15% 15% 15% 15%;
@@ -113,21 +127,54 @@ aside{
     position: absolute;
     width: 100%;
     height: 100%;
-    
     border-radius: 15% 15% 15% 15%;
 }
+
 .dis{
     pointer-events: none;
-
 }
+
 .disFor{
     pointer-events: none !important;
 }
-@media only screen and (max-width:980px) {
+
+@media only screen and (min-width: 850px) and (max-width:980px) {
     .cardArea{
-        margin-top:10%;
+        margin-top: 15%;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(8, 300px);
+        height: 170vh;
+    }
+
+    #divImg
+    {
+        margin: 17% 10% 10% 10%;
+    }
+
+    .timer{
+        width: 38em;
+        height: 5em;
+        top:2%;
+        left:3%;
+        padding: 10px 20px 10px 10px;
+    }
+
+    article > aside > button {
+        width: 240px;
+        height: 240px;
+        left: 40%;
+    }
+    
+    article > aside > h1, p {
+        font-size: 2em;
+    }
+    
+    i{
+        font-size: 3rem;
+    }
+    
+    .timer p {
+        color: #292929;
+        margin-top: 10px;
     }
 }
-
-
-
