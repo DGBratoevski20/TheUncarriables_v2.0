@@ -3,6 +3,9 @@
     height:90vh;
     margin-left: 5%;
     margin-top: 5%;
+	border: 3px solid var(--map-color);
+	border-radius: 40px;
+	box-shadow: 3px 1px 10px var(--map-color);
   }
 
   #chartdiv {
@@ -11,6 +14,8 @@
 	margin-left: 3%;
 	margin-top: 10.5%;
 	margin-bottom: 5%;
+    background: var(--chart-color);
+    border-radius: 15px;
   }
 
   /* required styles */
@@ -675,6 +680,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --bg-color: linear-gradient(270deg, #0480c0 10%, #CAF0F8 90%);
   --heading-color: #ffffffe6;
   --cta-hover-color: #90E0EF;
+  --map-color: #014F86;
+  --chart-color: linear-gradient(60deg, lightblue, #6E6AEE 90%);
   --population-color: #ff9900;
   --map-icon-bg: #CAF0F8;
   --map-icon: #014F86;
@@ -694,7 +701,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --bg-color: linear-gradient(60deg, #616161 10%, #121212 90%);
   --heading-color: #f1f1f1;
   --cta-hover-color: #6560ff;
-  --population-color: #dddddd;
+  --map-color: #6E6AEE;
+  --chart-color: linear-gradient(60deg, #6E6AEE, #121212 90%);
+  --population-color: #dddddd; 
   --map-icon-bg: #6E6AEE;
   --icons-bg: #121212;
   --icons: #CAF0F8;
