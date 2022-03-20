@@ -319,15 +319,15 @@ var polygon3 =
 
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b>Sečovlje Saltpans Natural Park.</b><hr><i> One of the nature preserves in Spain.</i>')
+.bindPopup('<b>Sečovlje Saltpans Natural Park.</b><hr><i> One of the nature preserves in Portugal.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b>National park "Parque Nacional de Los Picos de Europa".</b><hr><i> One of the nature preserves in Spain.</i>')
+.bindPopup('<b>National park "Parque Nacional de Los Picos de Europa".</b><hr><i> One of the nature preserves in Portugal.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Spain.</i>')
+.bindPopup('<b>National park "Caldera de Taburiente".</b><hr><i> One of the nature preserves in Portugal.</i>')
 .openPopup();
 
 //monuments
