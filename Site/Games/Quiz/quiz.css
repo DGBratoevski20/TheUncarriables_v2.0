@@ -56,6 +56,8 @@ span{
     display: block;
     padding: 0.1rem 0.7rem;
     border-radius: 1rem;
+    width: 100%;
+    height: 100%;
 }
 #answer{
     margin-top: 2.5rem;
@@ -86,7 +88,7 @@ span{
     position: relative;
     top: 5rem;
     display: none;
-    transform: translateY(300%);
+    transform: translateY(500%);
 }
 #score-title{
     margin: 1rem 0;
@@ -131,7 +133,7 @@ span{
     position: relative;
     top: 5rem;
     opacity: 0;
-    transform: translateY(280%);
+    transform: translateY(230%);
     
 }
 #answers{

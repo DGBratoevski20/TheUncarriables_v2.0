@@ -12,16 +12,19 @@ var ButtonRight;
 var buttonStartGame; 
 var helperOnLeftComp = 15;
 var helperOnLeftMob = 15;
-var eighty = 93;
+var eighty = 93; // variable for more flexible hero movements and stop movements
 
 document.querySelector('.score').innerText = '0'
+
 function UP()
 {
+    //Function for when you press ArrowUp
     if(CheckArrowUp == 1)
             {
                 document.querySelector('h1').innerHTML = 'Troposphere';
                 setInterval(function()
                 {
+                    //Interval for Fuel
                     document.querySelector('#point').style.animation = "clouds 3s infinite"
                     
                     
@@ -39,7 +42,7 @@ function UP()
                     }, 2000)
                 }, 2000)
                 
-                //bomb
+                //Interval for One Meteorit
                 setInterval(function()
                     {
                          
@@ -59,7 +62,7 @@ function UP()
                         clearTimeout(SecondVarForTimeOut)
                     }, 3000)
                 }, 3000)
-                //bomb2
+                //Interval for Another Meteorit
                 setInterval(function()
                     {
                          
@@ -82,6 +85,7 @@ function UP()
 
                 SecondVarForInterval = setInterval(function()
                 {
+                    //Interval Game to response properly to layers of atmosphere
 					fuel -= 1;
                     counterForMetres += helperOncounterForMetres;
                     document.querySelector('.score').innerText = `${counterForMetres}`;
@@ -243,7 +247,7 @@ window.addEventListener("keydown", function(mouseEvent)
 
 
 
-//Find Collusion
+//Find Collusion with all which is falling
 setInterval(function()
 {
     var point = document.querySelector('#point').getBoundingClientRect();
