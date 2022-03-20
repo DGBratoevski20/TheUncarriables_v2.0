@@ -80,6 +80,7 @@ var option2= document.getElementById('option2');
 var option3= document.getElementById('option3');
 var points= document.getElementById('score');
 var span= document.querySelectorAll('span');
+var next = document.querySelector('.next');
 var i=0;
 var randAr = [];
 var score= 0;
@@ -169,6 +170,7 @@ function nextQuestion(){
 function backToQuiz(){
     location.reload();
 }
+next.addEventListener('click', nextQuestion);
 
 //function to check Answers
 function checkAnswer(){
