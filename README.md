@@ -1,5 +1,5 @@
 <h1 align="center">TheUncarriables_v2.0</h1>
-<h3 align="center">History & Geography📚</h3>
+<h3 align="center">📜History & Geography🗺️</h3>
 
 
 <p align="center">
