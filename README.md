@@ -49,6 +49,6 @@ You can download the site from [github](https://github.com/DGBratoevski20/TheUnc
 - <img src="https://seeklogo.com/images/F/font-awesome-logo-3010FE2434-seeklogo.com.png" width="20"> Font Awesome
 ---
 
-# If you like our site you can star us!⭐✨&#127919;
+# If you like our site you can star us!⭐✨&#127919; &#128192;
 
 # Have a great time and don't forget: "Carry the uncarriable!"😀
