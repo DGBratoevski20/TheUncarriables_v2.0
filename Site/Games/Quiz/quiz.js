@@ -91,7 +91,7 @@ var questionBank= [
         answer : 'Vilnius'
     },
     {
-        question : 'When did WW2 ended? ', // ready
+        question : 'When did WW1 ended? ', // ready
         option : ['1919','1917','1920','1916'],
         answer : '1919'
     }
