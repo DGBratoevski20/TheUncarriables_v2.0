@@ -29,7 +29,7 @@
   --icons-bg: #014F86;
   --icons: #CAF0F8;
   --instagram-icon: #FFA500;
-  --twitter-icon: #00FFFF;
+  --reddit-icon: red;
   --github-icon: #03c04a;
   --facebook-icon: #0072ff;
   --progress-bar-color: #f06f06;
@@ -56,7 +56,7 @@
   --icons: #CAF0F8;
   --map-icon: #ffffff;
   --instagram-icon: #FFFF00;
-  --twitter-icon: cyan;
+  --reddit-icon: red;
   --github-icon: #03c04a;
   --facebook-icon: #0072ff;
   --progress-bar-color: #6560ff;
@@ -578,7 +578,7 @@ iframe {
 }
 
 
-.footer-icons li #twitter::before {
+.footer-icons li #reddit::before {
   content: '';
   position: absolute;
   top: 0;
@@ -586,21 +586,21 @@ iframe {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: var(--twitter-icon);
+  background: var(--reddit-icon);
   transition: .5s;
   transform: scale(.9);
   z-index: -1;
 }
 
-.footer-icons li #twitter:hover::before {
+.footer-icons li #reddit:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px var(--twitter-icon);
+  box-shadow: 0 0 15px var(--reddit-icon);
 }
 
-.footer-icons li #twitter:hover {
-  color: var(--twitter-icon);
-  box-shadow: 0 0 5px var(--twitter-icon);
-  text-shadow: 0 0 5px var(--twitter-icon);
+.footer-icons li #reddit:hover {
+  color: var(--reddit-icon);
+  box-shadow: 0 0 5px var(--reddit-icon);
+  text-shadow: 0 0 5px var(--reddit-icon);
 }
 
 .footer-icons li #github::before {
