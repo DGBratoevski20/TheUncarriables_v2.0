@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 
 *{
  list-style-type: none;
 }
-=======
->>>>>>> 3fe5b322afa118ab78eb8aecf3928c84da84c907
+
 img{
     width: 5.5rem;
     height: 5.2rem;
@@ -121,15 +120,14 @@ button:active{
     
 }
 #quiz-container{
-<<<<<<< HEAD
+
     position: absolute;
     top:30%;
     left: 1%;
     width: 98vw;
     transition: all 1s;
-=======
     transform: translateY(600%);
->>>>>>> 3fe5b322afa118ab78eb8aecf3928c84da84c907
+
     z-index: 1000;
 	margin-top: -100px;
 }
