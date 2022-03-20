@@ -1,5 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+    margin: 0%;
+    background-color: #020618;
+    position: relative;
+}
+
 *{
  list-style-type: none;
 }
@@ -13,8 +22,8 @@ img{
     position: fixed;
 }
 .questions{
-        margin: auto;
-    width: 90vw;
+    margin: auto;
+    width: 85vw;
     padding: 2rem;
     background: #f5f5b3;
     cursor: default;
@@ -68,11 +77,11 @@ span{
     color: white;
     text-align: center;
     position: absolute;
-    left: 35%;
+    left: 30%;
     border: 3px solid darkorange;
     border-radius: 15px;
-    width: 30%;
-    height: 7%;
+    width: 40%;
+    height: 8%;
     background: linear-gradient(0deg, darkorange, yellow);
 }
 .buttons{
@@ -96,6 +105,21 @@ span{
 #score-btn,#check-answer{
     margin-top: 1rem;
 }
+
+#score-btn {
+    background-color: red;
+    height: 4em;
+    border: none;
+    border-radius: 10px;
+}
+
+#check-answer {
+    background-color: green;
+    height: 4em;
+    border: none;
+    border-radius: 10px;
+}
+
 #score{
     font-size: 2.5rem;
 }
@@ -138,8 +162,10 @@ span{
 }
 #answers{
     margin-top: 1rem;
-    display: grid;
-    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .quiz{
     width: 100%;
@@ -192,12 +218,6 @@ i{
 u{
     text-decoration: none;
 }
-body{
-    margin: 0%;
-    background-color: #020618;
-    position: relative;
-    font-family: 'Fredoka', sans-serif;
-}
 .questions> ol >li{
     height: auto;
 }
@@ -234,8 +254,34 @@ body{
 }
 @media only  screen and (max-width:980px){
     .PaddingBot{
-        transform: translateY(200%);
-        height: 800px;
+        transform: translateY(100%);
+        height: 300px;
+    }
+    .questions{
+        width: 80vw;
+        height: 50vh;
+    }
+    #question{
+        font-size: 2.5rem;
+        margin-top: 10%;
+    }
+    .option{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        width: 30rem;
+        height: 100px;
+        margin-left: 16%;
+        margin-right: 20px;
+    }
+    ol{
+        flex-direction: column;
+    }
+    #answer{
+        margin-top: 2.5rem;
+    }
+    #stat{
+        font-size: 2.2rem;
+        margin-top: -4%;
     }
 }
 @media only screen and (min-width: 850px) and (max-width:980px) {

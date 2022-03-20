@@ -46,54 +46,54 @@ intervalForTimer = setInterval(function()
 //Question bank
 var questionBank= [
     {
-        question : 'What is the name of the tallest mountain in the world?', // ready
-        option : ['Asia','Mount Everest','K5','Stara Mountain'],
-        answer : 'Mount Everest'
+        question : 'What is the capital city of Estonia?', // ready
+        option : ['Tallinn','Narva','Parnu','Tartu'],
+        answer : 'Tallinn'
     },
     {
-        question : 'What American city is the Golden Gate Bridge located in?', // ready
-        option : ['San Francisco','California','Alaska','Arizona'],
-        answer : 'San Francisco'
+        question : 'When did the First Industrial Revolution started? ', // ready
+        option : ['Late 18th Century','Early 19th Century','Middle 18th Century','Early 18th Century'],
+        answer : 'Middle 18th Century'
     },
     {
-        question : 'Which country is also called The Netherlands? ', //ready
-        option : ['China','German','Antarctica','Holland'],
-        answer : 'Holland'
+        question : 'What is the capital city of Cyprus? ', //ready
+        option : ['Lakatamia','Paralimni','Larnaca','Nicosia'],
+        answer : 'Nicosia'
     },
     {
-        question : 'What is the name of the longest river in Africa? ',
-        option : ['The Amazon River','The Mississippi River','The Nile River','The Yenisei River'], // ready
-        answer : 'The Nile River'
+        question : 'When did the Great Depression ended? ',
+        option : ['1939','1940','1941','1942'], // ready
+        answer : '1941'
     },
     {
-        question : 'What country has the most natural lakes', // ready
-        option : ['China','Canada','Russia','USA'],
-        answer : 'Canada'
+        question : 'What is the capital city of Denmark? ', // ready
+        option : ['Copenhagen','Esbjerg','Odense','Aalborg'],
+        answer : 'Copenhagen'
     },
     {
-        question : 'What city is known as the Glass Capital of the World? ', // ready
-        option : ['Chicago','Houston','Toledo','Los Angeles'],
-        answer : 'Toledo'
+        question : 'When did the Revolutionary War ended? ', // ready
+        option : ['1784','1781','1783','1780'],
+        answer : '1783'
     },
     {
-        question : 'What ocean borders the state of Florida?', // ready
-        option : ['Pacific Ocean','Atlantic Ocean','Indian Ocean','Arctic Ocean'],
-        answer : 'Atlantic Ocean'
+        question : 'What is the capital city of Latvia?', // ready
+        option : ['Riga','Ventspils','Liepaja','Jelgava'],
+        answer : 'Riga'
     },
     {
-        question : 'What is the name of the largest lake in the US?', // ready
-        option : ['Lake Albert','Lake Superior','Lake Edward','Lake Kivu'],
-        answer : 'Lake Superior'
+        question : 'When is the Panama Canal created? ', // ready
+        option : ['1912','1917','1914','1916'],
+        answer : '1914'
     },
     {
-        question : 'What river flows through the Grand Canyon?', // ready
-        option : ['Colorado River','Lena River','Purus River','Yukon River'],
-        answer : 'Colorado River'
+        question : 'What is the capital city of Lithuania? ', // ready
+        option : ['Klaipeda','Siauliai','Panevezys','Vilnius'],
+        answer : 'Vilnius'
     },
     {
-        question : 'How many total islands does Hawaii have?', // ready
-        option : ['132','68','47','231'],
-        answer : '132'
+        question : 'When did WW2 ended? ', // ready
+        option : ['1919','1917','1920','1916'],
+        answer : '1919'
     }
 ]
 
