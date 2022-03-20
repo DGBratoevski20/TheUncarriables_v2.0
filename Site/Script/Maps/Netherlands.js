@@ -495,17 +495,17 @@ L.marker([52.36017448550254, 4.885873257570371],{icon:TouristDestinationsMarkerI
 
 // cities
 L.marker([52.072509777275876, 4.298209580307056],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>The Hague.</b><hr><i> One of the biggest cities in Netherlands.</i>')
+.bindPopup('<b>The Hague.</b><hr><i>Population: 514 861</i><br><i>Area: 98,13 km<sup>2</sup></i><br><i>Elevation: 1m</i><hr><i>The Hague is a city and municipality on the western coast of the Netherlands on the North Sea.</i>')
 .openPopup();
 
 L.marker([51.93585750763058, 4.474379115296331],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Rotterdam.</b><hr><i> One of the biggest cities in Netherlands.</i>')
+.bindPopup('<b>Rotterdam.</b><hr><i>Population: 623 652 </i><br><i>Area: 324,1  km<sup>2</sup></i><br><i>Elevation:  0m</i><hr><i>Rotterdam is the second largest city and municipality in the Netherlands.</i>')
 .openPopup();
 
 L.marker([52.09859240224668, 5.121858732711509],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Utrecht.</b><hr><i> One of the biggest cities in Netherlands.</i>')
+.bindPopup('<b>Utrecht.</b><hr><i>Population: 1,307 000</i><br><i>Area: 99,21 km<sup>2</sup></i><br><i>Elevation: 5 m</i><hr><i>Utrecht is the fourth-largest city and a municipality of the Netherlands, capital and most populous city of the province of Utrecht.</i>')
 .openPopup();
 
 L.marker([52.37511137109779, 4.902678761742699],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Amsterdam.</b><hr><i> The capital city of Netherlands.</i>')
-.openPopup();
+.bindPopup('<b>Amsterdam.</b><hr><i><i>Population: 821 752</i><br><i>Area: 219,3 km<sup>2</sup></i><br><i>Elevation: -2m</i><hr><i>Amsterdam is the capital and most populous city of the Netherlands.'</i>
+</i>')

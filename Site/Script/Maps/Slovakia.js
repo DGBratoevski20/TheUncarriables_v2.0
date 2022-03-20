@@ -337,25 +337,25 @@ L.marker([49.212674124872095, 20.121167276679245],{icon:TouristDestinationsMarke
 
 //cities
 L.marker([48.311791651899036, 18.070614006567418],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Nitra.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+.bindPopup('<b>Nitra.</b><hr><i>Population: 77,603</i><br><i>Area: 100.5 km<sup>2</sup></i><br><i>Elevation: 167 m</i><hr><i>Nitra is a city in western Slovakia, situated at the foot of Zobor Mountain in the valley of the river Nitra.</i>')
 .openPopup();
 
 L.marker([48.84204277459344, 19.158964794791576],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Banská Bystrica.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+.bindPopup('<b>Banská Bystrica.</b><hr><i>Population: 78,758</i><br><i>Area: 103.4 km<sup>2</sup></i><br><i>Elevation: 368 m</i><hr><i>Banská Bystrica is a city in central Slovakia located on the Hron River in a long and wide valley encircled by the mountain chains of the Low Tatras, the Veľká Fatra, and the Kremnica Mountains.</i>')
 .openPopup();
 
 L.marker([49.217418140637655, 18.738528627520484],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Žilina.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+.bindPopup('<b>Žilina.</b><hr><i>Population: 81,094</i><br><i>Area: 80  km<sup>2</sup></i><br><i>Elevation: 378 m</i><hr><i>Žilina is a city in north-western Slovakia, around 200 kilometres from the capital Bratislava, close to both the Czech and Polish borders.</i>')
 .openPopup();
 
 L.marker([49.002469539522856, 21.23720083735469],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Prešov.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+.bindPopup('<b>Prešov.</b><hr><i>Population: 89,872</i><br><i>Area: 70.43 km<sup>2</sup></i><br><i>Elevation: 296 m</i><hr><i>Prešov is a city in Eastern Slovakia. It is a seat of the administrative Prešov Region and Šariš as well as the historic Sáros County of the Kingdom of Hungary.</i>')
 .openPopup();
 
 L.marker([48.72203788044131, 21.256532952408698],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Košice.</b><hr><i> One of the biggest cities in Slovakia.</i>')
+.bindPopup('<b>Košice.</b><hr><i>Population: 238,757</i><br><i>Area: 242.8 km<sup>2</sup></i><br><i>Elevation: 208 m</i><hr><i>Košice is a city in eastern Slovakia, close to the Hungarian border.</i>')
 .openPopup();
 
 L.marker([48.15043737772495, 17.100639332663736],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Bratislava.</b><hr><i> The capital city of Slovakia.</i>')
+.bindPopup('<b>Bratislava.</b><hr><i>Population: 424,428</i><br><i>Area: 367.6 km<sup>2</sup></i><br><i>Elevation: 367.6 m</i><hr><i>Bratislava, the capital of Slovakia, is set along the Danube River by the border with Austria and Hungary.</i>')
 .openPopup();

@@ -355,21 +355,21 @@ L.marker([41.44821515375674, -8.289332048822311],{icon:TouristDestinationsMarker
 
 // cities
 L.marker([41.159326804937216, -8.630917284788302],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Porto.</b><hr><i> One of the biggest cities in Portugal.</i>')
+.bindPopup('<b>Porto.</b><hr><i>Population: 1,700,000</i><br><i>Area: 41.42 km<sup>2</sup></i><br><i>Elevation: 104 m</i><hr><i>Porto is the second-largest city in Portugal, the capital of the Porto District, and one of the Iberian Peninsula`s major urban areas.</i>')
 .openPopup();
 
 L.marker([41.54780059999308, -8.427666639620412],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Braga.</b><hr><i> One of the biggest cities in Portugal.</i>')
+.bindPopup('<b>Braga.</b><hr><i>Population: 193,333</i><br><i>Area: 183.40 km<sup>2</sup></i><br><i>Elevation: 200 m</i><hr><i>Braga is a city and a municipality capital of the northwestern Portuguese district of Braga and of the historical and cultural Minho Province.</i>')
 .openPopup();
 
 L.marker([40.20182698905252, -8.415120843779475],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Coimbra.</b><hr><i> One of the biggest cities in Portugal.</i>')
+.bindPopup('<b>Coimbra.</b><hr><i>Population: 143,396</i><br><i>Area: 450 km<sup>2</sup></i><br><i>Elevation: 499</i><hr><i>Coimbra is a city and a municipality in Portugal. The population of the municipality at the 2011 census was 143,397 in an area of 319.40 square kilometres.')
 .openPopup();
 
 L.marker([40.64437897599664, -8.649745969900799],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Aveiro.</b><hr><i> One of the biggest cities in Portugal.</i>')
+.bindPopup('<b>Aveiro.</b><hr><i>Population: 80,880</i><hr><i>Area: 197.58 km<sup>2</sup></i><br><i>Elevation: 220 m</i><hr><i>Aveiro is a city and a municipality in Portugal. In 2021, the population was 80,880 in an area of 197.58 square kilometres it is the second most populous city in the Centro Region of Portugal.</i>')
 .openPopup();
 
 L.marker([38.72141158673595, -9.139789655321902],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Lisbon.</b><hr><i> The capital city of Portugal.</i>')
+.bindPopup('<b>Lisbon.</b><hr><i>Population: 2,719,000</i><hr><i>Area: 100.05 km<sup>2</sup></i><br><i>Elevation: 2 m</i><hr><i>Lisbon is the capital and the largest city of Portugal, with an estimated population of 544,851 within its administrative limits in an area of 100.05 km2.</i>')
 .openPopup();

@@ -303,26 +303,26 @@ L.marker([57.636657385781966, 18.29485565057488],{icon:TouristDestinationsMarker
 
 //cities
 L.marker([57.71093805967822, 11.965933427643622],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Gothenburg.</b><hr><i> One of the biggest cities in Sweden.</i>')
+.bindPopup('<b>Gothenburg.</b><hr><i>Population: 579,281</i><br><i>Area: 447.8 km<sup>2</sup></i><br><i>Elevation: 12 m</i><hr><i>Gothenburg, a major city in Sweden, is situated off the Göta älv river on the country's west coast.</i>')
 .openPopup();
 
 L.marker([55.60208195113387, 13.00181526081602],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Malmö.</b><hr><i> One of the biggest cities in Sweden.</i>')
+.bindPopup('<b>Malmö.</b><hr><i>Population: 344,166</i><br><i>Area: 76.81 km<sup>2</sup></i><br><i>Elevation: 57 m</i><hr><i>Malmö is a coastal city in southern Sweden.</i>')
 .openPopup();
 
 L.marker([59.859814525400125, 17.635893737002007],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Uppsala.</b><hr><i> One of the biggest cities in Sweden.</i>')
+.bindPopup('<b>Uppsala.</b><hr><i>Population: 177,074</i><br><i>Area: 48.77 km<sup>2</sup></i><br><i>Elevation: 15 m</i><hr><i>Uppsala is a city near Stockholm, in Sweden.</i>')
 .openPopup();
 
 
 L.marker([59.27346182938627, 15.21018449483136],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Örebro.</b><hr><i> One of the biggest cities in Sweden.</i>')
+.bindPopup('<b>Örebro.</b><hr><i>Population: 155,989</i><br><i>Area: 1,380 km<sup>2</sup></i><br><i>Elevation: 34 m</i><hr><i>Örebro is a city with 124,027 inhabitants, the seat of Örebro Municipality and the capital of Örebro County in Sweden.</i>')
 .openPopup();
 
 L.marker([58.58623608064828, 16.190535870739346],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Norrköping.</b><hr><i> One of the biggest cities in Sweden.</i>')
+.bindPopup('<b>Norrköping.</b><hr><i>Population: 137,326</i><br><i>Area: 35.68 km<sup>2</sup></i><br><i>Elevation: 119 m</i><hr><i>Norrköping is a city in the province of Östergötland in eastern Sweden and the seat of Norrköping Municipality, Östergötland County.</i>')
 .openPopup();
 
 L.marker([59.36693868725194, 18.064821650729527],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Stockholm.</b><hr><i> The capital city of Sweden.</i>')
+.bindPopup('<b>Stockholm.</b><hr><i>Population: 975,551</i><br><i>Area: 188 km<sup>2</sup></i><br><i>Elevation: 28 m</i><hr><i>Stockholm, the capital of Sweden, encompasses 14 islands and more than 50 bridges on an extensive Baltic Sea archipelago.</i>')
 .openPopup();

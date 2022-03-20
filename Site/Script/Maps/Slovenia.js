@@ -272,25 +272,25 @@ L.marker([45.98376877023109, 14.325712054149374],{icon:TouristDestinationsMarker
 
 //cities
 L.marker([46.55807749861824, 15.657039519127492],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Maribor.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.bindPopup('<b>Maribor.</b><hr><i>Population: 94,370</i><br><i>Area: 40.98 km<sup>2</sup></i><br><i>Elevation: 275 m</i><hr><i>Maribor is a Slovenian city set amid wine-region hills on the Drava River.</i>')
 .openPopup();
 
 L.marker([46.235578381336616, 15.264664258694664],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Celje.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.bindPopup('<b>Celje.</b><hr><i>Population: 37,872</i><br><i>Area: 22.71 km<sup>2</sup></i><br><i>Elevation: 238 m</i><hr><i>Celje is the fourth-largest city in Slovenia.</i>')
 .openPopup();
 
 L.marker([46.183360742377324, 13.729824553291953],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Tolmin.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.bindPopup('<b>Tolmin.</b><hr><i>Population: 3,525</i><br><i>Area: 1.7 km<sup>2</sup></i><br><i>Elevation: 201 m</i><hr><i>Tolmin is a small town in northwestern Slovenia.</i>')
 .openPopup();
 
 L.marker([46.23808183540291, 14.3538932869235],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Kranj.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.bindPopup('<b>Kranj.</b><hr><i>Population: 37,941</i><br><i>Area: 148 km<sup>2</sup></i><br><i>Elevation: 386 m</i><hr><i>Kranj is the third-largest city in Slovenia.</i>')
 .openPopup();
 
 L.marker([46.37289315777687, 14.107914272729888],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Bled.</b><hr><i> One of the biggest cities in Slovenia.</i>')
+.bindPopup('<b>Bled.</b><hr><i>Population: 8,171</i><br><i>Area: 188.5 km<sup>2</sup></i><br><i>Elevation: 508 m</i><hr><i>Bled, a Slovenian resort town in the foothills of the Julian Alps, is set along the glacial Lake Bled.</i>')
 .openPopup();
 
 L.marker([46.03998851436525, 14.510287223533883],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Ljubljana.</b><hr><i> The capital city of Slovenia.</i>')
+.bindPopup('<b>Ljubljana.</b><hr><i>Population: 279,631</i><br><i>Area: 163.8 km<sup>2</sup></i><br><i>Elevation: 295 m</i><hr><i>Ljubljana is Slovenia`s capital and largest city.</i>')
 .openPopup();
