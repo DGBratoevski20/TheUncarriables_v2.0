@@ -363,15 +363,15 @@ var polygon2 =
 
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.bindPopup('<b>Maiella National Park.</b><hr><i> One of the nature preserves in Italy.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.bindPopup('<b>Antola Natural Regional Park.</b><hr><i> One of the nature preserves in Italy.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Slovakia.</i>')
+.bindPopup('<b>Appennino Tosco-Emiliano National Park.</b><hr><i> One of the nature preserves in Italy.</i>')
 .openPopup();
 
 //monuments
