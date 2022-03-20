@@ -240,25 +240,25 @@ L.marker([45.50267064877976, 24.249661852567126],{icon:TouristDestinationsMarker
 
 //cities
 L.marker([46.56737476701929, 26.908884041765983],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Bacău.</b><hr><i> One of the biggest cities in Romania.</i>')
+.bindPopup('<b>Bacău.</b><hr><i>Population: 638,717</i><br><i>Area: 43.19 km<sup>2</sup></i><br><i>Elevation: 165 m</i><hr><i>Bacău is the main city in Bacău County, Romania.</i>')
 .openPopup();
 
 L.marker([44.1647553660865, 28.63532666928853],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Constanța.</b><hr><i> One of the biggest cities in Romania.</i>')
+.bindPopup('<b>Constanța.</b><hr><i>Population: 297,503</i><br><i>Area: 124.9 km<sup>2</sup></i><br><i>Elevation: 25 m</i><hr><i>Constanța is a city on the shores of the Black Sea, in southeastern Romania. Its long history, which goes back over 2,000 years, is documented at the National History and Archaeology Museum, near the port.</i>')
 .openPopup();
 
 L.marker([46.775227446524866, 23.621977661540935],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Cluj-Napoca.</b><hr><i> One of the biggest cities in Romania.</i>')
+.bindPopup('<b>Cluj-Napoca.</b><hr><i>Population: 303,047</i><br><i>Area: 179.5 km<sup>2</sup></i><br><i>Elevation: 340 m</i><hr><i>Cluj-Napoca, a city in northwestern Romania, is the unofficial capital of the Transylvania region.</i>')
 .openPopup();
 
 L.marker([47.160805029371424, 27.59998516278188],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Iași.</b><hr><i> One of the biggest cities in Romania.</i>')
+.bindPopup('<b>Iași.</b><hr><i>Population: 318,871</i><br><i>Area: 93.9 km<sup>2</sup></i><br><i>Elevation: 200 m</i><hr><i>Iași is a university city in eastern Romania, near the border with Moldova.</i>')
 .openPopup();
 
 L.marker([45.43509050553079, 28.057399670964112],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Galați.</b><hr><i> One of the biggest cities in Romania.</i>')
+.bindPopup('<b>Galați.</b><hr><i>Population: 286,530</i><br><i>Area: 246.4 km<sup>2</sup></i><br><i>Elevation: 55 m</i><hr><i>Galați is the capital city of Galați County, in the historical region of Western Moldavia, in eastern Romania.</i>')
 .openPopup();
 
 L.marker([44.43145360848081, 26.10121466957515],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Bucharest.</b><hr><i> The capital city of Romania.</i>')
+.bindPopup('<b>Bucharest.</b><hr><i>Population: 1,830,878</i><br><i>Area: 240 km<sup>2</sup></i><br><i>Elevation: 75 m</i><hr><i>Bucharest, in southern Romania, is the countrys capital and commercial center.</i>')
 .openPopup();

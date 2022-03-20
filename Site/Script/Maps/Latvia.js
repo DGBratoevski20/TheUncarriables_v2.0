@@ -273,25 +273,25 @@ L.marker([57.183430249049785, 24.85963809994719],{icon:TouristDestinationsMarker
 
 // cities
 L.marker([57.39884497483879, 21.55014710659771],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Ventspils.</b><hr><i> One of the biggest cities in Latvia.</i>')
+.bindPopup('<b>Ventspils.</b><hr><i>Population: 34 377</i><br><i>Area:55,4 km²km<sup>2</sup></i><br><i>Elevation: 57 m</i><hr><i>Ventspils developed around the Livonian Order Ventspils Castle, built along the Venta River. It was chartered in 1314 and became an important mercantile city of the Hanseatic League.</i>')
 .openPopup();
 
 L.marker([56.96093619207526, 23.78874018624686],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Jūrmala.</b><hr><i> One of the biggest cities in Latvia.</i>')
+.bindPopup('<b>Jūrmala.</b><hr><i>Population: 49 325</i><br><i>Area: 100 km<sup>2</sup></i><br><i>Elevation: 6 m</i><hr><i>Jūrmala is a city in Latvia, about 25 kilometres (16 miles) west of Riga. Jūrmala is a resort town stretching 32 km (20 miles) and sandwiched between the Gulf of Riga and the Lielupe River.</i>')
 .openPopup();
 
 L.marker([56.65153464510933, 23.72320623118176],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Jelgava.</b><hr><i> One of the biggest cities in Latvia.</i>')
+.bindPopup('<b>Jelgava.</b><hr><i>Population: 55 972</i><br><i>Area: 60,32 km<sup>2</sup></i><br><i>Elevation: 13 m</i><hr><i>Jelgava  is a city in central Latvia about 41 kilometres (25 miles) southwest of Riga with 55,972 inhabitants (2019).</i>')
 .openPopup();
 
 L.marker([56.50627347991781, 21.010744000409918],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Liepāja.</b><hr><i> One of the biggest cities in Latvia.</i>')
+.bindPopup('<b>Liepāja.</b><hr><i>Population: 68 945</i><br><i>Area:  60,37 km<sup>2</sup></i><br><i>Elevation: 14 m</i><hr><i>Liepāja is a city in western Latvia, located on the Baltic Sea. It is the largest city in the Kurzeme Region and the third largest city in the country after Riga and Daugavpils. It is an important ice-free port. The population in 2020 was 68,535 people.'</i>)
 .openPopup();
 
 L.marker([55.8775557008804, 26.53266705226049],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Daugvpils.</b><hr><i> One of the biggest cities in Latvia.</i>')
+.bindPopup('<b>Daugvpils.</b><hr><i>Population: 82 604 </i><br><i>Area: 72,48  km<sup>2</sup></i><br><i>Elevation: 105 m</i><hr><i>Daugavpils  is a city in south-eastern Latvia, located on the banks of the Daugava River, from which the city gets its name. </i>')
 .openPopup();
 
 L.marker([56.948491643410236, 24.11069035433517],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Riga.</b><hr><i> The capital city of Latvia.</i>')
+.bindPopup('<b>Riga.</b><hr><i>Population: 632 614</i><br><i>Area: 307,2  km<sup>2</sup></i><br><i>Elevation: 7m</i><hr><i>Riga is the capital of Latvia and is home to 614,618 inhabitants (2021),[9] which is a third of Latvia`s population. </i>')
 .openPopup();

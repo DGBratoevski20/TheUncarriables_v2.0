@@ -431,21 +431,21 @@ L.marker([54.68812011935642, 25.270831533053123],{icon:TouristDestinationsMarker
 
 // cities
 L.marker([55.7457984437633, 24.35109526451854],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Panevėžys.</b><hr><i> One of the biggest cities in Lithuania.</i>')
+.bindPopup('<b>Panevėžys.</b><hr><i>Population: 111,953</i><br><i>Area: 52 km<sup>2</sup></i><br><i>Elevation: 61 m</i><hr><i>Panevėžys is the fifth largest city in Lithuania. As of 2011, it occupied 52 square kilometres (20 sq mi) with 113,653 inhabitants.</i>')
 .openPopup();
 
 L.marker([55.94981948011651, 23.317505540676695],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Šiauliai.</b><hr><i> One of the biggest cities in Lithuania.</i>')
+.bindPopup('<b>Šiauliai.</b><hr><i>Population: 107,086</i><br><i>Area: 81.13 km<sup>2</sup></i><br><i>Elevation: 151 m<i><hr><i>Šiauliai is the fourth largest city in Lithuania, with a population of 107,086. From 1994 to 2010 it was the capital of Šiauliai County.</i>')
 .openPopup();
 
 L.marker([55.70819598338497, 21.143975513138106],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Klaipėda.</b><hr><i> One of the biggest cities in Lithuania.</i>')
+.bindPopup('<b>Klaipėda.</b><hr><i>Population: 154,332</i><br><i>Area: 98.2 km<sup>2</sup></i><br><i>Elevation: 21 m<i><hr><i>Klaipėda is a city in Lithuania on the Baltic Sea coast. The capital of the eponymous county, it is the third largest city and the only major seaport in Lithuania.')
 .openPopup();
 
 L.marker([54.90676677054016, 23.90542723575055],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Kaunas.</b><hr><i> One of the biggest cities in Lithuania.</i>')
+.bindPopup('<b>Kaunas.</b><hr><i>Population: 289,380</i><br><i>Area: 157 km<sup>2</sup></i><br><i>Elevation: 48 m<i><hr><i>Kaunas is the second-largest city in Lithuania after Vilnius and an important centre of Lithuanian economic, academic, and cultural life.')
 .openPopup();
 
 L.marker([54.693044937555925, 25.286213984496587],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Vilnius.</b><hr><i> The capital city of Lithuania.</i>')
+.bindPopup('<b>Vilnius.</b><hr><i>Population: 592,389</i><br><i>Area: 401 km<sup>2</sup><i><br><i>Elevation: 112 m<i><hr><i>Vilnius is the capital and largest city of Lithuania, with a population of 592,389 as of 2022.')
 .openPopup();

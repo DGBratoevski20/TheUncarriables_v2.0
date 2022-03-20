@@ -296,25 +296,25 @@ L.marker([39.45546033734307, -0.3499114389807377],{icon:TouristDestinationsMarke
 
 //cities
 L.marker([41.39171025016631, 2.1736045997546922],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Barcelona.</b><hr><i> One of the biggest cities in Spain.</i>')
+.bindPopup('<b>Barcelona.</b><hr><i>Population: 1,620,431</i><br><i>Area: 101.9 km<sup>2</sup></i><br><i>Elevation: 12 m</i><hr><i>Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is known for its art and architecture.</i>')
 .openPopup();
 
 L.marker([39.46915854721577, -0.376001122242424],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Valencia.</b><hr><i> One of the biggest cities in Spain.</i>')
+.bindPopup('<b>Valencia.</b><hr><i>Population: 791,413</i><br><i>Area: 134.6 km<sup>2</sup></i><br><i>Elevation: 15 m</i><hr><i>The port city of Valencia lies on Spain’s southeastern coast, where the Turia River meets the Mediterranean Sea.</i>')
 .openPopup();
 
 L.marker([37.388441675791086, -5.9859197043299],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Seville.</b><hr><i> One of the biggest cities in Spain.</i>')
+.bindPopup('<b>Seville.</b><hr><i>Population: 688,711</i><br><i>Area: 140 km<sup>2</sup></i><br><i>Elevation: 7 m</i><hr><i>Seville is the capital and largest city of the Spanish autonomous community of Andalusia and the province of Seville.</i>')
 .openPopup();
 
 L.marker([38.34336173710972, -0.4917942862638563],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Alicante.</b><hr><i> One of the biggest cities in Spain.</i>')
+.bindPopup('<b>Alicante.</b><hr><i>Population: 331,577</i><br><i>Area: 201.3 km<sup>2</sup></i><br><i>Elevation: 3 m</i><hr><i>Alicante is a port city on Spain’s southeastern Costa Blanca, and the capital of the Alicante province.</i>')
 .openPopup();
 
 L.marker([38.00512068634677, -1.130386315917573],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Murcia.</b><hr><i> One of the biggest cities in Spain.</i>')
+.bindPopup('<b>Murcia.</b><hr><i>Population: 447,182</i><br><i>Area: 881.9 km<sup>2</sup></i><br><i>Elevation: 43 m</i><hr><i>Murcia is a university city in southeastern Spain and the capital of a region also named Murcia .</i>')
 .openPopup();
 
 L.marker([40.419810088119654, -3.7047615707462103],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Madrid.</b><hr><i> The capital city of Spain.</i>')
+.bindPopup('<b>Madrid.</b><hr><i>Population: 3,223,633</i><br><i>Area: 604.3 km<sup>2</sup></i><br><i>Elevation: 657 m</i><hr><i>Madrid, Spain's central capital, is a city of elegant boulevards and expansive, manicured parks such as the Buen Retiro.</i>')
 .openPopup();
