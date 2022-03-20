@@ -247,21 +247,21 @@ L.marker([46.56257167074994, 13.27861449471774],{icon:TouristDestinationsMarkerI
 
 //cities
 L.marker([48.30563, 14.28476],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Linz.</b><hr><i> One of the biggest cities in Austria.</i>')
+.bindPopup('<b>Linz.</b><hr><i>Population: 204,846</i><br><i>Area: 95.99 km<sup>2</sup></i><br><i>Elevation: 266 m</i><hr><i>Linz is the capital of Upper Austria and third-largest city in Austria.</i>')
 .openPopup();
 
 L.marker([47.06861, 15.44151],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Graz.</b><hr><i> One of the biggest cities in Austria.</i>')
+.bindPopup('<b>Graz.</b><hr><i>Population: 331,562</i><br><i>Area: 127.57 km<sup>2</sup></i><br><i>Elevation: 353 m</i><hr><i>Graz is the capital city of the Austrian state of Styria and second-largest city in Austria after Vienna.</i>')
 .openPopup();
 
 L.marker([47.81063, 13.05597],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Salzburg.</b><hr><i> One of the biggest cities in Austria.</i>')
+.bindPopup('<b>Salzburg.</b><hr><i>Population: 156,872</i><br><i>Area: 65.65 km<sup>2</sup></i><br><i>Elevation: 424 m</i><hr><i>Salzburg is the fourth-largest city in Austria.</i>')
 .openPopup();
 
 L.marker([47.27341, 11.40167],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Innsbruck.</b><hr><i> One of the biggest cities in Austria.</i>')
+.bindPopup('<b>Innsbruck.</b><hr><i>Population: 132,493</i><br><i>Area: 104.91 km<sup>2</sup></i><br><i>Elevation: 574 m</i><hr><i>Innsbruck is the capital of Tyrol and the fifth-largest city in Austria.</i>')
 .openPopup();
 
 L.marker([48.20967, 16.37328],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Wien.</b><hr><i> The capital city of Austria.</i>')
+.bindPopup('<b>Wien.</b><hr><i>Population: 1,897,000</i><br><i>Area: 414.78 km<sup>2</sup></i><br><i>Elevation: 542 m</i><hr><i>Wien (Vienna) is the national capital, largest city, and one of nine states of Austria.</i>')
 .openPopup();

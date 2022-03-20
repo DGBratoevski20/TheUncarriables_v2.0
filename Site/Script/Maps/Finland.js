@@ -439,23 +439,24 @@ L.marker([60.99279125880206, 24.458782906648725],{icon:TouristDestinationsMarker
 .bindPopup('<b>Hameenlinna</b><hr><i>One of the most popular tourist destinations in Finland.</i>')
 .openPopup();
 
+
 // cities
 L.marker([61.49693,23.76023],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Tampere.</b><hr><i> One of the biggest cities in Finland.</i>')
+.bindPopup('<b>Tampere.</b><hr><i>Population: 226,696</i><br><i>Area: 523.4 km<sup>2</sup></i><br><i>Elevation: 119 m</i><hr><i>Tampere is a city in southern Finland.</i>')
 .openPopup();
 
 L.marker([60.20530,24.66009],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Espoo.</b><hr><i> One of the biggest cities in Finland.</i>')
+.bindPopup('<b>Espoo.</b><hr><i>Population: 272,193</i><br><i>Area: 312 km<sup>2</sup></i><br><i>Elevation: 114.2 m</i><hr><i>Espoo is a city and municipality in the region of Uusimaa in the Republic of Finland.</i>')
 .openPopup();
 
 L.marker([60.30552,25.03812],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Vantaa.</b><hr><i> One of the biggest cities in Finland.</i>')
+.bindPopup('<b>Vantaa.</b><hr><i>Population: 226,696</i><br><i>Area: 240.5 km<sup>2</sup></i><br><i>Elevation: 17 m</i><hr><i>Vantaa is a city and municipality in Finland.</i>')
 .openPopup();
 
 L.marker([60.45194,22.26677],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Turku.</b><hr><i> One of the biggest cities in Finland.</i>')
+.bindPopup('<b>Turku.</b><hr><i>Population: 186,756</i><br><i>Area: 243.4 km<sup>2</sup></i><br><i>Elevation: 47 m</i><hr><i>Turku, a city on the southwest coast of Finland, straddles the Aura River.</i>')
 .openPopup();
 
 L.marker([60.17003, 24.93626],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Helsinki.</b><hr><i> The capital city of Finland.</i>')
+.bindPopup('<b>Helsinki.</b><hr><i>Population: 631,695</i><br><i>Area: 213.8 km<sup>2</sup></i><br><i>Elevation: 7 m</i><hr><i>Helsinki, Finland’s southern capital, sits on a peninsula in the Gulf of Finland.</i>')
 .openPopup();

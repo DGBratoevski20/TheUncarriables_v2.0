@@ -285,23 +285,24 @@ L.marker([37.569591210557086, 22.8037182515751],{icon:TouristDestinationsMarkerI
 .bindPopup('<b>Nafplio</b><hr><i>One of the most popular tourist destinations in Greece.</i>')
 .openPopup();
 
+
 // cities
 L.marker([40.64487,22.94075],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Thessaloniki.</b><hr><i> One of the biggest cities in Greece.</i>')
+.bindPopup('<b>Thessaloniki.</b><hr><i>Population: 325,182</i><br><i>Area: 19.31 km<sup>2</sup></i><br><i>Elevation: 250 m</i><hr><i>Thessaloniki is a Greek port city on the Thermaic Gulf of the Aegean Sea.</i>')
 .openPopup();
 
 L.marker([38.25069,21.73445],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Patra.</b><hr><i> One of the biggest cities in Greece.</i>')
+.bindPopup('<b>Patra.</b><hr><i>Population: 195,265</i><br><i>Area: 125.4 km<sup>2</sup></i><br><i>Elevation: 10 m</i><hr><i>Patras is Greeces third-largest city and the regional capital of Western Greece, in the northern Peloponnese, 215 km west of Athens.</i>')
 .openPopup();
 
 L.marker([39.63809,22.41986],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Piraeus.</b><hr><i> One of the biggest cities in Greece.</i>')
+.bindPopup('<b>Piraeus.</b><hr><i>Population: 163,688</i><br><i>Area: 10.9 km<sup>2</sup></i><br><i>Elevation: 51 m</i><hr><i>Piraeus is a port city within the Athens urban area, in the Attica region of Greece.</i>')
 .openPopup();
 
 L.marker([35.34213,25.14550],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Herakleion.</b><hr><i> One of the biggest cities in Greece.</i>')
+.bindPopup('<b>Herakleion.</b><hr><i>Population: 225.500</i><br><i>Area: 245.1 km<sup>2</sup></i><br><i>Elevation: 15 m</i><hr><i>Heraklion, also known as Iraklio, is a port city and the capital of the Greek island of Crete.</i>')
 .openPopup();
 
 L.marker([37.98700, 23.72932],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Athens.</b><hr><i> The capital city of Greece.</i>')
+.bindPopup('<b>Athens.</b><hr><i>Population: 3,167,155</i><br><i>Area: 38.96 km<sup>2</sup></i><br><i>Elevation: 20 m</i><hr><i>Athens is the capital of Greece. It was also at the heart of Ancient Greece, a powerful civilization and empire.</i>')
 .openPopup();

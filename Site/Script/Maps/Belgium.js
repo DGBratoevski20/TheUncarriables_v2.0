@@ -287,25 +287,25 @@ L.marker([50.722472689331646, 4.378496844247709],{icon:TouristDestinationsMarker
 
 //cities
 L.marker([51.05966, 3.72912],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Ghent.</b><hr><i> One of the biggest cities in Belgium.</i>')
+.bindPopup('<b>Ghent.</b><hr><i>Population: 260,341</i><br><i>Area: 156.18 km<sup>2</sup></i><br><i>Elevation: 357 m</i><hr><i>Ghent is a city and a municipality in the Flemish Region of Belgium.</i>')
 .openPopup();
 
 L.marker([51.22878, 4.40136112],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Antwerpen.</b><hr><i> One of the biggest cities in Belgium.</i>')
+.bindPopup('<b>Antwerpen.</b><hr><i>Population: 520,504</i><br><i>Area: 204.51 km<sup>2</sup></i><br><i>Elevation: 8 m</i><hr><i>Antwerpen is a city in Belgium and the capital of Antwerp Province in the Flemish Region.</i>')
 .openPopup();
 
 L.marker([51.21080, 3.224591],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Brugge.</b><hr><i> One of the biggest cities in Belgium.</i>')
+.bindPopup('<b>Brugge.</b><hr><i>Population: 118,284</i><br><i>Area: 138.4 km<sup>2</sup></i><br><i>Elevation: 2 m</i><hr><i>Bruges, the capital of West Flanders in northwest Belgium, is distinguished by its canals, cobbled streets and medieval buildings.</i>')
 .openPopup();
 
 L.marker([50.63255, 5.56805],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Liege.</b><hr><i> One of the biggest cities in Belgium.</i>')
+.bindPopup('<b>Liege.</b><hr><i>Population: 197,355</i><br><i>Area: 69.39 km<sup>2</sup></i><br><i>Elevation: 508 m</i><hr><i>Liège, a city along the Meuse River in Belgium’s French-speaking Wallonia region, has long been a commercial and cultural hub.</i>')
 .openPopup();
 
 L.marker([50.46641, 4.86376],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Namur.</b><hr><i> One of the biggest cities in Belgium.</i>')
+.bindPopup('<b>Namur.</b><hr><i>Population: 110,939</i><br><i>Area: 175.7 km<sup>2</sup></i><br><i>Elevation: 82 m</i><hr><i>Namur is the capital city of the Wallonia region of Belgium.</i>')
 .openPopup();
 
 L.marker([50.85017, 4.36192],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Brussels.</b><hr><i> The capital city of Belgium.</i>')
+.bindPopup('<b>Brussels.</b><hr><i>Population: 2,065,284</i><br><i>Area: 162 km<sup>2</sup></i><br><i>Elevation: 13 m</i><hr><i>The City of Brussels is the largest municipality and historical centre of the Brussels-Capital Region, as well as the capital of Belgium.</i>')
 .openPopup();

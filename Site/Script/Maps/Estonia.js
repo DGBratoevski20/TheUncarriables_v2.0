@@ -613,21 +613,21 @@ L.marker([58.37690384303668, 26.73486906754939],{icon:TouristDestinationsMarkerI
 
 //cities
 L.marker([58.38760,26.73551],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Tartu.</b><hr><i> One of the biggest cities in Estonia.</i>')
+.bindPopup('<b>Tartu.</b><hr><i>Population: 93,124</i><br><i>Area: 38.8 km<sup>2</sup></i><br><i>Elevation: 57 m</i><hr><i>Tartu is a city in eastern Estonia. It’s known for the prestigious, 17th-century University of Tartu.</i>')
 .openPopup();
 
 L.marker([59.39331,28.17984],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Narva.</b><hr><i> One of the biggest cities in Estonia.</i>')
+.bindPopup('<b>Narva.</b><hr><i>Population: 57,130</i><br><i>Area: 84.54 km<sup>2</sup></i><br><i>Elevation: 266 m</i><hr><i>Narva is a municipality and city in Estonia.</i>')
 .openPopup();
 
 L.marker([58.39646,24.49151],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Pärnu.</b><hr><i> One of the biggest cities in Estonia.</i>')
+.bindPopup('<b>Pärnu.</b><hr><i>Population: 39,620</i><br><i>Area: 32.22 km<sup>2</sup></i><br><i>Elevation: 10 m</i><hr><i>Pärnu is a resort city in southwestern Estonia, overlooking Pärnu Bay.</i>')
 .openPopup();
 
 L.marker([59.39763,27.28065],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Kohtla-Järve.</b><hr><i> One of the biggest cities in Estonia.</i>')
+.bindPopup('<b>Kohtla-Järve.</b><hr><i>Population: 35,187</i><br><i>Area: 68.77 km<sup>2</sup></i><br><i>Elevation: 71 m</i><hr><i>Kohtla-Järve is a city and municipality in north-eastern Estonia, founded in 1924 and incorporated as a town in 1946.</i>')
 .openPopup();
 
 L.marker([59.43672, 24.75756],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Tallinn.</b><hr><i> The capital city of Estonia.</i>')
+.bindPopup('<b>Tallinn.</b><hr><i>Population: 426,538</i><br><i>Area: 159.3 km<sup>2</sup></i><br><i>Elevation: 9 m</i><hr><i>Tallinn, Estonia’s capital on the Baltic Sea, is the country’s cultural hub.</i>')
 .openPopup();

@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 *{
  list-style-type: none;
 }
@@ -77,7 +77,7 @@ span{
     text-align: center;
 }
 
-#scoreboard,#answerBank{
+#scoreboard{
     width: 20rem;
     background: rgba(230,230,250,0.77);
     padding: 2rem;
@@ -86,6 +86,7 @@ span{
     position: relative;
     top: 5rem;
     display: none;
+    transform: translateY(300%);
 }
 #score-title{
     margin: 1rem 0;
@@ -101,8 +102,42 @@ span{
     margin-bottom: 0.2rem;
     font-size: larger;
 }
+.timer{
+    position: fixed;
+	z-index: 9999;
+    width: 25em;
+    top:2%;
+    left:1%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #f7fc00;    
+    height: 3.5em;
+    margin-bottom:20px;
+    padding: 10px 20px 10px 20px;
+	border-radius: 30px;
+	box-shadow: 10px 10px 10px #000000;
+}
+.timer > p {
+    color: #292929;
+	margin-left: -40px;
+}
+#answerBank
+{
+    width: 20rem;
+    background: rgba(230,230,250,0.77);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    opacity: 0;
+    transform: translateY(280%);
+    
+}
 #answers{
     margin-top: 1rem;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
 }
 .quiz{
     width: 100%;
@@ -119,12 +154,18 @@ span{
     left: 1%;
     width: 98vw;
     transition: all 1s;
-    transform: translateY(600%);
+    transform: translateY(100%);
 
     z-index: 1000;
 	margin-top: -100px;
 }
-p{
+i{
+    font-size: 2.5rem;
+    color: #292929;
+    padding: 0.1em;
+}
+
+.quiz > p{
     width: 100vw;
     margin: 0;
     padding-top:250px;
@@ -144,7 +185,7 @@ p{
     padding-bottom: 300px;
     height: 500px;
     position: relative;
-    transform: translateY(180%);
+    transform: translateY(220%);
 }
 u{
     text-decoration: none;
@@ -153,6 +194,10 @@ body{
     margin: 0%;
     background-color: #020618;
     position: relative;
+    font-family: 'Fredoka', sans-serif;
+}
+.questions> ol >li{
+    height: auto;
 }
 .obj{
     position: fixed;
@@ -189,5 +234,18 @@ body{
     .PaddingBot{
         transform: translateY(200%);
         height: 800px;
+    }
+}
+@media only screen and (min-width: 850px) and (max-width:980px) {
+    .timer{
+        width: 38em;
+        height: 5em;
+        top:2%;
+        left:3%;
+        padding: 10px 20px 10px 10px;
+    }
+    .timer p {
+        color: #292929;
+        margin-top: 16px;
     }
 }

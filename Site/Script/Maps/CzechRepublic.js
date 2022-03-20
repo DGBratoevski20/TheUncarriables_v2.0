@@ -354,25 +354,25 @@ L.marker([50.586797492487506, 15.157591777110193],{icon:TouristDestinationsMarke
 
 //cities
 L.marker([49.82526,18.25952],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Ostrava.</b><hr><i> One of the biggest cities in Czech Republic.</i>')
+.bindPopup('<b>Ostrava.</b><hr><i>Population: 289,629</i><br><i>Area: 214.2 km<sup>2</sup></i><br><i>Elevation: 260 m</i><hr><i>Ostrava is a city in the north-east of the Czech Republic, and the capital of the Moravian-Silesian Region.</i>')
 .openPopup();
 
 L.marker([49.74159,13.37169],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Pilsen.</b><hr><i> One of the biggest cities in Czech Republic.</i>')
+.bindPopup('<b>Pilsen.</b><hr><i>Population: 171,707</i><br><i>Area: 7.252 km<sup>2</sup></i><br><i>Elevation: 181 m</i><hr><i>Bordering the Chicago River, the Lower West Side neighborhood offers a combination of diverse areas including the Chicago Arts District in East Pilsen.</i>')
 .openPopup();
 
 L.marker([49.59508,17.24933],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Olomouc.</b><hr><i> One of the biggest cities in Czech Republic.</i>')
+.bindPopup('<b>Olomouc.</b><hr><i>Population: 100,408</i><br><i>Area: 103.3 km<sup>2</sup></i><br><i>Elevation: 219 m</i><hr><i>Olomouc is a city in the eastern province of Moravia in the Czech Republic.</i>')
 .openPopup();
 
 L.marker([50.76614,15.05331],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Liberec.</b><hr><i> One of the biggest cities in Czech Republic.</i>')
+.bindPopup('<b>Liberec.</b><hr><i>Population: 104,163</i><br><i>Area: 3.163 km<sup>2</sup></i><br><i>Elevation: 374 m</i><hr><i>Liberec is a city in the Czech Republic.</i>')
 .openPopup();
 
 L.marker([49.19458,16.60705],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Brno.</b><hr><i> One of the biggest cities in Czech Republic.</i>')
+.bindPopup('<b>Brno.</b><hr><i>Population: 379,526</i><br><i>Area: 230.2 km<sup>2</sup></i><br><i>Elevation: 237 m</i><hr><i>Brno is a city in the Czech Republic. It’s known for its modernist buildings, like the restored Villa Tugendhat, completed in 1930 by architect Mies van der Rohe.</i>')
 .openPopup();
 
 L.marker([50.07199, 14.42952],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Prague.</b><hr><i> The capital city of Czech Republic.</i>')
+.bindPopup('<b>Prague.</b><hr><i>Population: 1,309,372</i><br><i>Area: 496 km<sup>2</sup></i><br><i>Elevation: 272 m</i><hr><i>Prague, capital city of the Czech Republic, is bisected by the Vltava River.</i>')
 .openPopup();

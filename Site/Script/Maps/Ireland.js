@@ -352,25 +352,25 @@ L.marker([52.21203111099736, -10.124309341013355],{icon:TouristDestinationsMarke
 
 // cities
 L.marker([54.59198028047157, -5.945591399993577],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Belfast.</b><hr><i> One of the biggest cities in Ireland.</i>')
+.bindPopup('<b>Belfast.</b><hr><i>Population: 638,717</i><br><i>Area: 115 km<sup>2</sup></i><br><i>Elevation: 3 m</i><hr><i>Belfast is Northern Ireland’s capital.</i>')
 .openPopup();
 
 L.marker([51.901296981677376, -8.47583173180281],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Cork.</b><hr><i> One of the biggest cities in Ireland.</i>')
+.bindPopup('<b>Cork.</b><hr><i>Population: 124,391</i><br><i>Area: 104.91 km<sup>2</sup></i><br><i>Elevation: 574 m</i><hr><i>Cork is the second largest city in Ireland, located in the south-west of Ireland, in the province of Munster.</i>')
 .openPopup();
 
 L.marker([54.99671920087083, -7.3090607459210535],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Londonderry.</b><hr><i> One of the biggest cities in Ireland.</i>')
+.bindPopup('<b>Londonderry.</b><hr><i>Population: 90,736</i><br><i>Area: 2.118 km<sup>2</sup></i><br><i>Elevation: 584 m</i><hr><i>Londonderry is a town in Windham County, Vermont, United States. It is bounded on the north by Landgrove and Weston, on the east by Windham, on the south by Jamaica and on the west by Winhall and Landgrove.</i>')
 .openPopup();
 
 L.marker([52.670690944573046, -8.63190699846907],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Limerick.</b><hr><i> One of the biggest cities in Ireland.</i>')
+.bindPopup('<b>Limerick.</b><hr><i>Population: 94,192</i><br><i>Area: 59.2 km<sup>2</sup></i><br><i>Elevation: 10 m</i><hr><i>Limerick is a major city in the Republic of Ireland, set in Munster province in the south of the country.</i>')
 .openPopup();
 
 L.marker([53.27008926170458, -9.056208901010477],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Galway.</b><hr><i> One of the biggest cities in Ireland.</i>')
+.bindPopup('<b>Galway.</b><hr><i>Population: 544,107</i><br><i>Area: 117.8 km<sup>2</sup></i><br><i>Elevation: 25 m</i><hr><i>Galway, a harbour city on Ireland’s west coast, sits where the River Corrib meets the Atlantic Ocean.</i>')
 .openPopup();
 
 L.marker([53.366767227817896, -6.267659982425188],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Dublin.</b><hr><i> The capital city of Ireland.</i>')
+.bindPopup('<b>Dublin.</b><hr><i>Population: 638,717</i><br><i>Area: 115 km<sup>2</sup></i><br><i>Elevation: 20 m</i><hr><i>Dublin, capital of the Republic of Ireland, is on Ireland’s east coast at the mouth of the River Liffey.</i>')
 .openPopup();
