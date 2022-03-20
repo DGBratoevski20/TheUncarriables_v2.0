@@ -1,5 +1,7 @@
 
-
+*{
+ list-style-type: none;
+}
 img{
     width: 5.5rem;
     height: 5.2rem;
@@ -93,13 +95,42 @@ button:active{
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: -10;
+    z-index: -100;
     
     
 }
 #quiz-container{
-    transform: translateY(400%);
+    position: absolute;
+    top:30%;
+    left: 1%;
+    width: 98vw;
+    transition: all 1s;
     z-index: 1000;
+}
+p{
+    width: 100vw;
+    margin: 0;
+    padding-top:250px;
+    text-align: center;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(255, 232, 189);
+    font-size: 6rem;
+    opacity: 0.7;
+    left: 0;
+    color: black;
+    
+    top: 0;
+    z-index: 1000;
+}
+.PaddingBot{
+    padding-bottom: 300px;
+    height: 500px;
+    position: relative;
+    transform: translateY(180%);
+}
+u{
+    text-decoration: none;
 }
 body{
 
@@ -124,9 +155,11 @@ body{
     height: 100%;
     margin: 0;
     left:0;
+    z-index: -100;
    
 }
 .rightPart{
+    z-index: -100;
     position: absolute;
     background-image: url('../../Images/Nature-Photos/flower.jpg');
     width: 100%;
@@ -137,7 +170,12 @@ body{
     
     clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 53%);
 }
-
+@media only  screen and (max-width:980px){
+    .PaddingBot{
+        transform: translateY(200%);
+        height: 800px;
+    }
+}
 
 /*b;blblblblblbl*/
 
