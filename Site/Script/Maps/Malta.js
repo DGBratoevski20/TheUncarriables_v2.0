@@ -250,15 +250,15 @@ var polygon3 =
     ]
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in Malta.</i>')
+.bindPopup('<b>Stroja National Park.</b><hr><i> One of the nature preserves in Malta.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in Malta.</i>')
+.bindPopup('<b>Gadira Natural Park.</b><hr><i> One of the nature preserves in Malta.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Malta.</i>')
+.bindPopup('<b>Ta Qali National Park.</b><hr><i> One of the nature preserves in Malta.</i>')
 .openPopup();
 
 //monuments

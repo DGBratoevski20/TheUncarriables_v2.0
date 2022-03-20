@@ -262,15 +262,15 @@ var polygon3 =
 
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in the Republic of Cyprus.</i>')
+.bindPopup('<b>Athalassas National Park.</b><hr><i> One of the nature preserves in the Republic of Cyprus.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in the Republic of Cyprus.</i>')
+.bindPopup('<b>Akama forest.</b><hr><i> One of the nature preserves in the Republic of Cyprus.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in the Republic of Cyprus.</i>')
+.bindPopup('<b>Limassol forest park.</b><hr><i> One of the nature preserves in the Republic of Cyprus.</i>')
 .openPopup();
 
 //monuments

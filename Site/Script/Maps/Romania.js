@@ -201,15 +201,15 @@ var polygon3 = [
 
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Roamania.</i>')
+.bindPopup('<b>Parcul National Park.</b><hr><i> One of the nature preserves in Romania.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in Roamania.</i>')
+.bindPopup('<b>Parcul National Reserve.</b><hr><i> One of the nature preserves in Romania.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Roamania.</i>')
+.bindPopup('<b>Piatra Craiului National Park.</b><hr><i> One of the nature preserves in Romania.</i>')
 .openPopup();
 
 //monuments

@@ -1,9 +1,11 @@
+//initialize map
 var map = L.map('map').setView([56.996505006, 24.427360938789217], 7);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
 }).addTo(map);
 
+//intialize markers
 let CitiesMarkerIcon = L.icon ({
     iconUrl: '../Images/marker.png',
     iconSize: [35,35],
@@ -16,6 +18,7 @@ let TouristDestinationsMarkerIcon = L.icon ({
     iconAnchor: [17.5,35],
 });
 
+//polygon cordinates
 var polygon =
 [
     [
@@ -227,15 +230,15 @@ var polygon3 =
   ]
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in Latvia.</i>')
+.bindPopup('<b>Slitere National Park.</b><hr><i> One of the nature preserves in Latvia.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in Latvia.</i>')
+.bindPopup('<b>Gaujas National Park.</b><hr><i> One of the nature preserves in Latvia.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Latvia.</i>')
+.bindPopup('<b>Kemeru  National Park.</b><hr><i> One of the nature preserves in Latvia.</i>')
 .openPopup();
 
 //monuments

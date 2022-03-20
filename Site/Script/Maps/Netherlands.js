@@ -468,15 +468,15 @@ var polygon3 =
 
 //polygons
 var polygon = L.polygon(polygon, {color: 'red'}).addTo(map)
-.bindPopup('<b> Natural Park.</b><hr><i> One of the nature preserves in Netherlands.</i>')
+.bindPopup('<b>The Groote Peel National Park.</b><hr><i> One of the nature preserves in Netherlands.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon2, {color: 'red'}).addTo(map)
-.bindPopup('<b> National Park.</b><hr><i> One of the nature preserves in Netherlands.</i>')
+.bindPopup('<b>Sallandse Heuvelrug National Park.</b><hr><i> One of the nature preserves in Netherlands.</i>')
 .openPopup();
 
 var polygon = L.polygon(polygon3, {color: 'red'}).addTo(map)
-.bindPopup('<b>.</b><hr><i> One of the nature preserves in Netherlands.</i>')
+.bindPopup('<b>Utrechtse Heuvelrug National Park.</b><hr><i> One of the nature preserves in Netherlands.</i>')
 .openPopup();
 
 //monuments
