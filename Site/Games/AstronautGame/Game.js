@@ -6,23 +6,26 @@ var counterForMetres = 0;
 var SecondVarForTimeOut, ThirdVarForTimeOut;
 var helperOncounterForMetres = 100;
 var left = 46;
-var fuel = 300;
+var fuel = 500;
 var ButtonLeft;
 var ButtonRight;
 var buttonStartGame; 
 var helperOnLeftComp = 15;
 var helperOnLeftMob = 15;
-var eighty = 93;
+var eighty = 93; // variable for more flexible hero movements and stop movements
 
 document.querySelector('.score').innerText = '0'
+
 function UP()
 {
+    //Function for when you press ArrowUp
     if(CheckArrowUp == 1)
             {
                 document.querySelector('h1').innerHTML = 'Troposphere';
                 setInterval(function()
                 {
-                    document.querySelector('#point').style.animation = "clouds 2s infinite"
+                    //Interval for Fuel
+                    document.querySelector('#point').style.animation = "clouds 3s infinite"
                     
                     
                     
@@ -33,13 +36,13 @@ function UP()
                     {   
                         
                         document.querySelector('#point').style.animation = "none"
-                        document.querySelector('#point').style.left =  Math.round(Math.random() * 99+ 1) + "%"
+                        document.querySelector('#point').style.left =  Math.round(Math.random() * 80+ 1) + "%"
                         
                         clearTimeout(FirstVarForTimeOut)
                     }, 2000)
                 }, 2000)
                 
-                //bomb
+                //Interval for One Meteorit
                 setInterval(function()
                     {
                          
@@ -59,7 +62,7 @@ function UP()
                         clearTimeout(SecondVarForTimeOut)
                     }, 3000)
                 }, 3000)
-                //bomb2
+                //Interval for Another Meteorit
                 setInterval(function()
                     {
                          
@@ -82,6 +85,7 @@ function UP()
 
                 SecondVarForInterval = setInterval(function()
                 {
+                    //Interval Game to response properly to layers of atmosphere
 					fuel -= 1;
                     counterForMetres += helperOncounterForMetres;
                     document.querySelector('.score').innerText = `${counterForMetres}`;
@@ -133,7 +137,7 @@ function UP()
                             document.querySelector('#cloud2').style.animation = "right-left 8s infinite"
 
                             document.querySelector('#cloud').style.backgroundImage = "url('images/alient.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft2.png')"
 
                         }
                         else if(counterForMetres >= 700000 && counterForMetres < 10000000)
@@ -243,7 +247,7 @@ window.addEventListener("keydown", function(mouseEvent)
 
 
 
-//Find Collusion
+//Find Collusion with all which is falling
 setInterval(function()
 {
     var point = document.querySelector('#point').getBoundingClientRect();
@@ -274,7 +278,7 @@ setInterval(function()
         document.querySelector('#point').style.animation = 'none'
         
         counterForMetres += helperOncounterForMetres;
-		fuel += 20;
+		fuel += 50;
         
         if(counterForMetres < 12000)
         {   document.querySelector('#cloud').style.animation= 'none'
