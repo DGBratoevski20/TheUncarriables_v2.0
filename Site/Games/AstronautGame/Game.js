@@ -6,7 +6,7 @@ var counterForMetres = 0;
 var SecondVarForTimeOut, ThirdVarForTimeOut;
 var helperOncounterForMetres = 100;
 var left = 46;
-var health = 700;
+var fuel = 300;
 var ButtonLeft;
 var ButtonRight;
 var buttonStartGame; 
@@ -82,6 +82,7 @@ function UP()
 
                 SecondVarForInterval = setInterval(function()
                 {
+					fuel -= 1;
                     counterForMetres += helperOncounterForMetres;
                     document.querySelector('.score').innerText = `${counterForMetres}`;
                    
@@ -186,12 +187,7 @@ window.addEventListener("keydown", function(mouseEvent)
     {
         case 'ArrowLeft':
         {   
-                    
             
-      
-            
-                 
-                
                     if(left < 15)
                     {
                     helperOnLeftComp = 0
@@ -203,11 +199,7 @@ window.addEventListener("keydown", function(mouseEvent)
                     }
                     left-=helperOnLeftComp;
                     
-                    
-                   
-                
-                
-
+            
                 break;
         }
         case 'ArrowRight':
@@ -282,7 +274,7 @@ setInterval(function()
         document.querySelector('#point').style.animation = 'none'
         
         counterForMetres += helperOncounterForMetres;
-
+		fuel += 20;
         
         if(counterForMetres < 12000)
         {   document.querySelector('#cloud').style.animation= 'none'
@@ -309,14 +301,14 @@ setInterval(function()
     {
         document.querySelector('#bomb').style.animation = 'none'
 
-        health -= 50;
+        fuel -= 50;
     }
     else if(Bomb2())
     {
         
         document.querySelector('#bomb2').style.animation = 'none'
         
-        health -= 50;
+        fuel -= 50;
     }
     
 }, 1)
@@ -389,9 +381,10 @@ window.addEventListener('touchstart',function(TouchEvent)
 //The End of the game
 FirstvarForInterval = setInterval(function()
 {
-    if(health <= 0)
+    if(fuel <= 0)
     {
         
+		document.body.style.overflow = "auto";
         document.querySelector('.area').style.display = "none";
         document.querySelector('.btns').style.opacity = "0";
         document.querySelector('body').style.overflowX = "hidden";
@@ -406,7 +399,8 @@ FirstvarForInterval = setInterval(function()
             document.querySelector('.info').querySelector('h1').style.fontSize = "1.3rem"
             
         }
-        document.querySelector('.info').querySelector('h1').innerText = `Game Over! You reached the ${contentOfH1} with ${counterForMetres} metres.`
+
+        document.querySelector('.info').querySelector('h1').innerText = `Game Over! \n You reached the ${contentOfH1} with ${counterForMetres} metres.`
         switch(contentOfH1)
         {
             case "Troposphere":
@@ -474,7 +468,7 @@ FirstvarForInterval = setInterval(function()
     {
         eighty = 91;
     }
-    document.querySelector('.health').innerText = `${health}`
+    document.querySelector('.fuel').innerText = `${fuel}`
     document.querySelector('#hero').style.left = left + "%"
     
     

@@ -442,6 +442,34 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 }
 
+#phoneFooter {
+    display: none;
+    margin: 0px 0px 0px 35%;
+    padding: 1em;
+    width: 45%;
+}
+
+#phoneFooterIcon {
+    display: none;
+    background-color: var(--map-icon-bg);
+    color: var(--map-icon);
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-left: -50px;
+    margin-bottom: -30px;
+}
+
+#phoneFooterText {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.1rem;
+    color: var(--font-color);
+}
+
 .footer-left {
     float: left;
     text-align: center;

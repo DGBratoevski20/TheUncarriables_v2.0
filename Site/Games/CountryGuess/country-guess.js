@@ -13,7 +13,7 @@ function Germany()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
       
@@ -21,7 +21,7 @@ function Germany()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -59,7 +59,7 @@ function France()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
       
@@ -67,7 +67,7 @@ function France()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -104,7 +104,7 @@ function Afghanistan()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -112,7 +112,7 @@ function Afghanistan()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -149,7 +149,7 @@ function Gabon()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -157,7 +157,7 @@ function Gabon()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -194,7 +194,7 @@ function Portugal()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -202,7 +202,7 @@ function Portugal()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -239,7 +239,7 @@ function Bulgaria()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -247,7 +247,7 @@ function Bulgaria()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -284,7 +284,7 @@ function Turkey()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -292,7 +292,7 @@ function Turkey()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -329,7 +329,7 @@ function Malta()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -337,7 +337,7 @@ function Malta()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -374,7 +374,7 @@ function Italy()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good Job!");
 
@@ -382,7 +382,7 @@ function Italy()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -419,7 +419,7 @@ function Oman()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -427,7 +427,7 @@ function Oman()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -464,7 +464,7 @@ function Honduras()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -472,7 +472,7 @@ function Honduras()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -509,7 +509,7 @@ function costaRica()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -517,7 +517,7 @@ function costaRica()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -554,7 +554,7 @@ function Spain()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -562,7 +562,7 @@ function Spain()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -599,7 +599,7 @@ function Qatar()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -607,7 +607,7 @@ function Qatar()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -644,7 +644,7 @@ function Iran()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -652,7 +652,7 @@ function Iran()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -689,7 +689,7 @@ function northKorea()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -697,7 +697,7 @@ function northKorea()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -734,7 +734,7 @@ function China()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -742,7 +742,7 @@ function China()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;
@@ -779,7 +779,7 @@ function Angola()
   {
     var country = prompt("Which country is this?", "...");
     
-    if(country == countryName)
+    if(country.toUpperCase() == countryName.toUpperCase())
     {
       alert("Good job!");
 
@@ -787,7 +787,7 @@ function Angola()
       {
         var capital = prompt("And the capital city is?", "...");
     
-        if(capital == capitalCity)
+        if(capital.toUpperCase() == capitalCity.toUpperCase())
         {
           alert("Well done!");
           game = false;

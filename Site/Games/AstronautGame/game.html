@@ -1,79 +1,89 @@
+<!DOCTYPE html>
 
 <html>
 
-<head>
-    <link href = "styleGame.css" rel = "stylesheet">
-    <meta name="viewport" content= "user-scalable=no">
-</head>
-<body>
-    
-    <h1>Earth</h1>
-    <h3>Metres</h3>
-    <h4>Health</h4>
-    <div class = "score"></div>
-    <div class = "health"></div>
-    <div class = "area">
+    <head>
+        <link href = "styleGame.css" rel = "stylesheet">
+        <meta name="viewport" content= "user-scalable=no">
+    </head>
+
+    <body>
         
-        <div id = "hero"><img src = "images/racket.png"></div>
-        <div id = "bomb"><img src = "images/asteroid.png"></div>
-        <div id = "bomb2"><img src = "images/asteroid.png"></div>
-        <div id = "point"><img src = "images/straw.gif"></div>
-        <div id = "cloud2"></div>
-        <div id = "cloud"></div>
-        <div class = "engine">
+        <h1>Earth</h1>
+        <h3>Metres⬆️</h3>
+        <h4>Fuel⛽</h4>
+        <div class = "score"></div>
+        <div class = "fuel"></div>
+        <div class = "area">
             
-            
-    
+            <div id = "hero"><img src = "images/racket.png"></div>
+            <div id = "bomb"><img src = "images/asteroid.png"></div>
+            <div id = "bomb2"><img src = "images/asteroid.png"></div>
+            <div id = "point"><img src = "images/fuel.png"></div>
+            <div id = "cloud2"></div>
+            <div id = "cloud"></div>
+            <div class = "engine"></div>
+        
+
         </div>
-    
 
-    </div>
-    <div class = "btns">
-        <button id = "Start">&#8593;</button>
-    <div class="line">
-            <button id = "Left">&#8592;</button>
-            <button id = "Right">&#8594;</button>
-    </div>
+        <div class = "btns">
+
+            <button id = "Start">&#8593;</button>
+            <div class="line">
+                    <button id = "Left">&#8592;</button>
+                    <button id = "Right">&#8594;</button>
+            </div>
+            
+        </div>
+
         
-    </div>
+        
+        <div class = "info">
+            <h1 style = "width: 40vw; text-align: center;"></h1>
+            <article id = "Troposphere">
+                <h2>Troposphere</h2>
+                <p>
+                    Troposphere, lowest region of the atmosphere, bounded by the Earth beneath and the stratosphere above, with its upper boundary being the tropopause, about 10-18 km (6-11 miles) above the Earth's surface. The troposphere is characterized by decreasing temperature with height and is distinguished from the overlying stratosphere by a region of nearly constant temperature in the lower stratosphere.
+                </p>
+            </article>
 
-    
-    
-    <div class = "info">
-        <h1 style = "width: 40vw; text-align: center;"></h1>
-        <article id = "Troposphere">
-            <h2>Troposphere</h2>
-            <p>The troposphere is the lowest layer of Earth's atmosphere. It extends from Earth's surface to an average height of about 12 km, although this altitude varies from about 9 km at the geographic poles to 17 km  at the Equator, with some variation due to weather.
-            Although variations do occur, the temperature usually declines with increasing altitude in the troposphere because the troposphere is mostly heated through energy transfer from the surface. Thus, the lowest part of the troposphere is typically the warmest section of the troposphere. This promotes vertical mixing  tropos. The troposphere contains roughly 80% of the mass of Earth's atmosphere.[27] The troposphere is denser than all its overlying layers because a larger atmospheric weight sits on top of the troposphere and causes it to be most severely compressed.
-            </p>
-        </article>
+            <article id = "Stratosphere">
+                <h2>Stratosphere</h2>
+                <p>
+                    Stratosphere, layer of Earth's atmosphere lying between the troposphere and the mesosphere. The lower portion of the stratosphere is nearly isothermal (a layer of constant temperature), whereas temperatures in its upper levels increase with altitude. The stratosphere extends from the tropopause at about 10 to 17 km (about 6 to 11 miles) altitude to its upper boundary (the stratopause) at about 50 km (30 miles), and it also contains the ozone layer.
+                </p>
+            </article>
 
-        <article id = "Stratosphere">
-            <h2>Stratosphere</h2>
-            <p>The stratosphere is the second-lowest layer of Earth's atmosphere. It lies above the troposphere and is separated from it by the tropopause. This layer extends from the top of the troposphere at roughly 12 km above Earth's surface to the stratopause at an altitude of about 50 to 55 km.The stratospheric temperature profile creates very stable atmospheric conditions, so the stratosphere lacks the weather-producing air turbulence that is so prevalent in the troposphere. Consequently, the stratosphere is almost completely free of clouds and other forms of weather. However, polar stratospheric or nacreous clouds are occasionally seen in the lower part of this layer of the atmosphere where the air is coldest. The stratosphere is the highest layer that can be accessed by jet-powered aircraft.</p>
-        </article>
+            <article id = "Mesosphere">
+                <h2>Mesosphere</h2>
+                <p>
+                    Mesosphere, region of the upper atmosphere between about 50 and 80 km (30 and 50 miles) above the surface of the Earth. The base of the mesosphere is defined as the temperature maximum existing at the top of the stratosphere, with the boundary between the two regions usually called the stratopause. The mesosphere extends upward to the next temperature minimum, which defines the base of the thermosphere; the boundary between the two regions is called the mesopause.
+                </p>
+            </article>
 
-        <article id = "Mesosphere">
-            <h2>Mesosphere</h2>
-            <p>Just below the mesopause, the air is so cold that even the very scarce water vapor at this altitude can sublimate into polar-mesospheric noctilucent clouds of ice particles. These are the highest clouds in the atmosphere and may be visible to the naked eye if sunlight reflects off them about an hour or two after sunset or similarly before sunrise. They are most readily visible when the Sun is around 4 to 16 degrees below the horizon..</p>
-        </article>
+            <article id = "Thermosphere">
+                <h2>Thermosphere</h2>
+                <p>
+                    Thermosphere, region of increasing temperature in Earth's atmosphere that is located above the mesosphere. The base of the thermosphere (the mesopause) is at an altitude of about 80 km (50 miles), whereas its top (the thermopause) is at about 450 km.
+                </p>
+            </article>
 
-        <article id = "Thermosphere">
-            <h2>Thermosphere</h2>
-            <p>The thermosphere is the second-highest layer of Earth's atmosphere. It extends from the mesopause at an altitude of about 80 km up to the thermopause at an altitude range of 500–1000 km. The height of the thermopause varies considerably due to changes in solar activity. Because the thermopause lies at the lower boundary of the exosphere, it is also referred to as the exobase. The lower part of the thermosphere, from 80 to 550 kilometres above Earth's surface, contains the ionosphere.</p>
-        </article>
+            <article id = "Exosphere">
+                <h2>Exosphere</h2>
+                <p>
+                    Exosphere, outermost region of a planet's atmosphere, where molecular densities are low and the probability of collisions between molecules is very small. The base of the exosphere is called the critical level of escape because, in the absence of collisions, lighter, faster-moving atoms such as hydrogen and helium may attain velocities that allow them to escape the planet's gravitational field. Most molecules, however, have velocities considerably lower than the escape velocity, so their rate of escape to outer space is quite low. The Earth's exosphere begins about 500 km (300 miles) above the terrestrial surface and extends out through the magnetosphere and beyond to the interplanetary medium.
+                </p>
+            </article>
 
-        <article id = "Exosphere">
-            <h2>Exosphere</h2>
-            <p>The exosphere is the outermost layer of Earth's atmosphere. It extends from the thermopause, at the top of the thermosphere at an altitude of about 700 km above sea level, to about 10,000 km, where it merges into the solar wind.</p>
-        </article>
+            <article id = "Space">
+                <h2>Space</h2>
+                <p>
+                    Space is the boundless three-dimensional extent in which objects and events have relative position and direction.
+                </p>
+            </article>
 
-        <article id = "Space">
-            <h2>Space</h2>
-            <p>Space is the boundless three-dimensional extent in which objects and events have relative position and direction. In classical physics, physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime..</p>
-        </article>
-
-    </div>
-    <script src = "Game.js"></script>
-</body>
+        </div>
+        <script src = "Game.js"></script>
+    </body>
 </html>

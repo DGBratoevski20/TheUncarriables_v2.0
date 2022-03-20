@@ -1,6 +1,6 @@
 <h1 align="center">TheUncarriables_v2.0</h1>
-<h6 align="center">History & Geography</h6>
-<br>
+<h3 align="center">History & Geography📚</h3>
+
 
 <p align="center">
 <img src="https://cdn.discordapp.com/attachments/943926217483112488/953774779863822456/unknown.png" width="750">
@@ -8,27 +8,27 @@
   
 ## Hello, We are TheUncarriables v2.0
 
-Our site is about a History and Geography. It includes interesting ways for learning such as quizzes, maps, diagrames, time lines and other educational games.
+Our site is about a History and Geography. It includes interesting ways for learning such as quizzes, maps, diagrames, time lines and other educational games.🖥️
 ---
  
  ## Team	<a name = "team"></a>
-1. **DGBratoevski20** - **Scrum trainer**	
+1. **DGBratoevski20** - **Scrum trainer**	👦🏼
    > ***GitHub profile***: [***DGBratoevski20***](https://github.com/DGBratoevski20)	
 
-2. **IPStoyanov20** - **Backend Developer**	
+2. **IPStoyanov20** - **Backend Developer** 👦🏽
    > ***GitHub profile***: [***IPStoyanov20***](https://github.com/IPStoyanov20)	
 
-3. **HHChandar20** - **Frontend Developer**	
+3. **HHChandar20** - **Frontend Developer** 👦🏻
    > ***GitHub profile***: [***HHChandar20***](https://github.com/HHChandar20)	
 
-4. **AIBaev20** - **Designer**	
+4. **AIBaev20** - **Designer** 👦
    > ***GitHub profile***: [***AIBaev20***](https://github.com/AIBaev20)
    
  ---
 
 ## Installation 
 
-You can download the site from [github](https://github.com/DGBratoevski20/TheUncarriables_v2.0) by pressing the green clone button. 
+You can download the site from [github](https://github.com/DGBratoevski20/TheUncarriables_v2.0) by pressing the green clone button.
 
 ---
 
@@ -47,6 +47,6 @@ You can download the site from [github](https://github.com/DGBratoevski20/TheUnc
 - <img src="https://seeklogo.com/images/F/font-awesome-logo-3010FE2434-seeklogo.com.png" width="20"> Font Awesome
 ---
 
-# If you like our site you can star us!
+# If you like our site you can star us!⭐✨
 
-# Have a great time and don't forget: "Carry the uncarriable!"
+# Have a great time and don't forget: "Carry the uncarriable!"😀

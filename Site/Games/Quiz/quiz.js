@@ -78,7 +78,6 @@ var option0= document.getElementById('option0');
 var option1= document.getElementById('option1');
 var option2= document.getElementById('option2');
 var option3= document.getElementById('option3');
-var next= document.querySelector('.next');
 var points= document.getElementById('score');
 var span= document.querySelectorAll('span');
 var i=0;
@@ -165,9 +164,6 @@ function nextQuestion(){
         scoreboard.style.display= 'block'
     }
 }
-
-//click events to next button
-next.addEventListener('click',nextQuestion);
 
 //Back to Quiz button event
 function backToQuiz(){
