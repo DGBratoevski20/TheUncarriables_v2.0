@@ -13,29 +13,33 @@ img{
     position: fixed;
 }
 .questions{
-    margin: auto;
+        margin: auto;
     width: 90vw;
     padding: 2rem;
-    background: lightblue;
+    background: #f5f5b3;
     cursor: default;
     border-radius: 1rem;
-    border: 10px solid #000000;
+    border: 10px solid #b9ff4f;
 }
 #question{
-    margin-bottom: 8rem;
-	text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-align: center;
 }
 .option{
+    display: flex;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    box-shadow: 4px 5px 10px #15103d;
+    box-shadow: 4px 5px 10px yellow;
     width: 15rem;
-    background: linear-gradient(135deg, #15103d, #15190f);
+    height: 50px;
+    background: linear-gradient(0deg, darkorange, greenyellow);
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 1rem;
-    text-align: center;
-	color: red;
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
 .option:hover{
     color: #900000;
@@ -63,27 +67,16 @@ span{
     text-align: center;
     position: absolute;
     left: 35%;
-    border: 5px solid red;
+    border: 3px solid darkorange;
     border-radius: 15px;
     width: 30%;
     height: 7%;
-	background: linear-gradient(135deg, #15103d, #15190f);
+    background: linear-gradient(0deg, darkorange, yellow);
 }
 .buttons{
     text-align: center;
 }
-button{
-    padding: 0.2rem 1.5rem;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    border-radius: 1.5rem;
-    color: rgba(93,53,156,0.98);
-    background: rgba(161,177,19,0.82);
-}
-button:active{
-    background: lavender;
-}
+
 #scoreboard,#answerBank{
     width: 20rem;
     background: rgba(230,230,250,0.77);
@@ -189,8 +182,7 @@ body{
     background-size: cover;
     margin: 0;
     height: 100%;
-    left:0;
-    
+    left:0;    
     clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 53%);
 }
 @media only  screen and (max-width:980px){
@@ -199,7 +191,3 @@ body{
         height: 800px;
     }
 }
-
-/*b;blblblblblbl*/
-
- 

@@ -156,7 +156,6 @@ function calcScore(e){
 function nextQuestion(){
     if(counterqustion < questionBank.length)
     {
-        
         Rand();
     }
     else{
