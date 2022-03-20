@@ -22,7 +22,7 @@
             {
                 location.reload();
             })
-            timer.querySelector('p').innerText = `Hours:${hours} Min:${minute} Sec:${seconds}`
+            timer.querySelector('p').innerText = `Hours: ${hours} Min: ${minute} Sec: ${seconds}`
             
             mother.forEach(function(item)
             {
@@ -120,7 +120,7 @@
                         minute = 0;
                         
                     }                  
-                   timer.querySelector('p').innerText = `Hours:${hours} Min:${minute} Sec:${seconds}`
+                   timer.querySelector('p').innerText = `Hours: ${hours} Min: ${minute} Sec: ${seconds}`
                 }, 1000)
                 
                 countre = 0

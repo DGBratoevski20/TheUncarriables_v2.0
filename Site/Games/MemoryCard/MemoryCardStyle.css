@@ -8,7 +8,8 @@ body{
 }
 
 .timer{
-    position: absolute;
+    position: fixed;
+	z-index: 9999;
     width: 25em;
     top:2%;
     left:1%;
@@ -18,6 +19,8 @@ body{
     height: 3.5em;
     margin-bottom:20px;
     padding: 10px 20px 10px 20px;
+	border-radius: 30px;
+	box-shadow: 10px 10px 10px #000000;
 }
 
 /* Button for Play again*/
@@ -50,6 +53,7 @@ i{
 
 .timer p {
     color: #292929;
+	margin-left: -40px;
 }
 
 aside > img{
@@ -63,6 +67,10 @@ aside > img{
     opacity: 1;
     display: none;
     z-index: 100;
+}
+
+.game-over{
+	font-size: 2.3rem
 }
 
 article{
@@ -100,6 +108,7 @@ article > aside{
     transition: all 1s;
     border-radius: 15% 15% 15% 15%;
     transform-style: preserve-3d;
+	box-shadow: 10px 10px 10px #000000;
 }
 
 img{
