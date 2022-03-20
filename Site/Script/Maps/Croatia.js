@@ -400,21 +400,21 @@ L.marker([45.291527085553604, 13.887037606228398],{icon:TouristDestinationsMarke
 
 //cities
 L.marker([43.51046, 16.44431],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Split.</b><hr><i> One of the biggest cities in Croatia.</i>')
+.bindPopup('<b>Split.</b><hr><i>Population: 176,314</i><br><i>Area: 79.38 km<sup>2</sup></i><br><i>Elevation: 0 m</i><hr><i>Split is the second largest city of Croatia and the largest city in the region of Dalmatia.</i>')
 .openPopup();
 
 L.marker([45.32162, 14.43944],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Rijeka.</b><hr><i> One of the biggest cities in Croatia.</i>')
+.bindPopup('<b>Rijeka.</b><hr><i>Population: 108,622</i><br><i>Area: 44 km<sup>2</sup></i><br><i>Elevation: 126 m</i><hr><i>Rijeka is a Croatian port city on Kvarner Bay in the northern Adriatic Sea.</i>')
 .openPopup();
 
 L.marker([45.55202, 18.70005],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Osijek.</b><hr><i> One of the biggest cities in Croatia.</i>')
+.bindPopup('<b>Osijek.</b><hr><i>Population: 84,104</i><br><i>Area: 169 km<sup>2</sup></i><br><i>Elevation: 94 m</i><hr><i>Osijek is the largest city and the economic and cultural centre of the eastern Croatian region of Slavonia</i>')
 .openPopup();
 
 L.marker([44.11874, 15.23047],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Zadar.</b><hr><i> One of the biggest cities in Croatia.</i>')
+.bindPopup('<b>Zadar.</b><hr><i>Population: 75,082</i><br><i>Area: 194 km<sup>2</sup></i><br><i>Elevation: 39 m</i><hr><i>Zadar, a city on Croatia’s Dalmatian coast, is known for the Roman and Venetian ruins of its peninsular Old Town.</i>')
 .openPopup();
 
 L.marker([45.81546, 15.973691],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Zagreb.</b><hr><i> The capital city of Croatia.</i>')
+.bindPopup('<b>Zagreb.</b><hr><i>Population: 806,341</i><br><i>Area: 641 km<sup>2</sup></i><br><i>Elevation: 158 m</i><hr><i>Linz is the capital of Upper Austria and third-largest city in Austria.</i>')
 .openPopup();

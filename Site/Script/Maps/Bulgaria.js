@@ -423,37 +423,37 @@ L.marker([44.0965768614296, 27.063071411637523],{icon:TouristDestinationsMarkerI
 .bindPopup('<b>Srebarna.</b><hr><i>One of the most popular tourist destinations in Bulgaria.</i>')
 .openPopup();
 
+
 //cities
 L.marker([42.15525946577863, 24.75],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Plovdiv.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Plovdiv.</b><hr><i>Population: 343,424</i><br><i>Area: 102 km<sup>2</sup></i><br><i>Elevation: 164 m</i><hr><i>Plovdiv is an ancient city built around 7 hills, in southern Bulgaria.</i>')
 .openPopup();
 
 L.marker([43.20645, 27.91536333],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Varna.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Varna.</b><hr><i>Population: 335,177</i><br><i>Area: 238 km<sup>2</sup></i><br><i>Elevation: 80 m</i><hr><i>Varna is a port city and seaside resort on Bulgarian Black Sea, next to the coastal resorts of Golden Sands, St. Konstantin and Albena.</i>')
 .openPopup();
 
 L.marker([42.4923, 27.47136333],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Burgas.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Burgas.</b><hr><i>Population: 202,766</i><br><i>Area: 253.6 km<sup>2</sup></i><br><i>Elevation: 30 m</i><hr><i>Burgas is a city on Bulgaria’s Black Sea coast. At its heart, the Church of Saint Cyril and Methodius is known for striking stained-glass windows over its main entrance.</i>')
 .openPopup();
 
 L.marker([43.0822, 25.63136333],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Veliko Tarnovo.</b><hr><i>  One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Veliko Tarnovo.<i>Population: 87,181</i><br><i>Area: 30.38 km<sup>2</sup></i><br><i>Elevation: 220 m</i><hr><i>Veliko Tarnovo is a town in north central Bulgaria and the administrative centre of Veliko Tarnovo Province.</i>')
 .openPopup();
 
 L.marker([42.423871, 25.6272],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Stara Zagora.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Stara Zagora.</b><i>Population: 136,781</i><br><i>Area: 85.11 km<sup>2</sup></i><br><i>Elevation: 196 m</i><hr><i>Stara Zagora is the fifth-largest agglomeration in Bulgaria, and the administrative capital of the homonymous Stara Zagora Province located in the historical region of Thrace.</i>')
 .openPopup();
 
 L.marker([43.8476, 25.954],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Ruse.</b><hr><i> One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Ruse.</b><hr><i>Population: 144,936</i><br><i>Area: 127.1 km<sup>2</sup></i><br><i>Elevation: 45 m</i><hr><i>Ruse is the fifth largest city in Bulgaria.</i>')
 .openPopup();
 
 L.marker([43.409, 24.617999],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Pleven.</b><hr><i>  One of the biggest cities in Bulgaria.</i>')
+.bindPopup('<b>Pleven.</b><hr><i>Population: 98,467</i><br><i>Area: 85.09 km<sup>2</sup></i><br><i>Elevation: 116 m</i><hr><i>Pleven is the seventh most populous city in Bulgaria.</i>')
 .openPopup();
 
 
-
 L.marker([42.698, 23.32222222],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Sofia.</b><hr><i> The capital city of Bulgaria.</i>')
+.bindPopup('<b>Sofia.</b><hr><i>Population: 1,242,568</i><br><i>Area: 492 km<sup>2</sup></i><br><i>Elevation: 553 m</i><hr><i>Sofia is the capital of the Balkan nation of Bulgaria. It’s in the west of the country, below Vitosha Mountain.</i>')
 .openPopup();

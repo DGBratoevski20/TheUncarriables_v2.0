@@ -409,25 +409,25 @@ L.marker([56.223578192793454, 10.308977122037048],{icon:TouristDestinationsMarke
 
 //cities
 L.marker([56.16860,10.20409],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Aarhus.</b><hr><i> One of the biggest cities in Denmark.</i>')
+.bindPopup('<b>Aarhus.</b><hr><i>Population: 336,411</i><br><i>Area: 91 km<sup>2</sup></i><br><i>Elevation: 0 m</i><hr><i>Aarhus is a city in Denmark on the Jutland peninsula’s east coast.</i>')
 .openPopup();
 
 L.marker([55.40736,10.39792],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Odense.</b><hr><i> One of the biggest cities in Denmark.</i>')
+.bindPopup('<b>Odense.</b><hr><i>Population: 200,703</i><br><i>Area: 304.3 km<sup>2</sup></i><br><i>Elevation: 13 m</i><hr><i>Odense is the third-largest city in Denmark.</i>')
 .openPopup();
 
 L.marker([57.05163,9.91785],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Aalborg.</b><hr><i> One of the biggest cities in Denmark.</i>')
+.bindPopup('<b>Aalborg.</b><i>Population: 211,684</i><br><i>Area: 6.05 km<sup>2</sup></i><br><i>Elevation: 55 m</i><hr><i>Aalborg is a city in the Jutland region of Denmark.</i>')
 .openPopup();
 
 L.marker([55.47755,8.45970],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Esbjerg.</b><hr><i> One of the biggest cities in Denmark.</i>')
+.bindPopup('<b>Esbjerg.</b><i>Population: 115,932</i><br><i>Area: 742.5 km<sup>2</sup></i><br><i>Elevation: 11 m</i><hr><i>Esbjerg is a seaport town and seat of Esbjerg Municipality on the west coast of the Jutland peninsula in southwest Denmark.</i>')
 .openPopup();
 
 L.marker([55.71052,9.53283],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Vejle.</b><hr><i> One of the biggest cities in Denmark.</i>')
+.bindPopup('<b>Vejle.</b><i>Population: 113,720</i><br><i>Area: 144 km<sup>2</sup></i><br><i>Elevation: 8 m</i><hr><i>Vejle is a town in Denmark, in the southeast of the Jutland Peninsula at the head of Vejle Fjord, where the Vejle River and Grejs River and their valleys converge.</i>')
 .openPopup();
 
 L.marker([55.67763, 12.57018],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Copenhagen.</b><hr><i> The capital city of Denmark.</i>')
+.bindPopup('<b>Copenhagen.</b><hr><i>Population: 602,481</i><br><i>Area: 179.8 km<sup>2</sup></i><br><i>Elevation: 91 m</i><hr><i>Copenhagen, Denmark’s capital, sits on the coastal islands of Zealand and Amager.</i>')
 .openPopup();
