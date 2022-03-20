@@ -16,6 +16,7 @@
 	margin-bottom: 5%;
     background: var(--chart-color);
     border-radius: 15px;
+	box-shadow: 3px 1px 10px var(--map-color);
   }
 
   /* required styles */
