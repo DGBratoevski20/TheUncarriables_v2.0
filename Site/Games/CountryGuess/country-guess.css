@@ -26,7 +26,7 @@ section {
 #container {
   display: grid;
   height: 100%;
-  grid-template-columns: 500px 500px 500px;
+  grid-template-columns: 480px 480px 480px;
   grid-template-rows: 300px 300px 300px 300px 300px 300px;
   border: 10px solid #616161;
   border-radius: 5px;
