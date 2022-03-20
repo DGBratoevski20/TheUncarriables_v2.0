@@ -6,7 +6,7 @@ var counterForMetres = 0;
 var SecondVarForTimeOut, ThirdVarForTimeOut;
 var helperOncounterForMetres = 100;
 var left = 46;
-var fuel = 500;
+var fuel = 300;
 var ButtonLeft;
 var ButtonRight;
 var buttonStartGame; 

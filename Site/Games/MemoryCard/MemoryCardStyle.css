@@ -91,14 +91,14 @@ article > aside{
 
 .cardArea{
     width: 90vw;
-    height:250vh;
+    height:100vh;
     background-color: transparent;
     display: grid;
     margin: auto;
     margin-top: 7%;
 	justify-content: center;
     grid-template-columns: repeat(4, 290px);
-    grid-template-rows: repeat(6, 280px);
+    grid-template-rows: repeat(3, 280px);
 }
 
 #divImg {
