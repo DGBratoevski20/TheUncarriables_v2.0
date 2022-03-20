@@ -6,7 +6,7 @@ var counterForMetres = 0;
 var SecondVarForTimeOut, ThirdVarForTimeOut;
 var helperOncounterForMetres = 100;
 var left = 46;
-var fuel = 300;
+var fuel = 500;
 var ButtonLeft;
 var ButtonRight;
 var buttonStartGame; 
@@ -22,7 +22,7 @@ function UP()
                 document.querySelector('h1').innerHTML = 'Troposphere';
                 setInterval(function()
                 {
-                    document.querySelector('#point').style.animation = "clouds 2s infinite"
+                    document.querySelector('#point').style.animation = "clouds 3s infinite"
                     
                     
                     
@@ -33,7 +33,7 @@ function UP()
                     {   
                         
                         document.querySelector('#point').style.animation = "none"
-                        document.querySelector('#point').style.left =  Math.round(Math.random() * 99+ 1) + "%"
+                        document.querySelector('#point').style.left =  Math.round(Math.random() * 80+ 1) + "%"
                         
                         clearTimeout(FirstVarForTimeOut)
                     }, 2000)
@@ -133,7 +133,7 @@ function UP()
                             document.querySelector('#cloud2').style.animation = "right-left 8s infinite"
 
                             document.querySelector('#cloud').style.backgroundImage = "url('images/alient.png')"
-                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft.png')"
+                            document.querySelector('#cloud2').style.backgroundImage = "url('images/aircraft2.png')"
 
                         }
                         else if(counterForMetres >= 700000 && counterForMetres < 10000000)
@@ -274,7 +274,7 @@ setInterval(function()
         document.querySelector('#point').style.animation = 'none'
         
         counterForMetres += helperOncounterForMetres;
-		fuel += 20;
+		fuel += 50;
         
         if(counterForMetres < 12000)
         {   document.querySelector('#cloud').style.animation= 'none'
