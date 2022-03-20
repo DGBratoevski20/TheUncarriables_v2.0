@@ -30,7 +30,7 @@ body {
     position: relative;
     margin: auto;
     margin-top: 5%;
-    box-shadow: 100px, 100px, 100px,black;
+    box-shadow: 0px 0px 50px #ceff20;
     display: flex;
     transition: all 2s;
     justify-content: center;
@@ -59,9 +59,14 @@ body {
 .info > h1 {
     text-align: center;
     position: absolute;
-    top: -20%;
+    top: -70%;
     left: 28%;
     font-size: 1rem;
+}
+
+p{
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
 h1 {
@@ -127,6 +132,7 @@ h1 {
     font-size: 1.5rem;  
     background-color: #8ffdfd;
 	border: 5px solid #ceff00;
+    box-shadow: 0px 0px 50px #ceff20;
 }
 
 img {
@@ -189,6 +195,8 @@ article
     width: 80vw;
     transition: all 2s;
 	text-align: center;
+	border-radius: 30px;
+    box-shadow: 0px 0px 50px #ceff20;
 }
 
 @keyframes clouds {  
@@ -283,6 +291,7 @@ h4 {
     justify-content: center;
     font-size: 1.5rem;
 	border: 5px solid #ceff00;
+    box-shadow: 0px 0px 50px #ceff20;
 }
 
 .btns {
@@ -313,6 +322,7 @@ button {
     width: 200px;
     height: 200px;
     margin: 30%;
+    box-shadow: 0px 0px 50px #ceff20;
 }
 
 #Start {
