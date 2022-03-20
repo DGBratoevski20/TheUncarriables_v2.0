@@ -4,50 +4,57 @@
 
     <head>
         <title>Login</title>
-	  <link rel="icon" href="../Images/navbar-logo.png">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link rel="stylesheet" href="../Style/login.css">
-        <script language="javascript" src="../Script/changeTheme.js"></script>
+	    <link rel="icon" href="../Images/navbar-logo.png"> <!-- Link for favicon -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> <!-- Link to CSS from Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- Link to CSS from Font Awesome -->
+        <link rel="stylesheet" href="../Style/login.css"> <!-- Link to CSS -->
+        <script language="javascript" src="../Script/changeTheme.js"></script> <!-- Link to JavaScript -->
 
     </head>
     
     
     <body>
 
-    <header>
+        <!-- Navbar -->
+        <header>
 
-	<div class="logo">
-		<a href="../Index.html"><img id="logoInNavbar" src="../Images/navbar-logo.png" alt="logo"></a>
-	</div>
-	
-    <nav>
-        <ul class="nav-links">
-            <li><a href="country-cards.html">Geography</a></li>
-            <li><a href="history-cards.html">History</a></li>
-            <li><a href="population.html">Population</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+            <!-- Link to Index page -->
+            <div class="logo">
+                <a href="../Index.html"><img id="logoInNavbar" src="../Images/navbar-logo.png" alt="logo"></a>
+            </div>
+            
+            <!-- Navbar links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="country-cards.html">Geography</a></li>
+                    <li><a href="history-cards.html">History</a></li>
+                    <li><a href="population.html">Population</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
 
-    <a class="cta" href="contact-us.html">Games</a>
-	
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox" >
-            <input type="checkbox" id="checkbox">
-            <div class="slider round" onclick = "changeTheme()"></div>
-        </label>
-    </div>
-	
-    </header>
+            <a class="cta" href="contact-us.html">Games</a>
+            
+             <!-- Theme slider -->
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox" >
+                    <input type="checkbox" id="checkbox">
+                    <div class="slider round" onclick = "changeTheme()"></div> <!-- When slider is clicked it will execute the things in changeTheme() function -->
+                </label>
+            </div>
+        
+        </header>
 
+        <!-- Form -->
         <form name="Form" class="box-form">
 
+            <!-- Left side of form -->
             <div class="left">
                 <br>
                 <h1 id="h1-left">Hello!</h1>
                 <img id="logoInForm" src="../Images/Logo.png">
                 <div class="overlay">
+                    <!-- Icons -->
                     <span>
                         <br>
                         <a href="https://bg-bg.facebook.com"><i class="fab fa-facebook"></i></a>
@@ -56,6 +63,7 @@
                 </div>
             </div>
             
+            <!-- Right side of form -->
             <div class="right">
             
                 <h1 id="h1-right">Login</h1>
@@ -63,8 +71,12 @@
                 <p>Don't have an account? <a href="#" id="login-register">Create your account</a> it takes less than a minute</p>
                 
                 <div class="inputs">
+                    <!-- Email input -->
                     <input type="email" id="email" name="email" placeholder="Email" required>
+
                     <br>
+
+                    <!-- Password input -->
                     <input type="password" id="email" name="password" placeholder="Password" required>
                 </div>
                     
@@ -72,6 +84,7 @@
                     
                 <div class="remember-me--forget-password">
                     
+                    <!-- Remember me checkbox -->
                     <label class="login-label">
                         <input type="checkbox" name="item" checked>
                         <span class="text-checkbox">Remember me</span>
@@ -82,7 +95,11 @@
                 </div>
                     
                 <br>
-                <a href="#"><button type="submit" id="submit" onclick="checkForm()">Login</button></a>
+
+                <!-- Submit button -->
+                <a href="#">
+                    <button type="submit" id="submit" onclick="checkForm()">Login</button>
+                </a>
                 
             </div>
             
@@ -95,21 +112,25 @@
 					<i class="fa fa-map-marker-alt"></i>
 					<p> Burgas, Ortoto 4</p>
 					<div class="footer-map">
+                        <!-- Footer map -->
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.8277731122628!2d27.400923685552687!3d42.45634449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6eb7e8a995853%3A0x9f3b508a4516b2ad!2sProfessional%20Technical%20School!5e0!3m2!1sen!2sbg!4v1646482002617!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>            
 				</div>
 			</a>
 
             <div class="footer-right">
+
+                <!-- Footer links -->
                 <div class="footer-links">
                     <a href="../index.html">Home</a> <p>|</p>
-				<a href="country-cards.html">Geography</a> <p>|</p>
-				<a href="history-cards.html">History</a> <p>|</p>
-				<a href="Time-zone.html">Time zones</a> <p>|</p>
-				<a href="about.html">About</a> <p>|</p>
-				<a href="contact-us.html">Contact</a>
+                    <a href="country-cards.html">Geography</a> <p>|</p>
+                    <a href="history-cards.html">History</a> <p>|</p>
+                    <a href="Time-zone.html">Time zones</a> <p>|</p>
+                    <a href="about.html">About</a> <p>|</p>
+                    <a href="contact-us.html">Contact</a>
                 </div>
-				
+                
+                <!-- Footer icons -->
 				<ul class="footer-icons">
                     <li>
                       <a href="https://www.instagram.com/theuncarriablesv2.0/" id="instagram">
@@ -135,6 +156,7 @@
 				
 			</div>
 			
+            <!-- Footer for phone -->
 			<div id="phoneFooter">
 			  <i id="phoneFooterIcon" class="fa fa-map-marker-alt"></i>
 			  <p id="phoneFooterText">Burgas, Ortoto 4</p>

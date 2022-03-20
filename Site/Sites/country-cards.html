@@ -5,46 +5,52 @@
 <head>
 
   <title>European Union</title>
-  <link rel="icon" href="../Images/navbar-logo.png">
-  <link rel="stylesheet" href="../Style/country-cards.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <script language="javascript" src="../Script/changeTheme.js"></script>
+  <link rel="icon" href="../Images/navbar-logo.png"> <!-- Link to favicon -->
+  <link rel="stylesheet" href="../Style/country-cards.css"> <!-- Link to CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- Link to CSS from Font Awesome -->
+  <script language="javascript" src="../Script/changeTheme.js"></script> <!-- Link to JavaScript -->
 
 </head>
 
 <body>
 
+  <!-- Navbar -->
   <header>
 
+	<!-- Link to Index page -->
 	<div class="logo">
 		<a href="../index.html"><img id="logoInNavbar" src="../Images/navbar-logo.png" alt="logo"></a>
 	</div>
 
+	<!-- Navbar links -->
     <nav>
         <ul class="nav-links">
             <li><a href="country-cards.html">Geography</a></li>
-                  <li><a href="history-cards.html">History</a></li>
-                  <li><a href="population.html">Population</a></li>
-                  <li><a href="login.html">Login</a></li>
+			<li><a href="history-cards.html">History</a></li>
+			<li><a href="population.html">Population</a></li>
+			<li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
     <a class="cta" href="contact-us.html">Games</a>
 	
+	<!-- Theme slider -->
 	<div class="theme-switch-wrapper">
 		<label class="theme-switch" for="checkbox">
 			<input type="checkbox" id="checkbox" />
-			<div class="slider round" onclick = "changeTheme()"></div>
+			<div class="slider round" onclick = "changeTheme()"></div> <!-- When slider is clicked it will execute the things in changeTheme() function -->
 		</label>
 	</div>
 
   </header>
 
+  <!-- Heading of country-cards page -->
   <h1>European Union</h1>
 
   
   <div class="cards">
-  
+
+		<!-- Austria card -->
 		<div class="card">
 		  <a href = "../Maps/Austria.html">
 			<h2 class="card-title">Austria</h2><br>
@@ -52,7 +58,8 @@
 			<p class="card-desc">Austria is located in Central Europe. It is divided into nine states, with Vienna as the capital. The official language is German, and the currency is the euro (EUR).</p>
 		  </a>
 		</div>
-
+		
+		<!-- Bulgaria card -->
 		<div class="card">
 		  <a href = "../Maps/Bulgaria.html">
 			<h2 class="card-title">Bulgaria</h2><br>
@@ -61,7 +68,7 @@
 	      </a>
 		</div>
 	
-	
+		<!-- Belgium card -->
 		<div class="card">
 		  <a href = "../Maps/Belgium.html">
 			<h2 class="card-title">Belgium</h2><br>
@@ -70,7 +77,7 @@
 		  </a>
 		</div>
     
-    
+		<!-- Croatia card -->
 		<div class="card">
 		  <a href = "../Maps/Croatia.html">
 			<h2 class="card-title">Croatia</h2><br>
@@ -79,7 +86,7 @@
 		  </a>
 		</div>
     
-	
+		<!-- Cyprus card -->
 		<div class="card">
 		  <a href = "../Maps/RepublicOfCyprus.html">
 			<h2 class="card-title">Republic of Cyprus</h2><br>
@@ -88,8 +95,7 @@
 		  </a>
 		</div>
     
-
-    
+		<!-- Czech Republic card -->
 		<div class="card">
 		  <a href = "../Maps/CzechRepublic.html">
 			<h2 class="card-title">Czech Republic</h2><br>
@@ -98,8 +104,7 @@
 		  </a>
 		</div>
     
-
-    
+		<!-- Denmark card -->
 		<div class="card">
 		  <a href = "../Maps/Denmark.html">
 			<h2 class="card-title">Denmark</h2><br>
@@ -109,7 +114,7 @@
 		</div>
     
 
-    
+		<!-- Estonia card -->
 		<div class="card">
 		  <a href = "../Maps/Estonia.html">
 			<h2 class="card-title">Estonia</h2><br>
@@ -119,7 +124,7 @@
 		</div>
     
 
-    
+		<!-- Finland card -->
 		<div class="card">
 		  <a href = "../Maps/Finland.html">
 			<h2 class="card-title">Finland</h2><br>
@@ -129,7 +134,7 @@
 		</div>
     
 
-    
+		<!-- France card -->
 		<div class="card">
 		  <a href = "../Maps/France.html">
 			<h2 class="card-title">France</h2><br>
@@ -139,7 +144,7 @@
 		</div>
     
 
-    
+		<!-- Germany card -->
 		<div class="card">
 		  <a href = "../Maps/Germany.html">
 			<h2 class="card-title">Germany</h2><br>
@@ -149,7 +154,7 @@
 		</div>
     
 
-    
+		<!-- Greece card -->
 		<div class="card">
 		  <a href = "../Maps/Greece.html">
 			<h2 class="card-title">Greece</h2><br>
@@ -159,7 +164,7 @@
 		</div>
     
 
-    
+		<!-- Hungary card -->
 		<div class="card">
 		  <a href = "../Maps/Hungary.html">
 			<h2 class="card-title">Hungary</h2><br>
@@ -169,7 +174,7 @@
 		</div>
     
 
-    
+		<!-- Ireland card -->
 		<div class="card">
 		  <a href = "../Maps/Ireland.html">
 			<h2 class="card-title">Ireland</h2><br>
@@ -179,7 +184,7 @@
 		</div>
     
 
-    
+		<!-- Italy card -->
 		<div class="card">
 		  <a href = "../Maps/Italy.html">
 			<h2 class="card-title">Italy</h2><br>
@@ -188,7 +193,7 @@
 		  </a>
 		</div>
 
-    
+		<!-- Latvia card -->
 		<div class="card">
 		  <a href = "../Maps/Latvia.html">
 			<h2 class="card-title">Latvia</h2><br>
@@ -197,7 +202,7 @@
 		  </a>
 		</div>
 
-    
+		<!-- Lithuania card -->
 		<div class="card">
 		  <a href = "../Maps/Lithuania.html">
 			<h2 class="card-title">Lithuania</h2><br>
@@ -207,7 +212,7 @@
 		</div>
     
 
-    
+		<!-- Luxembourg card -->
 		<div class="card">
 		  <a href = "../Maps/Luxembourg.html">
 			<h2 class="card-title">Luxembourg</h2><br>
@@ -217,7 +222,7 @@
 		</div>
     
 
-    
+		<!-- Malta card -->
 		<div class="card">
 		  <a href = "../Maps/Malta.html">
 			<h2 class="card-title">Malta</h2><br>
@@ -227,7 +232,7 @@
 		</div>
     
 
-    
+		<!-- Netherlands card -->
 		<div class="card">
 		  <a href = "../Maps/Netherlands.html">
 			<h2 class="card-title">Netherlands</h2><br>
@@ -236,7 +241,7 @@
 		  </a>
 		</div>    
 
-    
+		<!-- Poland card -->
 		<div class="card">
 		  <a href = "../Maps/Poland.html">
 			<h2 class="card-title">Poland</h2><br>
@@ -246,7 +251,7 @@
 		</div>
     
 
-    
+		<!-- Portugal card -->
 		<div class="card">
 		  <a href = "../Maps/Portugal.html">
 			<h2 class="card-title">Portugal</h2><br>
@@ -256,7 +261,7 @@
 		</div>
    
 
-    
+		<!-- Romania card -->
 		<div class="card">
 		  <a href = "../Maps/Romania.html">
 			<h2 class="card-title">Romania</h2><br>
@@ -266,7 +271,7 @@
 		</div>
     
 
-    
+		<!-- Slovakia card -->
 		<div class="card">
 		  <a href = "../Maps/Slovakia.html">
 			<h2 class="card-title">Slovakia</h2><br>
@@ -276,7 +281,7 @@
 		</div>
     
 
-    
+		<!-- Slovenia card -->
 		<div class="card">
 		  <a href = "../Maps/Slovenia.html">
 			<h2 class="card-title">Slovenia</h2><br>
@@ -285,7 +290,7 @@
 		  </a>
 		</div>
     
-
+		<!-- Spain card -->
     	<div class="card">
 		  <a href = "../Maps/Spain.html">
 			<h2 class="card-title">Spain</h2><br>
@@ -295,7 +300,7 @@
 		</div>
     
 
-    
+		<!-- Sweden card -->
 		<div class="card">
 		  <a href = "../Maps/Sweden.html">
 			<h2 class="card-title">Sweden</h2><br>
@@ -314,21 +319,25 @@
 			<i class="fa fa-map-marker-alt"></i>
 			<p> Burgas, Ortoto 4</p>
 			<div class="footer-map">
+				<!-- Footer map -->
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.8277731122628!2d27.400923685552687!3d42.45634449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6eb7e8a995853%3A0x9f3b508a4516b2ad!2sProfessional%20Technical%20School!5e0!3m2!1sen!2sbg!4v1646482002617!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>            
 		</div>
 	</a>
 
 	<div class="footer-right">
+
+		<!-- Footer links -->
 		<div class="footer-links">
 			<a href="../index.html">Home</a> <p>|</p>
-				<a href="country-cards.html">Geography</a> <p>|</p>
-				<a href="history-cards.html">History</a> <p>|</p>
-				<a href="Time-zone.html">Time zones</a> <p>|</p>
-				<a href="about.html">About</a> <p>|</p>
-				<a href="contact-us.html">Contact</a>
+			<a href="country-cards.html">Geography</a> <p>|</p>
+			<a href="history-cards.html">History</a> <p>|</p>
+			<a href="Time-zone.html">Time zones</a> <p>|</p>
+			<a href="about.html">About</a> <p>|</p>
+			<a href="contact-us.html">Contact</a>
 		</div>
 		
+		<!-- Footer icons -->
 		<ul class="footer-icons">
 			<li>
 			  <a href="https://www.instagram.com/theuncarriablesv2.0/" id="instagram">

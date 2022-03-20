@@ -7,21 +7,24 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	  <title>About Us</title>
-	  <link rel="icon" href="../Images/navbar-logo.png">
-	  <link rel="stylesheet" href="../Style/about.css">
-	  <script src="../Script/changeTheme.js"></script>
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	  <link rel="icon" href="../Images/navbar-logo.png"> <!-- Link to favicon -->
+	  <link rel="stylesheet" href="../Style/about.css"> <!-- Link to CSS -->
+	  <script src="../Script/changeTheme.js"></script> <!-- Link to JavaScript -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- Link to CSS from Font Awesome -->
+	  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> <!-- Link to CSS from Font Awesome -->
 	</head>
 
 	<body>
-	
+		
+		<!-- Navbar -->
 		<header>
 
+			<!-- Link to Index page -->
 			<div class="logo">
 				<a href="../index.html"><img id="logoInNavbar" src="../Images/navbar-logo.png" alt="logo"></a>
 			</div>
-		
+			
+			<!-- Navbar links -->
 			<nav>
 				<ul class="nav-links">
 				  <li><a href="country-cards.html">Geography</a></li>
@@ -32,28 +35,34 @@
 			</nav>
 		
 			<a class="cta" href="contact-us.html">Games</a>
-		
+			
+			<!-- Theme slider -->
 			<div class="theme-switch-wrapper">
 			  <label class="theme-switch" for="checkbox">
 					<input type="checkbox" id="checkbox" />
-					<div class="slider round" onclick = "changeTheme()"></div>
+					<div class="slider round" onclick = "changeTheme()"></div> <!-- When slider is clicked it will execute the things in changeTheme() function -->
 			  </label>
 			</div>
 		
 		</header>
-	  
+		
+	  <!-- Heading of about us page -->
 	  <div class="header">
 		
 		<h1>Meet Our Team</h1>
 		<h3>The Uncarriables v2.0</h3>
 
 	  </div>
-	  
+
 		<div class="row1-container">
+
+			<!-- About for Hakan Chandar - Front-End Developer -->
 			<div class="box box-down purple">
-				  <h2>Hakan Chandar</h2>
-				  <p>Front-end developer</p>
-				  <img src="../Images/Profile-Photos/Hakan-Chandar.jfif" alt="Hakan Chandar">
+				  <h2>Hakan Chandar</h2> <!-- Name -->
+				  <p>Front-end developer</p> <!-- Role -->
+				  <img src="../Images/Profile-Photos/Hakan-Chandar.jfif" alt="Hakan Chandar"> <!-- Image -->
+				  
+				  <!-- Icons for social media -->
 				  <a href="https://www.facebook.com/hakan.chandar.12">
 					<i class="fab fa-facebook"></i>
 				  </a>
@@ -68,10 +77,13 @@
 				  </a>
 			</div>
 
+			<!-- About for Denislav Bratoevski - Scrum Trainer -->
 			<div class="box red">
-				  <h2>Denislav Bratoevski</h2>
-				  <p>Scrum Trainer</p>
-				  <img src="../Images/Profile-Photos/Denislav-Bratoevski.jfif" alt="Denislav Bratoevski">
+				  <h2>Denislav Bratoevski</h2> <!-- Name -->
+				  <p>Scrum Trainer</p> <!-- Role -->
+				  <img src="../Images/Profile-Photos/Denislav-Bratoevski.jfif" alt="Denislav Bratoevski"> <!-- Image -->
+				  
+				  <!-- Icons for social media -->
 				  <a href="https://www.facebook.com/deni.bratoevski/">
 					<i class="fab fa-facebook"></i>
 				  </a>
@@ -86,10 +98,13 @@
 				  </a>
 			</div>
 
+			<!-- About for Ivailo Stoyanov - Back-end Developer -->
 			<div class="box box-down blue">
-				  <h2>Ivailo Stoyanov</h2>
-				  <p>Back-end developer</p>
-				  <img src="../Images/Profile-Photos/Ivailo-Stoyanov.jfif" alt="Ivailo Stoyanov">
+				  <h2>Ivailo Stoyanov</h2> <!-- Name -->
+				  <p>Back-end developer</p> <!-- Role -->
+				  <img src="../Images/Profile-Photos/Ivailo-Stoyanov.jfif" alt="Ivailo Stoyanov"> <!-- Image -->
+				  
+				  <!-- Icons for social media -->
 				  <a href="#">
 					<i class="fab fa-facebook"></i>
 				  </a>
@@ -106,10 +121,14 @@
 	  </div>
 	  
 	  <div class="row2-container">
+
+			<!-- About for Alexander Baev - Designer -->
 			<div class="box orange">
-				  <h2>Alexander Baev</h2>
-				  <p>Designer</p>
-				  <img src="../Images/Profile-Photos/Alexander-Baev.jfif" alt="Alexander Baev">
+				  <h2>Alexander Baev</h2> <!-- Name -->
+				  <p>Designer</p> <!-- Role -->
+				  <img src="../Images/Profile-Photos/Alexander-Baev.jfif" alt="Alexander Baev"> <!-- Image -->
+				  
+				  <!-- Icons for social media -->
 				  <a href="https://www.facebook.com/alexander.baev.90/">
 					<i class="fab fa-facebook"></i>
 				  </a>
@@ -133,12 +152,15 @@
                   <i class="fa fa-map-marker-alt"></i>
                   <p> Burgas, Ortoto 4</p>
                   <div class="footer-map">
+					<!-- Footer map -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.8277731122628!2d27.400923685552687!3d42.45634449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6eb7e8a995853%3A0x9f3b508a4516b2ad!2sProfessional%20Technical%20School!5e0!3m2!1sen!2sbg!4v1646482002617!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>            
               </div>
             </a>
       
             <div class="footer-right">
+
+				<!-- Footer links -->
                 <div class="footer-links">
                   <a href="../index.html">Home</a> <p>|</p>
                   <a href="country-cards.html">Geography</a> <p>|</p>
@@ -147,7 +169,8 @@
                   <a href="about.html">About</a> <p>|</p>
                   <a href="contact-us.html">Contact</a>
                 </div>
-                
+				
+				<!-- Footer icons -->
                 <ul class="footer-icons">
                     <li>
                       <a href="#" id="instagram">
@@ -171,6 +194,7 @@
                     </li>
                 </ul>
 
+				<!-- Footer for phone -->
                 <div id="phoneFooter">
                   <i id="phoneFooterIcon" class="fa fa-map-marker-alt"></i>
                   <p id="phoneFooterText">Burgas, Ortoto 4</p>
@@ -180,8 +204,8 @@
             
         </footer>
 		
-	  <script src='https://kit.fontawesome.com/e8bbb49528.js'></script>
-	  
+	  <script src='https://kit.fontawesome.com/e8bbb49528.js'></script> <!-- Link to JavaScript from Font Awesome -->
+
 	</body>
 
 </html>

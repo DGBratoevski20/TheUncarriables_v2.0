@@ -2,131 +2,142 @@
 
 <html>
 
-<head>
+  <head>
 
-  <title>Contact us</title>
-	  <link rel="icon" href="../Images/navbar-logo.png">
-  <link rel="stylesheet" href="../Style/contact-us.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <script language="javascript" src="../Script/changeTheme.js"></script>
-  <script>
-    function refreshPage()
-    {
-      alert("Your email was successfuly sent!");
-    }
-  </script>
+    <title>Contact us</title>
+      <link rel="icon" href="../Images/navbar-logo.png">
+      <link rel="stylesheet" href="../Style/contact-us.css"> <!-- Link to CSS -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- Link to CSS from Font Awesome -->
+      <script language="javascript" src="../Script/changeTheme.js"></script> <!-- Link to JavaScript -->
+      <script>
+        function refreshPage()
+        {
+          alert("Your email was successfuly sent!");
+        }
+      </script>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <header>
+    
+    <!-- Navbar -->
+    <header>
 
-    <div class="logo">
-		<a href="../index.html"><img id="logoInNavbar" src="../Images/navbar-logo.png" alt="logo"></a>
-	</div>
-
-    <nav>
-        <ul class="nav-links">
-          <li><a href="country-cards.html">Geography</a></li>
-          <li><a href="history-cards.html">History</a></li>
-          <li><a href="population.html">Population</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-
-    <a class="cta" href="contact-us.html">Games</a>
-
-    <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round" onclick = "changeTheme()"></div>
-      </label>
-    </div>
-
-  </header>
-
-  <div id="contact">
-
-    <div id="title">
-      <h1>Contact us</h1>
-    </div>
-
-    <div id="form">
-      
-      <form method="post">
-      
-          <div class="formgroup" id="name-form">
-              <label for="name">Your name*</label>
-              <input type="text" id="name" name="name"/>
-          </div>
-          
-          <div class="formgroup" id="email-form">
-              <label for="email">Your e-mail*</label>
-              <input type="email" id="email" name="email"/>
-          </div>
-          
-          <div class="formgroup" id="message-form">
-              <label for="message">Your message</label>
-              <textarea id="message" name="message"></textarea>
-          </div>
-      
-          <input type="submit" value="Send your message!" onclick="refreshPage()">
-
-      </form>
-
-    </div>
-
-  </div>
-  
-  <footer>
-    <a href="https://www.google.com/maps?ll=42.456345,27.401579&z=16&t=m&hl=en&gl=BG&mapclient=embed&cid=11473853030451294893" target="_blank">
-      <div class="footer-left">
-          <i class="fa fa-map-marker-alt"></i>
-          <p> Burgas, Ortoto 4</p>
-          <div class="footer-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.8277731122628!2d27.400923685552687!3d42.45634449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6eb7e8a995853%3A0x9f3b508a4516b2ad!2sProfessional%20Technical%20School!5e0!3m2!1sen!2sbg!4v1646482002617!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>            
+      <!-- Link to Index page -->
+      <div class="logo">
+        <a href="../index.html"><img id="logoInNavbar" src="../Images/navbar-logo.png" alt="logo"></a>
       </div>
-    </a>
 
-    <div class="footer-right">
-        <div class="footer-links">
-          <a href="../Index.html">Home</a> <p>|</p>
-				<a href="country-cards.html">Geography</a> <p>|</p>
-				<a href="history-cards.html">History</a> <p>|</p>
-				<a href="Time-zone.html">Time zones</a> <p>|</p>
-				<a href="about.html">About</a> <p>|</p>
-				<a href="contact-us.html">Contact</a>
-        </div>
+      <!-- Navbar links -->
+      <nav>
+          <ul class="nav-links">
+            <li><a href="country-cards.html">Geography</a></li>
+            <li><a href="history-cards.html">History</a></li>
+            <li><a href="population.html">Population</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+      </nav>
+
+      <a class="cta" href="contact-us.html">Games</a>
+
+      <!-- Theme slider -->
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round" onclick = "changeTheme()"></div>
+        </label>
+      </div>
+
+    </header>
+
+    <div id="contact">
+
+      <!-- Title of contact form -->
+      <div id="title">
+        <h1>Contact us</h1>
+      </div>
+
+      <!-- Contact form -->
+      <div id="form">
         
-        <ul class="footer-icons">
-          <li>
-            <a href="https://www.instagram.com/theuncarriablesv2.0/" id="instagram">
-              <div class="fab fa-instagram"></div>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.reddit.com/user/TheUncarriables" id="reddit">
-              <div class="fab fa-reddit"></div>
-            </a>
-            </li>
-          <li>
-            <a href="https://github.com/DGBratoevski20/TheUncarriables_v2.0" id="github">
-              <div class="fab fa-github"></div>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/groups/654104182511960/people/?should_open_welcome_member_composer=1" id="facebook">
-              <div class="fab fa-facebook"></div>
-            </a> 
-          </li>
-      </ul>
+        <form method="post">
         
+            <div class="formgroup" id="name-form">
+                <label for="name">Your name*</label>
+                <input type="text" id="name" name="name"/> <!-- Name input -->
+            </div>
+            
+            <div class="formgroup" id="email-form">
+                <label for="email">Your e-mail*</label>
+                <input type="email" id="email" name="email"/> <!-- Email input -->
+            </div>
+            
+            <div class="formgroup" id="message-form">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message"></textarea> <!-- Message input -->
+            </div>
+        
+            <input type="submit" value="Send your message!" onclick="refreshPage()"> <!-- Submit button -->
+ 
+        </form>
+
+      </div>
+
     </div>
     
-  </footer>
-    
-</body>
+    <footer>
+      <a href="https://www.google.com/maps?ll=42.456345,27.401579&z=16&t=m&hl=en&gl=BG&mapclient=embed&cid=11473853030451294893" target="_blank">
+        <div class="footer-left">
+            <i class="fa fa-map-marker-alt"></i>
+            <p> Burgas, Ortoto 4</p>
+            <div class="footer-map">
+              <!-- Footer map -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.8277731122628!2d27.400923685552687!3d42.45634449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6eb7e8a995853%3A0x9f3b508a4516b2ad!2sProfessional%20Technical%20School!5e0!3m2!1sen!2sbg!4v1646482002617!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>            
+        </div>
+      </a>
+
+      <div class="footer-right">
+
+          <!-- Footer links -->
+          <div class="footer-links">
+            <a href="../Index.html">Home</a> <p>|</p>
+            <a href="country-cards.html">Geography</a> <p>|</p>
+            <a href="history-cards.html">History</a> <p>|</p>
+            <a href="Time-zone.html">Time zones</a> <p>|</p>
+            <a href="about.html">About</a> <p>|</p>
+            <a href="contact-us.html">Contact</a>
+          </div>
+          
+          <!-- Footer icons -->
+          <ul class="footer-icons">
+            <li>
+              <a href="https://www.instagram.com/theuncarriablesv2.0/" id="instagram">
+                <div class="fab fa-instagram"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/user/TheUncarriables" id="reddit">
+                <div class="fab fa-reddit"></div>
+              </a>
+              </li>
+            <li>
+              <a href="https://github.com/DGBratoevski20/TheUncarriables_v2.0" id="github">
+                <div class="fab fa-github"></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/groups/654104182511960/people/?should_open_welcome_member_composer=1" id="facebook">
+                <div class="fab fa-facebook"></div>
+              </a> 
+            </li>
+        </ul>
+          
+      </div>
+      
+    </footer>
+      
+  </body>
 
 </html>
