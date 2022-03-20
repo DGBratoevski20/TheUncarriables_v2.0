@@ -528,27 +528,28 @@ L.marker([47.692191234658495, 19.045383265448866],{icon:TouristDestinationsMarke
 .bindPopup('<b>Szentendre Skanzen Village Museum</b><hr><i>One of the most popular tourist destinations in Hungary.</i>')
 .openPopup();
 
+
 // cities
 L.marker([47.10603,17.90582],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Veszprém.</b><hr><i> One of the biggest cities in Hungary.</i>')
+.bindPopup('<b>Veszprém.</b><hr><i>Population: 59,738</i><br><i>Area: 126.9 km<sup>2</sup></i><br><i>Elevation: 266 m</i><hr><i>Veszprém is one of the oldest urban areas in Hungary, and a city with county rights.</i>')
 .openPopup();
 
 L.marker([47.52701,21.62293],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Debrecen.</b><hr><i> One of the biggest cities in Hungary.</i>')
+.bindPopup('<b>Debrecen.</b><hr><i>Population: 202,520</i><br><i>Area: 461.2 km<sup>2</sup></i><br><i>Elevation: 121 m</i><hr><i>Debrecen is the capital of Hungary’s Northern Great Plain region. Its 2-towered, 19th-century Reformed Church sits on the expansive main square, Kossuth Tér. Nearby, the Museum of the Reformed College of Debrecen has exhibits on the history of the city and the college..</i>')
 .openPopup();
 
 L.marker([46.252107888272675, 20.137633355563022],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Szeged.</b><hr><i> One of the biggest cities in Hungary.</i>')
+.bindPopup('<b>Szeged.</b><hr><i>Population: 161,879</i><br><i>Area: 281 km<sup>2</sup></i><br><i>Elevation: 76 m</i><hr><i>Szeged is the third largest city of Hungary, the largest city and regional centre of the Southern Great Plain and the county seat of Csongrád-Csanád county.</i>')
 .openPopup();
 
 L.marker([48.100320004248715, 20.78657473975032],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Miskolc.</b><hr><i> One of the biggest cities in Hungary.</i>')
+.bindPopup('<b>Miskolc.</b><hr><i>Population: 157,639</i><br><i>Area: 236.7 km<sup>2</sup></i><br><i>Elevation: 131 m</i><hr><i>Miskolc is a city in northeastern Hungary, known for its heavy industry. With a population of 161,265 Miskolc is the fourth largest city in Hungary.</i>')
 .openPopup();
 
 L.marker([46.07365055447059, 18.228579799784423],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Pécs.</b><hr><i> One of the biggest cities in Hungary.</i>')
+.bindPopup('<b>Pécs.</b><hr><i>Population: 145,011</i><br><i>Area: 162.6 km<sup>2</sup></i><br><i>Elevation: 153 m</i><hr><i>Pécs is an ancient city in southern Hungary, close to the Croatian border. Founded by the Romans, it`s known for its architectural landmarks such as the Early Christian Mausoleum, which features frescoed tombs.</i>')
 .openPopup();
 
 L.marker([47.49174,19.02753],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Budapest.</b><hr><i> The capital city of Hungary.</i>')
+.bindPopup('<b>Budapest.</b><hr><i>Population: 1,756,533</i><br><i>Area: 525.2 km<sup>2</sup></i><br><i>Elevation: 102 m</i><hr><i>Budapest, Hungary’s capital, is bisected by the River Danube. Its 19th-century Chain Bridge connects the hilly Buda district with flat Pest.</i>')
 .openPopup();

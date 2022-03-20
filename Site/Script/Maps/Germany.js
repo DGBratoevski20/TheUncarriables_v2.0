@@ -289,31 +289,32 @@ L.marker([49.379357652267096, 10.185697975998362],{icon:TouristDestinationsMarke
 .bindPopup('<b>Rothenburg</b><hr><i>One of the most popular tourist destinations in Germany.</i>')
 .openPopup();
 
+
 // cities
 L.marker([53.54030739150022, 10.01953125],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Hamburg.</b><hr><i> One of the biggest cities in Germany.</i>')
+.bindPopup('<b>Hamburg.</b><hr><i>Population: 1,841,382</i><br><i>Area: 755.2 km<sup>2</sup></i><br><i>Elevation: 3 m</i><hr><i>Hamburg, a major port city in northern Germany, is connected to the North Sea by the Elbe River.</i>')
 .openPopup();
 
 L.marker([48.16608541901253,11.557617187499998],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Munich.</b><hr><i> One of the biggest cities in Germany.</i>')
+.bindPopup('<b>Munich.</b><hr><i>Population: 1,472,723</i><br><i>Area: 310.7 km<sup>2</sup></i><br><i>Elevation: 520 m</i><hr><i>Munich, Bavaria’s capital, is home to centuries-old buildings and numerous museums.</i>')
 .openPopup();
 
 L.marker([50.965346321637696,6.954345703125],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Köln.</b><hr><i> One of the biggest cities in Germany.</i>')
+.bindPopup('<b>Köln.</b><hr><i>Population: 1,086,729</i><br><i>Area: 405.2 km<sup>2</sup></i><br><i>Elevation: 37 m</i><hr><i>Cologne, a 2,000-year-old city spanning the Rhine River in western Germany, is the region’s cultural hub.</i>')
 .openPopup();
 
 L.marker([50.127621728300475,8.690185546875],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Frankfurt.</b><hr><i> One of the biggest cities in Germany.</i>')
+.bindPopup('<b>Frankfurt.</b><hr><i>Population: 753,056</i><br><i>Area: 248.3 km<sup>2</sup></i><br><i>Elevation: 112 m</i><hr><i>Frankfurt, a central German city on the river Main, is a major financial hub that`s home to the European Central Bank.</i>')
 .openPopup();
 
 L.marker([51.46427482966439,7.00927734375],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Essen.</b><hr><i> One of the biggest cities in Germany.</i>')
+.bindPopup('<b>Essen.</b><hr><i>Population: 583,109</i><br><i>Area: 210.3 km<sup>2</sup></i><br><i>Elevation: 116 m</i><hr><i>Essen is the central and, after Dortmund, second-largest city of the Ruhr, the largest urban area in Germany.</i>')
 .openPopup();
 
 L.marker([48.785151998043155,9.184570312499998],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Stuttgard.</b><hr><i> One of the biggest cities in Germany.</i>')
+.bindPopup('<b>Stuttgard.</b><hr><i>Population: 634,830</i><br><i>Area: 207.4 km<sup>2</sup></i><br><i>Elevation: 245 m</i><hr><i>Stuttgart, capital of southwest Germany’s Baden-Württemberg state, is known as a manufacturing hub.</i>')
 .openPopup();
 
 L.marker([52.53627304145948, 13.38134765625],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Berlin.</b><hr><i> The capital city of Germany.</i>')
+.bindPopup('<b>Berlin.</b><hr><i>Population: 3,645,522</i><br><i>Area: 891.8 km<sup>2</sup></i><br><i>Elevation: 34 m</i><hr><i>Berlin, Germany’s capital, dates to the 13th century.</i>')
 .openPopup();

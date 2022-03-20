@@ -406,33 +406,33 @@ L.marker([43.768041256560736, 11.255439544391535],{icon:TouristDestinationsMarke
 
 // cities
 L.marker([45.48484638001285, 9.178645255184874],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Milan.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Milan.</b><hr><i>Population: 1,352,246</i><br><i>Area: 181.8 km<sup>2</sup></i><br><i>Elevation: 120 m</i><hr><i>Milan, a metropolis in Italy`s northern Lombardy region, is a global capital of fashion and design.</i>')
 .openPopup();
 
 L.marker([40.8666701753286, 14.265061020864495],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Naples.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Naples.</b><hr><i>Population: 3,085,845</i><br><i>Area: 119 km<sup>2</sup></i><br><i>Elevation: 17 m</i><hr><i>Naples, a city in southern Italy, sits on the Bay of Naples.</i>')
 .openPopup();
 
 L.marker([45.07122781404754, 7.68348772490847],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Turin.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Turin.</b><hr><i>Population: 886,837</i><br><i>Area: 130.2 km<sup>2</sup></i><br><i>Elevation: 239 m</i><hr><i>Turin is the capital city of Piedmont in northern Italy, known for its refined architecture and cuisine.</i>')
 .openPopup();
 
 L.marker([38.143048357320474, 13.35771912637409],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Palermo.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Palermo.</b><hr><i>Population: 673,735</i><br><i>Area: 158.9 km<sup>2</sup></i><br><i>Elevation: 14 m</i><hr><i>Palermo is the capital of the Italian island of Sicily.</i>')
 .openPopup();
 
 L.marker([44.40694381575936, 8.94425899172044],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Genoa.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Genoa.</b><hr><i>Population: 583,601</i><br><i>Area: 243 km<sup>2</sup></i><br><i>Elevation: 20 m</i><hr><i>Genoa is a port city and the capital of northwest Italy`s Liguria region.</i>')
 .openPopup();
 
 L.marker([43.77555741658469, 11.252341632252282],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Florence.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Florence.</b><hr><i>Population: 382,258</i><br><i>Area: 102.4 km<sup>2</sup></i><br><i>Elevation: 50 m</i><hr><i>Florence, capital of Italy’s Tuscany region, is home to many masterpieces of Renaissance art and architecture.</i>')
 .openPopup();
 
 L.marker([44.49439041804245, 11.340800024282567],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Bologna.</b><hr><i> One of the biggest cities in Italy.</i>')
+.bindPopup('<b>Bologna.</b><hr><i>Population: 388,367</i><br><i>Area: 140.9 km<sup>2</sup></i><br><i>Elevation: 54 m</i><hr><i>Bologna is the lively, historic capital of the Emilia-Romagna region, in northern Italy.</i>')
 .openPopup();
 
 L.marker([41.92539143426936, 12.484632494412406],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Rome.</b><hr><i> The capital city of Italy.</i>')
+.bindPopup('<b>Rome.</b><hr><i>Population: 2,873,737</i><br><i>Area: 1.285 km<sup>2</sup></i><br><i>Elevation: 21 m</i><hr><i>Rome is the capital city of Italy.</i>')
 .openPopup();
