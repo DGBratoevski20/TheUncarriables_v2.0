@@ -1,6 +1,8 @@
+/*Import google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*Light mode*/
 :root {
     --primary-color: #014F86;
     --secondary-color: #CAF0F8;
@@ -19,7 +21,7 @@
     --github-icon: #03c04a;
     --facebook-icon: #0072ff;
 }
-
+/*Dark mode*/
 [data-theme="dark"] {
     --primary-color: #121212;
     --secondary-color: #6E6AEE;
@@ -561,7 +563,7 @@ iframe {
     box-shadow: 0 0 5px var(--facebook-icon);
     text-shadow: 0 0 5px var(--facebook-icon);
 }
-
+/*Responsiveness for small laptops and ipad*/
 @media (max-width: 1170px) {
 
     #logoInNavbar {
@@ -628,7 +630,7 @@ iframe {
         font-size: 34px;
     }
 }
-
+/*Responsivness for phones*/
 @media (max-width: 900px) {
     
     header {

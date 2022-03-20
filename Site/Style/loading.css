@@ -13,6 +13,7 @@ h1{
   letter-spacing: 4px;
   font: 300 32px/1 'Open sans condensed', sans-serif;
 }
+/*Loading sreen object*/
 .loading{
   width: 100px;
   height: 100px;
@@ -28,6 +29,8 @@ h1{
   
   animation: rotate 1s infinite linear;
 }
+
+/*Loading screen animation*/
 @keyframes rotate{
 	from {transform: rotate(0deg)}
 	to {transform: rotate(360deg)}

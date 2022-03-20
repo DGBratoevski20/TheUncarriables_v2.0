@@ -18,6 +18,7 @@ body {
 	height: 100%;
 }
 
+/*Light mode*/
 :root {
     --primary-color: #014F86;
     --secondary-color: #CAF0F8;
@@ -44,6 +45,7 @@ body {
     --facebook-icon: #0072ff;
 }
 
+/*Dark mode*/
 [data-theme="dark"] {
     --primary-color: #121212;
     --secondary-color: #6E6AEE;
