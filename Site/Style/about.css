@@ -43,7 +43,8 @@ html {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     background: var(--bg-color);
-    background-size: cover;
+	background-size: 100% 100% no-repeat;
+	overflow-x: hidden;
 }
 
 header {
@@ -331,7 +332,7 @@ footer {
     padding: 30px 10%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    width: 85.6%;
+    width: 86%;
     margin-left: -5%;
     margin-top: -2%;
     margin-bottom: -2%;
@@ -606,7 +607,6 @@ iframe {
 
     .footer-right {
         float: right;
-        margin-right: -100px;
         margin-top: 10px;
     }
     
@@ -711,8 +711,15 @@ iframe {
 
 @media only screen and (max-width: 425px) {
 
+	html{
+		background-size: 101% 100%;
+	}
     header {
-        width: 96%;
+        display: flex;
+		align-items: center;
+		background-color: var(--primary-color);
+		font-size: 130%;
+		width: 88%;
     }
 
     #logoInNavbar {
@@ -773,8 +780,8 @@ iframe {
 
     footer {
         height: 20em;
-        width: 95.5%;
-        margin-left: -3.5%;
+        width: 88%;
+		margin-right: 0px;
     }
 
     .footer-left {
