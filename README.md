@@ -24,6 +24,8 @@ Our site is about a History and Geography. It includes interesting ways for lear
 4. **AIBaev20** - **Designer** 👦
    > ***GitHub profile***: [***AIBaev20***](https://github.com/AIBaev20)
    
+ 4. **KSChervenkov19** - **Mentor** 👦🏼
+   > ***GitHub profile***: [***KSChervenkov19***](https://github.com/KSChervenkov19)
  ---
 
 ## Installation 
