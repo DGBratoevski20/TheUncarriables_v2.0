@@ -285,7 +285,7 @@ L.marker([56.65153464510933, 23.72320623118176],{icon:CitiesMarkerIcon}).addTo(m
 .openPopup();
 
 L.marker([56.50627347991781, 21.010744000409918],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Liepāja.</b><hr><i>Population: 68 945</i><br><i>Area:  60,37 km<sup>2</sup></i><br><i>Elevation: 14 m</i><hr><i>Liepāja is a city in western Latvia, located on the Baltic Sea. It is the largest city in the Kurzeme Region and the third largest city in the country after Riga and Daugavpils. It is an important ice-free port. The population in 2020 was 68,535 people.'</i>)
+.bindPopup('<b>Liepāja.</b><hr><i>Population: 68 945</i><br><i>Area:  60,37 km<sup>2</sup></i><br><i>Elevation: 14 m</i><hr><i>Liepāja is a city in western Latvia, located on the Baltic Sea. It is the largest city in the Kurzeme Region and the third largest city in the country after Riga and Daugavpils. It is an important ice-free port. The population in 2020 was 68,535 people.</i>')
 .openPopup();
 
 L.marker([55.8775557008804, 26.53266705226049],{icon:CitiesMarkerIcon}).addTo(map)

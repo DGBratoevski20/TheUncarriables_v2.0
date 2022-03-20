@@ -507,5 +507,4 @@ L.marker([52.09859240224668, 5.121858732711509],{icon:CitiesMarkerIcon}).addTo(m
 .openPopup();
 
 L.marker([52.37511137109779, 4.902678761742699],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Amsterdam.</b><hr><i><i>Population: 821 752</i><br><i>Area: 219,3 km<sup>2</sup></i><br><i>Elevation: -2m</i><hr><i>Amsterdam is the capital and most populous city of the Netherlands.'</i>
-</i>')
+.bindPopup('<b>Amsterdam.</b><hr><i><i>Population: 821 752</i><br><i>Area: 219,3 km<sup>2</sup></i><br><i>Elevation: -2m</i><hr><i>Amsterdam is the capital and most populous city of the Netherlands.</i>')

@@ -303,7 +303,7 @@ L.marker([57.636657385781966, 18.29485565057488],{icon:TouristDestinationsMarker
 
 //cities
 L.marker([57.71093805967822, 11.965933427643622],{icon:CitiesMarkerIcon}).addTo(map)
-.bindPopup('<b>Gothenburg.</b><hr><i>Population: 579,281</i><br><i>Area: 447.8 km<sup>2</sup></i><br><i>Elevation: 12 m</i><hr><i>Gothenburg, a major city in Sweden, is situated off the Göta älv river on the country's west coast.</i>')
+.bindPopup('<b>Gothenburg.</b><hr><i>Population: 579,281</i><br><i>Area: 447.8 km<sup>2</sup></i><br><i>Elevation: 12 m</i><hr><i>Gothenburg, a major city in Sweden, is situated off the Göta älv river on the country`s west coast.</i>')
 .openPopup();
 
 L.marker([55.60208195113387, 13.00181526081602],{icon:CitiesMarkerIcon}).addTo(map)
