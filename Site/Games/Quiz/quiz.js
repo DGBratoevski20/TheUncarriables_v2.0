@@ -1,7 +1,7 @@
 let right = document.querySelector('.rightPart');
 let left = document.querySelector('.leftPart');
 let Quest = document.querySelector('quiz-question');
-let p = document.querySelector('p');
+let p = document.querySelector('.quiz').querySelector('p');
 setInterval(function(){
     right.style.left  = window.pageYOffset + 'px';
     left.style.left  = -window.pageYOffset + 'px';
@@ -12,6 +12,32 @@ window.addEventListener('scroll', ()=>
 {
     p.remove();
 })
+
+
+
+
+let timer = document.querySelector('.timer');
+let seconds = 0, minute = 0, hours = 0;
+timer.querySelector('p').innerText = `Hours: ${hours} Min: ${minute} Sec: ${seconds}`
+let intervalForTimer;
+intervalForTimer = setInterval(function()
+{
+    seconds++;
+    if(seconds % 60 == 0)
+    {
+        minute++;
+        seconds = 0;
+        
+    }
+    else if (minute % 60 == 0 && minute > 0)
+    {
+        hours++;
+        minute = 0;
+        
+    }                  
+    timer.querySelector('p').innerText = `Hours: ${hours} Min: ${minute} Sec: ${seconds}`
+    
+}, 1000)
 
 
 
@@ -175,13 +201,13 @@ next.addEventListener('click', nextQuestion);
 function checkAnswer(){
     var answerBank= document.getElementById('answerBank');
     var answers= document.getElementById('answers');
-    answerBank.style.display= 'block';
+    answerBank.style.opacity= 1;
     scoreboard.style.display= 'none';
     for(var a=0;a<questionBank.length;a++)
     {
         var list= document.createElement('li');
-        list.innerHTML= questionBank[a].answer;
-        answers.appendChild(list);
+        list.innerText= questionBank[a].answer;
+        answers.append(list);
     }
 }
 
