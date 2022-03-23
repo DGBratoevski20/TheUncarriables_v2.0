@@ -2,815 +2,580 @@ var countryName = "";
 var game = true;
 
 function isEmpty(str) {
-    return (!str || str.length === 0 );
+  return !str || str.length === 0;
 }
 
-function Germany()
-{
+function Germany() {
   countryName = "Germany";
   capitalCity = "Berlin";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
-      
-      while(game)
-      {
+
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
-
 
   game = true;
 }
 
-function France()
-{
+function France() {
   countryName = "France";
   capitalCity = "Paris";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
-      
-      while(game)
-      {
+
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Afghanistan()
-{
+function Afghanistan() {
   countryName = "Afghanistan";
   capitalCity = "Kabul";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Gabon()
-{
+function Gabon() {
   countryName = "Gabon";
   capitalCity = "Libreville";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Portugal()
-{
+function Portugal() {
   countryName = "Portugal";
   capitalCity = "Lisbon";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Bulgaria()
-{
+function Bulgaria() {
   countryName = "Bulgaria";
   capitalCity = "Sofia";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Turkey()
-{
+function Turkey() {
   countryName = "Turkey";
   capitalCity = "Ankara";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Malta()
-{
+function Malta() {
   countryName = "Malta";
   capitalCity = "Valletta";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Italy()
-{
+function Italy() {
   countryName = "Italy";
   capitalCity = "Rome";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good Job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Oman()
-{
+function Oman() {
   countryName = "Oman";
   capitalCity = "Muscat";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Honduras()
-{
+function Honduras() {
   countryName = "Honduras";
   capitalCity = "Tegucigalpa";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function costaRica()
-{
+function costaRica() {
   countryName = "Costa Rica";
   capitalCity = "San Jose";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Spain()
-{
+function Spain() {
   countryName = "Spain";
   capitalCity = "Madrid";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Qatar()
-{
+function Qatar() {
   countryName = "Qatar";
   capitalCity = "Doha";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Iran()
-{
+function Iran() {
   countryName = "Iran";
   capitalCity = "Tehran";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function northKorea()
-{
+function northKorea() {
   countryName = "North Korea";
   capitalCity = "Pyongyang";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function China()
-{
+function China() {
   countryName = "China";
   capitalCity = "Beijing";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
 }
 
-function Angola()
-{
+function Angola() {
   countryName = "Angola";
   capitalCity = "Luanda";
-  while(game)
-  {
+  while (game) {
     var country = prompt("Which country is this?", "...");
-    
-    if(country.toUpperCase() == countryName.toUpperCase())
-    {
+
+    if (country.toUpperCase() == countryName.toUpperCase()) {
       alert("Good job!");
 
-      while(game)
-      {
+      while (game) {
         var capital = prompt("And the capital city is?", "...");
-    
-        if(capital.toUpperCase() == capitalCity.toUpperCase())
-        {
+
+        if (capital.toUpperCase() == capitalCity.toUpperCase()) {
           alert("Well done!");
           game = false;
-        }
-        else if(isEmpty(capital))
-        {
+        } else if (isEmpty(capital)) {
           game = false;
-        }
-        else
-        {
-          alert("Don't give up buddy, come on!")
+        } else {
+          alert("Don't give up buddy, come on!");
         }
       }
-      
+
       game = false;
-    }
-    else if(isEmpty(country))
-    {
+    } else if (isEmpty(country)) {
       game = false;
-    }
-    else
-    {
-      alert("Don't give up buddy, come on!")
+    } else {
+      alert("Don't give up buddy, come on!");
     }
   }
   game = true;
