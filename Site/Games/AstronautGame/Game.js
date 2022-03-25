@@ -297,6 +297,7 @@ window.addEventListener("touchstart", function (TouchEvent) {
 //The End of the game
 FirstvarForInterval = setInterval(function () {
   if (fuel <= 0) {
+    fuel = 0;
     document.body.style.overflow = "auto";
     document.querySelector(".area").style.display = "none";
     document.querySelector(".btns").style.opacity = "0";
