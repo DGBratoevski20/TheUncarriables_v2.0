@@ -176,6 +176,9 @@ function nextQuestion() {
     points.innerHTML = score + "/" + questionBank.length;
     quizContainer.style.display = "none";
     scoreboard.style.display = "block";
+    clearInterval(intervalForTimer);
+    timer.remove();
+    scoreboard.querySelector('i').innerText += ` Hours: ${hours} Min: ${minute} Sec: ${seconds}`;
   }
 }
 
@@ -189,6 +192,9 @@ next.addEventListener("click", nextQuestion);
 function checkAnswer() {
   var answerBank = document.getElementById("answerBank");
   var answers = document.getElementById("answers");
+  
+  
+  
   answerBank.style.opacity = 1;
   scoreboard.style.display = "none";
   for (var a = 0; a < questionBank.length; a++) {
