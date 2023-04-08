@@ -46,10 +46,18 @@ body {
 
 .card .title a {
 	top: -175px;
-	color: #fff;
+	color: #bababa;
 	position: relative;
-	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
 	text-decoration: none;
+}
+
+.card .title a:hover {
+	color: #e2e2e2;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 .card .overlayer {
@@ -72,4 +80,19 @@ body {
 }
 .fa-play-circle:hover {
 	transform: scale(1.1);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #2e2e2e; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666666; 
+  border-radius: 10px;
 }
